@@ -24,6 +24,11 @@
 - But if (bEnable_Claymore) wil not load the claymore module
 
 # Last update: 24-03-2022
+- ADDED: Kinky Defib
+- Now you also can cover the area with smoke !
+- Changed the module names
+
+# Previous update: 24-03-2022
 - Added a small howto for enabling or disabling the modules
 - Please scrol down for the information
 
