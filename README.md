@@ -19,7 +19,12 @@
 # Known isues
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 
-# Last update: 23-03-2022
+# Last update: 24-03-2022
+- Added a small howto for enabling or disabling the modules
+- Please scrol down for the information
+
+
+# Previous update: 23-03-2022
 - Changed: __init__ module loading procedure.
 - Modules can now me turned on and off by setting true or false
 - Or disabling them totaly.
@@ -96,3 +101,92 @@
 - **T90** no damage mod, but no shell drop due no gravity ,time to live decreased to 4 seconds
 - **Tunguska** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
 - **LAV25** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
+
+
+## Enabling or disabling the modules how to
+- Here i explane how u can enable or disable the modified modules.
+#
+- local bEnable_players = true
+- if enabled (true)
+- This let u turn on or off the modified player lua file
+- Modification is made to walk and run speed (10% faster)
+- Jumping slightly increased
+#
+- if Disabled (false)
+- Default setings are active
+#
+#
+- local bEnable_weapons = true
+- if enabled (true)
+- This let u turn on or off the modified player lua file
+- Basicly not much (stripped down)
+- But the Gun Master settings are boosted in the original mod weapons.lua file
+#
+- local bEnable_modules = true
+- if enabled (true)
+- This will turn the separate modules on
+- This wil allow you to turn each module on or off (True or False)
+#
+- local bEnable_modules = false
+- if enabled (false)
+- This will turn the separate modules completly off
+- If disabled,no gadget modifications are active.
+#
+#
+- local bEnable_players = true
+- local bEnable_weapons = true
+# 
+- local bEnable_modules = true
+-             if (bEnable_modules) == (true) then dprint('modules config Enabled...')
+-  bEnable_combobags = true
+-  bEnable_C4 = true
+-  bEnable_M15 = true
+-  bEnable_EOD = true
+-  bEnable_grenade = true
+-  bEnable_claymore = true
+-  bEnable_repairtool = true
+-  bEnable_mortar = true
+-  bEnable_tugs_sweep = true
+-  bEnable_M93r = true
+-  bEnable_crossbow = true
+-  bEnable_rpg7 = true
+-  bEnable_smaw = true
+-  bEnable_stinger = true
+-  bEnable_javelin = true
+-  bEnable_igla = true
+-  bEnable_Mobile_AA = true
+-  bEnable_tank = true
+-  bEnable_atack_chopper = false
+-  bEnable_recon_chopper = false
+-  bEnable_Z11_chopper = false
+-  bEnable_sprut = false
+- 	else
+- 	    if (bEnable_modules) == (false) then dprint('Modules config Disabled...')
+-  bEnable_combobags = false
+-  bEnable_C4 = false
+-  bEnable_M15 = false
+-  bEnable_EOD = false
+-  bEnable_grenade = false
+-  bEnable_claymore = false
+-  bEnable_repairtool = false
+-  bEnable_mortar = false
+-  bEnable_tugs_sweep = false
+-  bEnable_M93r = false
+-  bEnable_crossbow = false
+-  bEnable_rpg7 = false
+-  bEnable_smaw = false
+-  bEnable_stinger = false
+-  bEnable_javelin = false
+-  bEnable_igla = false
+-  bEnable_Mobile_AA = false
+-  bEnable_tank = false
+-  bEnable_atack_chopper = false
+-  bEnable_recon_chopper = false
+-  bEnable_Z11_chopper = false
+-  bEnable_sprut = false
+- end
+- end
+#
+#
+- Choppers and the sprut are DISABLED by default.
+- This is work in progress ,so ,don not enable them !
