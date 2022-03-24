@@ -122,11 +122,11 @@ end
 end
 --
 
-            if (bEnable_Claymore) == (true) then dprint('Claymore Enabled...')
+            if (bEnable_claymore) == (true) then dprint('Claymore Enabled...')
 MMWeapons_claymore = require('__shared/MMWeapons_claymore')
 mmResources:AddLoadHandler(MMWeapons_claymore, MMWeapons_claymore.Write)
 	else
-	    if (bEnable_Claymore) == (false) then dprint('Claymore Disabled...')
+	    if (bEnable_claymore) == (false) then dprint('Claymore Disabled...')
 end
 end
 --
