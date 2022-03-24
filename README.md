@@ -19,6 +19,10 @@
 # Known isues
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 
+# Bug fix: 24-03-2022
+- bEnable_claymore = true is correct.
+- But if (bEnable_Claymore) wil not load the claymore module
+
 # Last update: 24-03-2022
 - Added a small howto for enabling or disabling the modules
 - Please scrol down for the information
