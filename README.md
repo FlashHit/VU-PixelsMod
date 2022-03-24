@@ -27,6 +27,9 @@
 - ADDED: EOD Bot has nut case repair range, and also shoots RPG
 - EOD Bot is now gamemode depending
 
+# Previous update: 20-03-2022
+- CHANGED: TUGs now beeps faster
+
 # Previous update: 15-03-2022
 - In general: Enough changes made !
 
