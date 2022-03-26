@@ -2,7 +2,8 @@
 require('__shared/MMUtils')
 
 local bEnable_players = true
-local bEnable_weapons = true
+local bEnable_weapons = true  -- Also contains some Gun Master setting stuff -
+local bEnable_weapons_org = false  -- Used for testing purpose only DO NOT ENABLE --
 
 local bEnable_modules = true
             if (bEnable_modules) == (true) then dprint('modules config Enabled...')
@@ -16,7 +17,6 @@ local bEnable_modules = true
  bEnable_repairtool = true
  bEnable_mortar = true
  bEnable_tugs_sweep = true
- bEnable_M93r = true
  bEnable_crossbow = true
  bEnable_rpg7 = true
  bEnable_smaw = true
@@ -25,10 +25,19 @@ local bEnable_modules = true
  bEnable_igla = true
  bEnable_Mobile_AA = true
  bEnable_tank = true
+ bEnable_M93r = true
+ bEnable_ASval = true
+ bEnable_aek971 = true
+ bEnable_P90 = true
+ bEnable_spas12 = true
+ bEnable_MK3A1 = true
+
+-- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
  bEnable_recon_chopper = false
  bEnable_Z11_chopper = false
  bEnable_sprut = false
+
 	else
 	    if (bEnable_modules) == (false) then dprint('Modules config Disabled...')
  bEnable_combobags = false
@@ -41,7 +50,6 @@ local bEnable_modules = true
  bEnable_repairtool = false
  bEnable_mortar = false
  bEnable_tugs_sweep = false
- bEnable_M93r = false
  bEnable_crossbow = false
  bEnable_rpg7 = false
  bEnable_smaw = false
@@ -50,6 +58,14 @@ local bEnable_modules = true
  bEnable_igla = false
  bEnable_Mobile_AA = false
  bEnable_tank = false
+ bEnable_M93r = false
+ bEnable_ASval = false
+ bEnable_aek971 = false
+ bEnable_P90 = false
+ bEnable_spas12 = false
+ bEnable_MK3A1 = false
+
+-- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
  bEnable_recon_chopper = false
  bEnable_Z11_chopper = false
@@ -77,6 +93,79 @@ mmWeapons = require('__shared/MMWeapons')
 	    if (bEnable_weapons) == (false) then dprint('Weapon stuff Disabled...')
 end
 end
+
+            if (bEnable_weapons_org) == (true) then dprint('Weapon stuff ORIGINAL Enabled...')
+mmWeapons_org = require('__shared/MMWeapons_org')
+	else
+	    if (bEnable_weapons_org) == (false) then dprint('Weapon stuff ORIGINAL Disabled...')
+end
+end
+
+-- Weapons Shotguns modules --
+            if (bEnable_spas12) == (true) then dprint('spas12 Enabled...')
+        MMShotgun_spas12 = require('__shared/MMShotgun_spas12')
+mmResources:AddLoadHandler(MMShotgun_spas12, MMShotgun_spas12.Write)
+	else
+	    if (bEnable_spas12) == (false) then dprint('spas12 Disabled...')
+end
+end
+--
+
+            if (bEnable_MK3A1) == (true) then dprint('MK3A1 Jackhammer Enabled...')
+        MMShotgun_MK3A1 = require('__shared/MMShotgun_MK3A1')
+mmResources:AddLoadHandler(MMShotgun_MK3A1, MMShotgun_MK3A1.Write)
+	else
+	    if (bEnable_MK3A1) == (false) then dprint('MK3A1 Jackhammer Disabled...')
+end
+end
+--
+
+-- Weapons modules --
+            if (bEnable_M93r) == (true) then dprint('M93r Enabled...')
+        MMWeapons_M93r = require('__shared/MMWeapons_M93r')
+mmResources:AddLoadHandler(MMWeapons_M93r, MMWeapons_M93r.Write)
+	else
+	    if (bEnable_M93r) == (false) then dprint('M93r Disabled...')
+end
+end
+--
+
+            if (bEnable_P90) == (true) then dprint('P90 Enabled...')
+        MMWeapons_P90 = require('__shared/MMWeapons_P90')
+mmResources:AddLoadHandler(MMWeapons_P90, MMWeapons_P90.Write)
+	else
+	    if (bEnable_P90) == (false) then dprint('P90 Disabled...')
+end
+end
+--
+
+	    if (bEnable_crossbow) == (true) then dprint('crossbow Enabled...')
+    MMWeapons_crossbow = require('__shared/MMWeapons_crossbow')
+mmResources:AddLoadHandler(MMWeapons_crossbow, MMWeapons_crossbow.Write)
+	else
+	    if (bEnable_crossbow) == (false) then dprint('crossbow Disabled...')
+end
+end
+--
+
+            if (bEnable_aek971) == (true) then dprint('aek971 Enabled...')
+    MMWeapons_aek971 = require('__shared/MMWeapons_aek971')
+mmResources:AddLoadHandler(MMWeapons_aek971, MMWeapons_aek971.Write)
+	else
+	    if (bEnable_aek971) == (false) then dprint('aek971 Disabled...')
+end
+end
+--
+
+            if (bEnable_ASval) == (true) then dprint('ASval Enabled...')
+    MMWeapons_AS_val = require('__shared/MMWeapons_AS_val')
+mmResources:AddLoadHandler(MMWeapons_AS_val, MMWeapons_AS_val.Write)
+	else
+	    if (bEnable_ASval) == (false) then dprint('ASval Disabled...')
+end
+end
+--
+
 
 -- Gadgets modules --
             if (bEnable_defib) == (true) then dprint('Kinky defib Enabled...')
@@ -168,30 +257,10 @@ end
 --
 
 
--- Weapons modules --
-            if (bEnable_M93r) == (true) then dprint('M93r Enabled...')
-        MMWeapons_M93r = require('__shared/MMWeapons_M93r')
-mmResources:AddLoadHandler(MMWeapons_M93r, MMWeapons_M93r.Write)
-	else
-	    if (bEnable_M93r) == (false) then dprint('M93r Disabled...')
-end
-end
---
-
-            if (bEnable_crossbow) == (true) then dprint('crossbow Enabled...')
-    MMWeapons_crossbow = require('__shared/MMWeapons_crossbow')
-mmResources:AddLoadHandler(MMWeapons_crossbow, MMWeapons_crossbow.Write)
-	else
-	    if (bEnable_crossbow) == (false) then dprint('crossbow Disabled...')
-end
-end
---
-
-
 -- Rockets modules --
 	    if (bEnable_rpg7) == (true) then dprint('rpg7 Enabled...')
-         MMWeapons_rockets_rpg = require('__shared/MMWeapons_rockets_rpg')
-mmResources:AddLoadHandler(MMWeapons_rockets_rpg, MMWeapons_rockets_rpg.Write)
+MMRockets_rpg = require('__shared/MMRockets_rpg')
+mmResources:AddLoadHandler(MMRockets_rpg, MMRockets_rpg.Write)
 	else
 	    if (bEnable_rpg7) == (false) then dprint('rpg7 Disabled...')
 end
@@ -199,8 +268,8 @@ end
 --
 
             if (bEnable_smaw) == (true) then dprint('smaw Enabled...')
-MMWeapons_rockets_smaw = require('__shared/MMWeapons_rockets_smaw')
-mmResources:AddLoadHandler(MMWeapons_rockets_smaw, MMWeapons_rockets_smaw.Write)
+MMRockets_smaw = require('__shared/MMRockets_smaw')
+mmResources:AddLoadHandler(MMRockets_smaw, MMRockets_smaw.Write)
 	else
 	    if (bEnable_smaw) == (false) then dprint('smaw Disabled...')
 end
@@ -208,8 +277,8 @@ end
 --
 
             if (bEnable_stinger) == (true) then dprint('stinger Enabled...')
-MMWeapons_rockets_stinger = require('__shared/MMWeapons_rockets_stinger')
-mmResources:AddLoadHandler(MMWeapons_rockets_stinger, MMWeapons_rockets_stinger.Write)
+MMRockets_stinger = require('__shared/MMRockets_stinger')
+mmResources:AddLoadHandler(MMRockets_stinger, MMRockets_stinger.Write)
 	else
 	    if (bEnable_stinger) == (false) then dprint('stinger Disabled...')
 end
@@ -217,16 +286,16 @@ end
 --
 
             if (bEnable_javelin) == (true) then dprint('javelin Enabled...')
-MMWeapons_rockets_javelin = require('__shared/MMWeapons_rockets_javelin')
-mmResources:AddLoadHandler(MMWeapons_rockets_javelin, MMWeapons_rockets_javelin.Write)
+MMRockets_javelin = require('__shared/MMRockets_javelin')
+mmResources:AddLoadHandler(MMRockets_javelin, MMRockets_javelin.Write)
 	else
 	    if (bEnable_javelin) == (false) then dprint('javelin Disabled...')
 end
 end
 --
             if (bEnable_igla) == (true) then dprint('igla Enabled...')
-MMWeapons_rockets_igla = require('__shared/MMWeapons_rockets_igla')
-mmResources:AddLoadHandler(MMWeapons_rockets_igla, MMWeapons_rockets_igla.Write)
+MMRockets_igla = require('__shared/MMRockets_igla')
+mmResources:AddLoadHandler(MMRockets_igla, MMRockets_igla.Write)
 	else
 	    if (bEnable_igla) == (false) then dprint('igla Disabled...')
 end
@@ -307,6 +376,14 @@ mmResources:AddLoadHandler(mmWeapons, mmWeapons.Write)
 	    if (bEnable_weapons) == (false) then dprint('Weapon resources Disabled...')
 end
 end
+
+            if (bEnable_weapons_org) == (true) then dprint('Weapon resources ORIGINAL Enabled...')
+mmResources:AddLoadHandler(mmWeapons_org, mmWeapons_org.Write)
+	else
+	    if (bEnable_weapons_org) == (false) then dprint('Weapon resources ORIGINAL Disabled...')
+end
+end
+
 
 mmResources:RegisterInstanceLoadHandlers()
 

@@ -1,0 +1,112 @@
+Common shared: Special
+Death Death None None 
+Damagearea DamageArea Suicide None 
+Soldier collision SoldierCollision Suicide None 
+Knife Weapons/Knife/Knife Melee None 
+Suicide Suicide Suicide None 
+Roadkill RoadKill None None 
+BF Premium Knife Knife_RazorBlade Melee None 
+M67 Grenade M67 Explosive None 
+Melee Melee Melee None 
+
+Common shared: Weapons
+870 Combat 870MCS Shotgun None 
+DAO-12 Striker Shotgun DAO-12 Shotgun None 
+Jackhammer/MK3A1 Shotgun  jackhammer Shotgun None 
+M1014 Semi-automatic Shotgun M1014 Shotgun None 
+Saiga 20K Semi Siaga20k Shotgun None 
+SPAS-12 Shotgun SPAS-12 Shotgun None 
+USAS-12 automatic Shotgun USAS-12 Shotgun None 
+
+AS Val Supressed Assault Rifle AS&Val AssaultRifle None 
+Beretta M93R M93R Handgun None 
+CrossBow CrossBow None None 
+Glock 18 Pistol Glock18 Handgun None 
+HK53/MP5 Assault Rifle HK53 AssaultRifle None 
+M5K Submachine Gun Weapons/XP2_MP5K/MP5K SMG None 
+M9 Pistol M9 Handgun None 
+Magpul Personal Defense Rifle Weapons/MagpulPDR/MagpulPDR SMG None 
+MP-443 Grach Pistol      Weapons/MP443/MP443 Handgun None 
+MP-443 Grach Pistol (GM) Weapons/MP443/MP443_GM Handgun None 
+MP412 REX Revolver Weapons/MP412Rex/MP412REX Handgun None 
+MP7 Machine Gun MP7 SMG None 
+P90 (GM) Weapons/P90/P90_GM SMG None 
+P90 Weapons/P90/P90 SMG None 
+PP-19 Bizon SubMachine Gun PP-19 LMG None 
+PP-2000 SubMachine Gun PP-2000 SMG None 
+Taurus .44 Mag revolver Taurus&.44 Handgun None 
+UMP-45 SubMachine Gun Weapons/UMP45/UMP45 SMG None 
+WWII M1911 .45 M1911 Handgun None 
+----------------------------------------------------------------
+
+Assault:
+Defibrillator Defib Melee Assault 
+M26 MASS Shotgun M26Mass Shotgun Assault 
+M320 Grenade launcher M320 ProjectileExplosive Assault 
+MedKit Medkit Nonlethal Assault 
+
+
+AEK-971 Assault Rifle AEK-971 AssaultRifle Assault 
+AK-74 Assault Rifle Weapons/AK74M/AK74 AssaultRifle Assault 
+AN-94 Abakan Assault Rifle AN-94&Abakan AssaultRifle Assault 
+Aug A3 Assault Rifle Steyr&AUG AssaultRifle Assault 
+F2000 Assault F2000 AssaultRifle Assault 
+FAMAS Assault Rifle FAMAS AssaultRifle Assault 
+G3A3 Battle Rifle Weapons/G3A3/G3A3 AssaultRifle Assault 
+KH2002 Assault Rifle Weapons/KH2002/KH2002 AssaultRifle Assault 
+L85A2/SA80 Assault Rifle Weapons/XP1_L85A2/L85A2 AssaultRifle Assault 
+M16A4 Assault Rifle M16A4 AssaultRifle Assault 
+M416 M416 AssaultRifle Assault 
+SCAR-L Assault Rifle SCAR-L AssaultRifle Assault 
+----------------------------------------------------------------
+
+Demolition Engineer:
+FGM-148 Javelin FGM-148 ProjectileExplosive Demolition 
+FIM-92 Stinger FIM92 ProjectileExplosive Demolition 
+M15 Anti Tank Mine M15&AT&Mine Explosive Demolition 
+Repair Tool Repair&Tool Melee Demolition 
+RPG-7 Anti Tank rocket-propelled grenade launcher RPG-7 ProjectileExplosive Demolition 
+SA-18 IGLA Air Defense Weapons/Sa18IGLA/Sa18IGLA ProjectileExplosive Demolition 
+SMAW Anti Tank weapon SMAW ProjectileExplosive Demolition 
+
+A-91 Assault Rifle Weapons/A91/A91 SMG Demolition 
+ACW-R Assault Rifle Weapons/XP2_ACR/ACR AssaultRifle Demolition 
+AKS-74u Assault Rifle AKS-74u SMG Demolition 
+G36C Assault Rifle Weapons/G36C/G36C SMG Demolition 
+L86A2 Light Machine Gun Weapons/XP2_L86/L86 LMG Demolition 
+M4A1 Carbine M4A1 SMG Demolition 
+MTAR-21 Assault Rifle Weapons/XP2_MTAR/MTAR AssaultRifle Demolition 
+QBZ-95 Assault Rifle QBZ-95 AssaultRifle Demolition 
+SCAR-H Assault Rifle Weapons/SCAR-H/SCAR-H SMG Demolition 
+SIG SG 550 Assault Rifle SG&553&LB SMG Demolition 
+----------------------------------------------------------------
+
+Support:
+C4 Explosive Weapons/Gadgets/C4/C4 Explosive Support 
+Claymore mine Weapons/Gadgets/Claymore/Claymore Explosive Support 
+
+LSAT Light Machine Gun LSAT LMG Support 
+M240 Machine Gun M240 LMG Support 
+M249 SAW M249 LMG Support 
+M27 IAR  M27IAR LMG Support 
+M60 LMG M60 LMG Support 
+MG36 MG36 LMG Support 
+Pecheneg Machine Gun Pecheneg LMG Support 
+QBB-95 Light Machine Gun QBB-95 LMG Support 
+RPK-74M Light Machine Gun RPK-74M LMG Support 
+Type88 Machine Gun Type88 LMG Support 
+----------------------------------------------------------------
+
+Recon - Sniper:
+Barrett M98B Sniper Rifle Model98B SniperRifle Recon 
+JNG90 Sniper Rifle JNG90 SniperRifle Recon 
+L96A1 Sniper Rifle L96 SniperRifle Recon 
+M39 Sniper Rifle M39 SniperRifle Recon 
+M40A5 Sniper Rifle M40A5 SniperRifle Recon 
+M417 Sniper Rifle M417 SniperRifle Recon 
+MK11 Sniper Rifle Mk11 SniperRifle Recon 
+QBU-88 Sniper Rifle QBU-88 SniperRifle Recon 
+Simonov SKS-45 Rifle SKS SniperRifle Recon 
+SV98 Snayperskaya SV98 SniperRifle Recon 
+SVD Sniper Rifle SVD SniperRifle Recon 
+----------------------------------------------------------------

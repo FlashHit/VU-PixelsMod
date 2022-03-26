@@ -4,43 +4,6 @@ function MMWeapons:Write(instance)
 
 end
 
---Events:Subscribe('Level:Loaded', function()
---
---	if (mmResources:IsLoaded('smawmissile')) then
---		mmResources:SetLoaded('smawmissile', false)
---	end
---	if (mmResources:IsLoaded('rpgprojectile')) then
---		mmResources:SetLoaded('rpgprojectile', false)
---	end
---	if (mmResources:IsLoaded('12gfrag')) then
---		mmResources:SetLoaded('12gfrag', false)
---	end
---	if (mmResources:IsLoaded('m93rbullet')) then
---		mmResources:SetLoaded('m93rbullet', false)
---	end
---	if (mmResources:IsLoaded('40mmlvg_grenade')) then
---		mmResources:SetLoaded('40mmlvg_grenade', false)
---	end
---	if (mmResources:IsLoaded('40mmlvgsound')) then
---		mmResources:SetLoaded('40mmlvgsound', false)
---	end
---	if (mmResources:IsLoaded('sniperbullet')) then
---		mmResources:SetLoaded('sniperbullet', false)
---	end
---	if (mmResources:IsLoaded('crossbolt')) then
---		mmResources:SetLoaded('crossbolt', false)
---	end
---	if (mmResources:IsLoaded('crossboltsound')) then
---		mmResources:SetLoaded('crossboltsound', false)
---	end
---
---	for resourceName, resourceData in pairs(mmResources:Get()) do
---		if (mmResources:IsLoaded(resourceName)) then
---			print('WARNING - Possible Unused Resource: '..tostring(resourceName))
---			mmResources:SetLoaded(resourceName, false)
---		end
---	end 
-
 
 function MMWeapons:ResetSwayData(swagData, minAngleMod, maxAngleMod, perShotMod, recoilMod, recoilHMod, recoilIncMod, recoilDecMod)
 
@@ -177,5 +140,4 @@ function MMWeapons:SetGMLevelKills(gmKillCounterInstance)
 	gmPreset_NormalReversed[17].killsNeeded = 2	-- GM_Knife
 
 end
-
 return MMWeapons()
