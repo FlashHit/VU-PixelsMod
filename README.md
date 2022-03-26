@@ -27,8 +27,16 @@
 - ADDED: Kinky Remington 870 MCS
 - **Remington 870 MCS** Lethal as hell now !
 
+- ADDED: Kinky DAO-12
+- **DAO-12** Lethal as hell now !
+
+- ADDED: Kinky M1014
+- **M1014** Lethal as hell now !
+
 - ADDED: Kinky Saiga20K
 - **Saiga20K** Lethal as hell now !
+
+
 
 - ADDED: Kinky Usas12
 - **Usas12** increased ammo size - Lethal as hell now !
