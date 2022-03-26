@@ -24,6 +24,15 @@
 - ADDED: Kinky MK3A1 Jackhammer
 - **MK3A1 Jackhammer** Lethal as hell now !
 
+- ADDED: Kinky Remington 870 MCS
+- **Remington 870 MCS** Lethal as hell now !
+
+- ADDED: Kinky Saiga20K
+- **Saiga20K** Lethal as hell now !
+
+- ADDED: Kinky Usas12
+- **Usas12** increased ammo size - Lethal as hell now !
+
 # Last update: 25-03-2022
 - ADDED: Kinky AS val
 - **ASval** increased ammo size
@@ -35,7 +44,7 @@
 - **P90** increased ammo size
 
 - ADDED: Kinky Spas12
-- **Spas12** increased ammo size - more damage
+- **Spas12** increased ammo size - Lethal as hell now !
 
 # Bug fix: 24-03-2022
 - bEnable_claymore = true is correct.
