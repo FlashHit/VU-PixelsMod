@@ -151,9 +151,25 @@ function MMResources:__init()
 
 
 -- Weapons Shotguns - M26 MASS Shotgun -- WIP
--- Weapons Shotguns - DAO-12 Striker Shotgun --
--- Weapons Shotguns - M1014 Semi-automatic Shotgun --
 
+-- Weapons Shotguns - DAO12 Striker Shotgun --
+	self.MMResources["DAO12"] = {}
+	self.MMResources["DAO12"]["Partition"] = 'CE832020-046A-11E0-A970-FF10D557871E'
+	self.MMResources["DAO12"]["Instance"] = 'CA0D0869-3535-27A3-AF84-5E992D3C24A9'
+	self.MMResources["DAO12"]["FireFunction1"] = '0A70FC78-2199-462F-92B8-209D2F9211E1'
+	self.MMResources["DAO12"]["FireFunction2"] = '38C05E70-31E9-4A41-A3CA-4FD74B079CF9'
+	self.MMResources["DAO12"]["FireFunction3"] = '4F027BBA-5AE6-4DE1-B900-4461FC479015'
+	self.MMResources["DAO12"]["FireFunction4"] = 'C601149B-890A-453E-8C9D-AE9C8B4216F4'
+
+
+-- Weapons Shotguns - M1014 Semi-automatic Shotgun --
+	self.MMResources["M1014"] = {}
+	self.MMResources["M1014"]["Partition"] = '460F1126-2578-11E0-96DC-FF63A5537869'
+	self.MMResources["M1014"]["Instance"] = '707C6815-CFD6-FBE0-A5DE-915AFDA6350A'
+	self.MMResources["M1014"]["FireFunction1"] = '28FF9461-5D36-4A7D-B187-CE7A538E66CA'
+	self.MMResources["M1014"]["FireFunction2"] = '1D08ACCF-C1CA-4CF4-B550-18390BEF07ED'
+	self.MMResources["M1014"]["FireFunction3"] = '8F3DAC3A-72B1-48D2-8CBF-8CAD8DECC4B1'
+	self.MMResources["M1014"]["FireFunction4"] = '0DBAD71F-95F4-47D4-93C1-C1A37E1BD9B2'
 
 -- Weapons Shotguns - USAS12 automatic Shotgun --
 	self.MMResources["USAS12"] = {}

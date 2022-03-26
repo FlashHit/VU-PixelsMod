@@ -34,6 +34,8 @@ local bEnable_modules = true
  bEnable_Remington870MCS = true
  bEnable_Saiga20K = true
  bEnable_USAS12 = true
+ bEnable_DAO12 = true
+ bEnable_M1014 = true
 
 -- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
@@ -70,6 +72,8 @@ local bEnable_modules = true
  bEnable_Remington870MCS = false
  bEnable_Saiga20K = false
  bEnable_USAS12 = false
+ bEnable_DAO12 = false
+ bEnable_M1014 = false
 
 -- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
@@ -108,6 +112,24 @@ end
 end
 
 -- Weapons Shotguns modules --
+            if (bEnable_DAO12) == (true) then dprint('DAO12 Enabled...')
+        MMShotgun_DAO12 = require('__shared/MMShotgun_DAO12')
+mmResources:AddLoadHandler(MMShotgun_DAO12, MMShotgun_DAO12.Write)
+	else
+	    if (bEnable_DAO12) == (false) then dprint('DAO12 Disabled...')
+end
+end
+--
+
+            if (bEnable_M1014) == (true) then dprint('M1014 Enabled...')
+        MMShotgun_M1014 = require('__shared/MMShotgun_M1014')
+mmResources:AddLoadHandler(MMShotgun_M1014, MMShotgun_M1014.Write)
+	else
+	    if (bEnable_M1014) == (false) then dprint('M1014 Disabled...')
+end
+end
+--
+
             if (bEnable_USAS12) == (true) then dprint('USAS12 Enabled...')
         MMShotgun_USAS12 = require('__shared/MMShotgun_USAS12')
 mmResources:AddLoadHandler(MMShotgun_USAS12, MMShotgun_USAS12.Write)
