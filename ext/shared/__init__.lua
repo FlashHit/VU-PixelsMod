@@ -3,7 +3,7 @@ require('__shared/MMUtils')
 
 local bEnable_players = true
 local bEnable_weapons = true  -- Also contains some Gun Master setting stuff -
-local bEnable_weapons_org = false  -- Used for testing purpose only DO NOT ENABLE --
+-- local bEnable_weapons_org = false  -- Used for testing purpose only DO NOT ENABLE --
 
 local bEnable_modules = true
             if (bEnable_modules) == (true) then dprint('modules config Enabled...')
@@ -31,6 +31,9 @@ local bEnable_modules = true
  bEnable_P90 = true
  bEnable_spas12 = true
  bEnable_MK3A1 = true
+ bEnable_Remington870MCS = true
+ bEnable_Saiga20K = true
+ bEnable_USAS12 = true
 
 -- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
@@ -64,6 +67,9 @@ local bEnable_modules = true
  bEnable_P90 = false
  bEnable_spas12 = false
  bEnable_MK3A1 = false
+ bEnable_Remington870MCS = false
+ bEnable_Saiga20K = false
+ bEnable_USAS12 = false
 
 -- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
@@ -102,7 +108,34 @@ end
 end
 
 -- Weapons Shotguns modules --
-            if (bEnable_spas12) == (true) then dprint('spas12 Enabled...')
+            if (bEnable_USAS12) == (true) then dprint('USAS12 Enabled...')
+        MMShotgun_USAS12 = require('__shared/MMShotgun_USAS12')
+mmResources:AddLoadHandler(MMShotgun_USAS12, MMShotgun_USAS12.Write)
+	else
+	    if (bEnable_USAS12) == (false) then dprint('USAS12 Disabled...')
+end
+end
+--
+
+            if (bEnable_Saiga20K) == (true) then dprint('Saiga20K Enabled...')
+        MMShotgun_Saiga20K = require('__shared/MMShotgun_Saiga20K')
+mmResources:AddLoadHandler(MMShotgun_Saiga20K, MMShotgun_Saiga20K.Write)
+	else
+	    if (bEnable_Saiga20K) == (false) then dprint('Saiga20K Disabled...')
+end
+end
+--
+
+            if (bEnable_Remington870MCS) == (true) then dprint('Remington 870MCS Enabled...')
+        MMShotgun_Remington870MCS = require('__shared/MMShotgun_Remington870MCS')
+mmResources:AddLoadHandler(MMShotgun_Remington870MCS, MMShotgun_Remington870MCS.Write)
+	else
+	    if (bEnable_Remington870MCS) == (false) then dprint('Remington 870MCS Disabled...')
+end
+end
+--
+
+	    if (bEnable_spas12) == (true) then dprint('spas12 Enabled...')
         MMShotgun_spas12 = require('__shared/MMShotgun_spas12')
 mmResources:AddLoadHandler(MMShotgun_spas12, MMShotgun_spas12.Write)
 	else
@@ -111,7 +144,7 @@ end
 end
 --
 
-            if (bEnable_MK3A1) == (true) then dprint('MK3A1 Jackhammer Enabled...')
+	    if (bEnable_MK3A1) == (true) then dprint('MK3A1 Jackhammer Enabled...')
         MMShotgun_MK3A1 = require('__shared/MMShotgun_MK3A1')
 mmResources:AddLoadHandler(MMShotgun_MK3A1, MMShotgun_MK3A1.Write)
 	else

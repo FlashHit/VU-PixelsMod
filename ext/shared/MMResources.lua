@@ -150,12 +150,37 @@ function MMResources:__init()
 	self.MMResources["mortarsmk"]["Instance"] = 'A420BDD8-F89F-49E3-B6DB-E8327253A589' 
 
 
--- Weapons Shotguns - M26 MASS Shotgun --
+-- Weapons Shotguns - M26 MASS Shotgun -- WIP
 -- Weapons Shotguns - DAO-12 Striker Shotgun --
 -- Weapons Shotguns - M1014 Semi-automatic Shotgun --
--- Weapons Shotguns - USAS-12 automatic Shotgun --
+
+
+-- Weapons Shotguns - USAS12 automatic Shotgun --
+	self.MMResources["USAS12"] = {}
+	self.MMResources["USAS12"]["Partition"] = 'F4F57492-38F5-11E0-845E-D6BEC180D605'
+	self.MMResources["USAS12"]["Instance"] = 'BE7FC137-648E-67C2-22F7-2594900FFFCA'
+	self.MMResources["USAS12"]["FireFunction1"] = '682FE06E-ECD8-4F30-9A6C-600F279D2FC2'
+	self.MMResources["USAS12"]["FireFunction2"] = '0088688B-9DD2-4100-9F02-C5A227184F9C'
+	self.MMResources["USAS12"]["FireFunction3"] = '134AF0FC-0D7A-4BCE-83A5-259E39F69F63'
+	self.MMResources["USAS12"]["FireFunction4"] = '36DE8274-A60D-4361-AA10-2040D0C0E23A'
+
 -- Weapons Shotguns - Saiga 20K Semi --
--- Weapons Shotguns - Remington 870 Combat --
+	self.MMResources["Saiga20K"] = {}
+	self.MMResources["Saiga20K"]["Partition"] = 'A119D627-257B-11E0-96DC-FF63A5537869'
+	self.MMResources["Saiga20K"]["Instance"] = '9CBF227A-BCD6-B540-622B-B70BBC85331F'
+	self.MMResources["Saiga20K"]["FireFunction1"] = 'C84F534F-5075-4EC1-8CAD-60D09F61A8A9'
+	self.MMResources["Saiga20K"]["FireFunction2"] = 'D360086F-0720-4BFA-B690-665FF90B942D'
+	self.MMResources["Saiga20K"]["FireFunction3"] = 'CF1D6D6E-242A-4A2F-B163-166F9701543E'
+	self.MMResources["Saiga20K"]["FireFunction4"] = 'E050498A-FD20-40DC-85A2-BCEB0C79ECAB'
+
+-- Weapons Shotguns - Remington 870MCS --
+	self.MMResources["870mcs"] = {}
+	self.MMResources["870mcs"]["Partition"] = '50F905EA-E32B-11DF-931B-DC6D3E613E0F'
+	self.MMResources["870mcs"]["Instance"] = 'B76D7661-C812-64C2-322C-A269E40A1CD7'
+	self.MMResources["870mcs"]["FireFunction1"] = '23EA5A02-84C7-4163-9210-B26E6CB37DC4'
+	self.MMResources["870mcs"]["FireFunction2"] = '62ED76A6-D4B3-46D6-887C-F720E2FA3147'
+	self.MMResources["870mcs"]["FireFunction3"] = 'DC77650A-A5AF-48E4-B2EF-BCE2FB8BD54A'
+	self.MMResources["870mcs"]["FireFunction4"] = '71E1E801-312C-43E7-886D-30AB75ACC629'
 
 -- Weapons Shotguns - Jackhammer - MK3A1 Shotgun --
 	self.MMResources["jackhammer"] = {}
@@ -170,6 +195,10 @@ function MMResources:__init()
 	self.MMResources["spas12"] = {}
 	self.MMResources["spas12"]["Partition"] = '37F8F2ED-CAC0-42E8-B77B-2300A99C3B0F'
 	self.MMResources["spas12"]["Instance"] = '27C36CA8-C16D-4D2B-B3DC-73E7AF91BE85'
+	self.MMResources["spas12"]["FireFunction1"] = 'B8F55C07-0412-4D22-9FAC-5DDA807244FB'
+	self.MMResources["spas12"]["FireFunction2"] = '9DC63986-E3C8-42C1-B431-88148AE1F1FA'
+	self.MMResources["spas12"]["FireFunction3"] = 'FCC8977C-04BF-4BB8-9F31-DC4EF3D03313'
+	self.MMResources["spas12"]["FireFunction4"] = '92F0B89D-0B88-456A-B57C-50BD7F36BADA'
 
 -- Weapons P90 --
 	self.MMResources["p90"] = {}

@@ -1,0 +1,15 @@
+spas ammo pimped 40 360
+spas ammo normal 5 30
+
+870mcs ammo pimped 7 28
+870mcs ammo normal 7 28
+
+jackhammer ammo pimped 13 26
+jaclhammer ammo normal 13 26
+
+Saiga20K ammo pimped 11 33
+Saiga20K ammo normal 11 33
+
+Usas12 ammo pimped 40 360
+Usas12 ammo normal 7 21
+
