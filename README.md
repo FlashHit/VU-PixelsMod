@@ -19,6 +19,24 @@
 # Known isues
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 
+
+# Last update: 26-03-2022
+- ADDED: Kinky MK3A1 Jackhammer
+- **MK3A1 Jackhammer** Lethal as hell now !
+
+# Last update: 25-03-2022
+- ADDED: Kinky AS val
+- **ASval** increased ammo size
+
+- ADDED: Kinky aek971
+- **aek971** increased ammo size
+
+- ADDED: Kinky P90
+- **P90** increased ammo size
+
+- ADDED: Kinky Spas12
+- **Spas12** increased ammo size - more damage
+
 # Bug fix: 24-03-2022
 - bEnable_claymore = true is correct.
 - But if (bEnable_Claymore) wil not load the claymore module
