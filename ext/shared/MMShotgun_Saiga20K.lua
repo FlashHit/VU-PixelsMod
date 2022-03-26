@@ -35,7 +35,7 @@ function MMShotgun_Saiga20K:Write(mmResources)
 		bulletDataPellets.endDamage = 200
 		bulletDataPellets.damageFalloffStartDistance = 0
 		bulletDataPellets.damageFalloffEndDistance = 50
-		dprint('Changed Saiga20K - Buckshot entity changed ...................................')
+		dprint('Changed Saiga20K - Buckshot entity changed ...')
 
 		local bulletDataFlechet = BulletEntityData(fireData[2].shot.projectileData)
 		bulletDataFlechet:MakeWritable()
@@ -44,7 +44,7 @@ function MMShotgun_Saiga20K:Write(mmResources)
 		bulletDataFlechet.endDamage = 200
 		bulletDataFlechet.damageFalloffStartDistance = 0
 		bulletDataFlechet.damageFalloffEndDistance = 500
-		dprint('Changed Saiga20K - Flechets entity changed ...................................')
+		dprint('Changed Saiga20K - Flechets entity changed ...')
 
 		local bulletDataFrags = BulletEntityData(fireData[3].shot.projectileData)
 		bulletDataFrags:MakeWritable()
@@ -53,7 +53,7 @@ function MMShotgun_Saiga20K:Write(mmResources)
 		bulletDataFrags.endDamage = 1600
 		bulletDataFrags.damageFalloffStartDistance = 0
 		bulletDataFrags.damageFalloffEndDistance = 500
-		dprint('Changed Saiga20K - FRAG entity changed ...................................')
+		dprint('Changed Saiga20K - FRAG entity changed ...')
 
 		local bulletDataSlugs = BulletEntityData(fireData[4].shot.projectileData)
 		bulletDataSlugs:MakeWritable()
@@ -62,7 +62,7 @@ function MMShotgun_Saiga20K:Write(mmResources)
 		bulletDataSlugs.endDamage = 400
 		bulletDataSlugs.damageFalloffStartDistance = 0
 		bulletDataSlugs.damageFalloffEndDistance = 500	
-		dprint('Changed Saiga20K - SLUGS entity changed ...................................')
+		dprint('Changed Saiga20K - SLUGS entity changed ...')
 	
 	end
 
