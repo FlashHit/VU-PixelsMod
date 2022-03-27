@@ -25,7 +25,7 @@
 - Slug ammo nag to spit a error message "cannot cast an instance that's lazy loaded to 'BulletEntityData'"
 - For now i disabled the pimped Slug ammo instance, Sorry.
 
-# Last update: 26-03-2022
+# Previous update: 26-03-2022
 - ADDED: Kinky MK3A1 Jackhammer
 - **MK3A1 Jackhammer** Lethal as hell now !
 
