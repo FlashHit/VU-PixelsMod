@@ -29,13 +29,18 @@ local bEnable_modules = true
  bEnable_ASval = true
  bEnable_aek971 = true
  bEnable_P90 = true
- bEnable_spas12 = true
- bEnable_MK3A1 = true
- bEnable_Remington870MCS = true
- bEnable_Saiga20K = true
- bEnable_USAS12 = true
- bEnable_DAO12 = true
- bEnable_M1014 = true
+ bEnable_spas12 = false
+ bEnable_Remington870MCS = false
+ bEnable_Saiga20K = false
+ bEnable_USAS12 = false
+ bEnable_DAO12 = false
+ bEnable_M1014 = false
+
+-- MK3A1 stuff --
+bEnable_MK3A1_buckshot = true
+bEnable_MK3A1_flechette = true
+bEnable_MK3A1_frag = true
+bEnable_MK3A1_slug = false -- Warning: This can cast a error message on next mapload
 
 -- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
@@ -68,12 +73,17 @@ local bEnable_modules = true
  bEnable_aek971 = false
  bEnable_P90 = false
  bEnable_spas12 = false
- bEnable_MK3A1 = false
  bEnable_Remington870MCS = false
  bEnable_Saiga20K = false
  bEnable_USAS12 = false
  bEnable_DAO12 = false
  bEnable_M1014 = false
+
+-- MK3A1 stuff --
+bEnable_MK3A1_buckshot = false
+bEnable_MK3A1_flechette = false
+bEnable_MK3A1_slug = false
+bEnable_MK3A1_frag = false
 
 -- DO NOT ENABLE THIS, ITS WORK IN PROGRESS --
  bEnable_atack_chopper = false
@@ -166,14 +176,46 @@ end
 end
 --
 
-	    if (bEnable_MK3A1) == (true) then dprint('MK3A1 Jackhammer Enabled...')
-        MMShotgun_MK3A1 = require('__shared/MMShotgun_MK3A1')
-mmResources:AddLoadHandler(MMShotgun_MK3A1, MMShotgun_MK3A1.Write)
+	    if (bEnable_MK3A1_slug) == (true) then dprint('MK3A1 Jackhammer Slug ammo Enabled...')
+        MMShotgun_MK3A1_slug = require('__shared/MMShotgun_MK3A1_slug')
+mmResources:AddLoadHandler(MMShotgun_MK3A1_slug, MMShotgun_MK3A1_slug.Write)
 	else
-	    if (bEnable_MK3A1) == (false) then dprint('MK3A1 Jackhammer Disabled...')
+	    if (bEnable_MK3A1_slug) == (false) then dprint('MK3A1 Jackhammer Slug ammo Disabled...')
 end
 end
 --
+
+	    
+	    if (bEnable_MK3A1_buckshot) == (true) then dprint('MK3A1 Jackhammer Buckshot ammo Enabled...')
+        MMShotgun_MK3A1_buckshot = require('__shared/MMShotgun_MK3A1_buckshot')
+mmResources:AddLoadHandler(MMShotgun_MK3A1_buckshot, MMShotgun_MK3A1_buckshot.Write)
+	else
+	    if (bEnable_MK3A1_buckshot) == (false) then dprint('MK3A1 Jackhammer Buckshot ammo Disabled...')
+end
+end
+--
+
+	    if (bEnable_MK3A1_flechette) == (true) then dprint('MK3A1 Jackhammer Flechette ammo Enabled...')
+        MMShotgun_MK3A1_flechette = require('__shared/MMShotgun_MK3A1_flechette')
+mmResources:AddLoadHandler(MMShotgun_MK3A1_flechette, MMShotgun_MK3A1_flechette.Write)
+	else
+	    if (bEnable_MK3A1_flechette) == (false) then dprint('MK3A1 Jackhammer Flechette ammo Disabled...')
+end
+end
+--
+
+
+	    if (bEnable_MK3A1_frag) == (true) then dprint('MK3A1 Jackhammer Frag ammo Enabled...')
+        MMShotgun_MK3A1_frag = require('__shared/MMShotgun_MK3A1_frag')
+mmResources:AddLoadHandler(MMShotgun_MK3A1_frag, MMShotgun_MK3A1_frag.Write)
+	else
+	    if (bEnable_MK3A1_frag) == (false) then dprint('MK3A1 Jackhammer Frag ammo Disabled...')
+end
+end
+--
+
+
+
 
 -- Weapons modules --
             if (bEnable_M93r) == (true) then dprint('M93r Enabled...')
