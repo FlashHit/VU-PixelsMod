@@ -49,8 +49,8 @@ function MMShotgun_Remington870MCS:Write(mmResources)
 		local bulletDataFrags = BulletEntityData(fireData[3].shot.projectileData)
 		bulletDataFrags:MakeWritable()
 		bulletDataFrags.gravity = 0
-		bulletDataFrags.startDamage = 1600
-		bulletDataFrags.endDamage = 1600
+		bulletDataFrags.startDamage = 200
+		bulletDataFrags.endDamage = 200
 		bulletDataFrags.damageFalloffStartDistance = 0
 		bulletDataFrags.damageFalloffEndDistance = 500
 		dprint('Changed Remington 870 MCS - FRAG entity changed ...')
