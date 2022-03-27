@@ -19,6 +19,11 @@
 # Known isues
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 
+# Last update: 27-03-2022
+- CHANGED: MK3A1 Jackhammer
+- **MK3A1 Jackhammer** Split all 4 ammo types in it own instance
+- Slug ammo nag to spit a error message "cannot cast an instance that's lazy loaded to 'BulletEntityData'"
+- For now i disabled the pimped Slug ammo instance, Sorry.
 
 # Last update: 26-03-2022
 - ADDED: Kinky MK3A1 Jackhammer
@@ -36,12 +41,10 @@
 - ADDED: Kinky Saiga20K
 - **Saiga20K** Lethal as hell now !
 
-
-
 - ADDED: Kinky Usas12
 - **Usas12** increased ammo size - Lethal as hell now !
 
-# Last update: 25-03-2022
+# Previous update: 25-03-2022
 - ADDED: Kinky AS val
 - **ASval** increased ammo size
 
@@ -58,7 +61,7 @@
 - bEnable_claymore = true is correct.
 - But if (bEnable_Claymore) wil not load the claymore module
 
-# Last update: 24-03-2022
+# Previous update: 24-03-2022
 - ADDED: Kinky Defib
 - Now you also can cover the area with smoke !
 - Changed the module names
