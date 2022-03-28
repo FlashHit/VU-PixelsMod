@@ -19,11 +19,13 @@
 # Known isues
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 
-# Last update: 27-03-2022
-- CHANGED: MK3A1 Jackhammer
-- **MK3A1 Jackhammer** Split all 4 ammo types in it own instance
-- Slug ammo nag to spit a error message "cannot cast an instance that's lazy loaded to 'BulletEntityData'"
-- For now i disabled the pimped Slug ammo instance, Sorry.
+# Last update: 28-03-2022
+- CHANGED: Had to split all shotgun ammo in its own instances
+- Slug ammo for some reason went bonkus on new mapload.
+- For now i disabled the pimped Slug ammo instances, Sorry.
+- All shotgun ammo kan now be enabled or disabled
+- **TUGS** is now super charged with double sweep range ! 
+
 
 # Previous update: 26-03-2022
 - ADDED: Kinky MK3A1 Jackhammer
@@ -186,51 +188,9 @@
 - local bEnable_modules = true
 -             if (bEnable_modules) == (true) then dprint('modules config Enabled...')
 -  bEnable_combobags = true
--  bEnable_C4 = true
--  bEnable_M15 = true
--  bEnable_EOD = true
--  bEnable_grenade = true
--  bEnable_claymore = true
--  bEnable_repairtool = true
--  bEnable_mortar = true
--  bEnable_tugs_sweep = true
--  bEnable_M93r = true
--  bEnable_crossbow = true
--  bEnable_rpg7 = true
--  bEnable_smaw = true
--  bEnable_stinger = true
--  bEnable_javelin = true
--  bEnable_igla = true
--  bEnable_Mobile_AA = true
--  bEnable_tank = true
--  bEnable_atack_chopper = false
--  bEnable_recon_chopper = false
--  bEnable_Z11_chopper = false
--  bEnable_sprut = false
 - 	else
 - 	    if (bEnable_modules) == (false) then dprint('Modules config Disabled...')
 -  bEnable_combobags = false
--  bEnable_C4 = false
--  bEnable_M15 = false
--  bEnable_EOD = false
--  bEnable_grenade = false
--  bEnable_claymore = false
--  bEnable_repairtool = false
--  bEnable_mortar = false
--  bEnable_tugs_sweep = false
--  bEnable_M93r = false
--  bEnable_crossbow = false
--  bEnable_rpg7 = false
--  bEnable_smaw = false
--  bEnable_stinger = false
--  bEnable_javelin = false
--  bEnable_igla = false
--  bEnable_Mobile_AA = false
--  bEnable_tank = false
--  bEnable_atack_chopper = false
--  bEnable_recon_chopper = false
--  bEnable_Z11_chopper = false
--  bEnable_sprut = false
 - end
 - end
 #
