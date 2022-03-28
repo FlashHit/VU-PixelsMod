@@ -6,10 +6,10 @@ function MMWeapons_tugs_sweep:Write(instance)
 
 		local radarSweep = ebxEditUtils:GetWritableInstance(mmResources:GetInstance('tugs_vehicle'))
 
---		radarSweep.ControllableSweepRadius = 60
+		radarSweep.controllableSweepRadius = 60
 		radarSweep.controllableSweepInterval = 1.5
---		radarSweep.SweepForMines = true
---		radarSweep.MineSweepRadius = 60
+		radarSweep.sweepForMines = true
+		radarSweep.mineSweepRadius = 60
 		radarSweep.mineSweepInterval = 1.5
 --		radarSweep.TimeToLive = 0
 		dprint('Changed T-UGS Sweep Range...')
