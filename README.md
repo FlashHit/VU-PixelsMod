@@ -18,14 +18,54 @@
 
 # Known isues
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
+* USE WITH CARE !
 
-# Last update: 28-03-2022
-- CHANGED: Had to split all shotgun ammo in its own instances
-- Slug ammo for some reason went bonkus on new mapload.
-- For now i disabled the pimped Slug ammo instances, Sorry.
-- All shotgun ammo kan now be enabled or disabled
+# Previous update: 30-03-2022
+- CHANGED: 
+- **Sorted all weapons in its class group**
+
+- ADDED: Famas
+- **Famas** increased ammo size
+ 
+ - ADDED: Scar-L
+- **Scar-L** increased ammo size
+ 
+ - ADDED: Aug A3
+- **Aug A3** increased ammo size
+
+- ADDED: pp2000
+- **PP2000** increased ammo size
+ 
+ - ADDED: ump45
+- **Ump45** increased ammo size
+ 
+ - ADDED: mp7
+- **MP7** increased ammo size
+ 
+ - ADDED: pp19
+- **PP19** increased ammo size
+
+- ADDED: Acwr
+- **ACW-R** increased ammo size
+ 
+ - ADDED: Mtar
+- **Mtar** increased ammo size
+
+- ADDED: m27 iar
+- **M27 IAR** increased ammo size
+ 
+ - ADDED: M60e04 LMG
+- **M60E04 LMG** increased ammo size
+
+# Previous update: 29-03-2022
+- ADDED: Kinky PDW-R
+- **PDW-R** increased ammo size
+
+- ADDED: Kinky MP5K
+- **MP5K** increased ammo size
+
+# Previous update: 28-03-2022
 - **TUGS** is now super charged with double sweep range ! 
-
 
 # Previous update: 26-03-2022
 - ADDED: Kinky MK3A1 Jackhammer
@@ -66,12 +106,7 @@
 # Previous update: 24-03-2022
 - ADDED: Kinky Defib
 - Now you also can cover the area with smoke !
-- Changed the module names
-
-# Previous update: 24-03-2022
-- Added a small howto for enabling or disabling the modules
-- Please scrol down for the information
-
+- **Changed the module names**
 
 # Previous update: 23-03-2022
 - Changed: __init__ module loading procedure.
@@ -151,49 +186,5 @@
 - **Tunguska** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
 - **LAV25** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
 
-
-## Enabling or disabling the modules how to
-- Here i explane how u can enable or disable the modified modules.
-#
-- local bEnable_players = true
-- if enabled (true)
-- This let u turn on or off the modified player lua file
-- Modification is made to walk and run speed (10% faster)
-- Jumping slightly increased
-#
-- if Disabled (false)
-- Default setings are active
-#
-#
-- local bEnable_weapons = true
-- if enabled (true)
-- This let u turn on or off the modified player lua file
-- Basicly not much (stripped down)
-- But the Gun Master settings are boosted in the original mod weapons.lua file
-#
-- local bEnable_modules = true
-- if enabled (true)
-- This will turn the separate modules on
-- This wil allow you to turn each module on or off (True or False)
-#
-- local bEnable_modules = false
-- if enabled (false)
-- This will turn the separate modules completly off
-- If disabled,no gadget modifications are active.
-#
-#
-- local bEnable_players = true
-- local bEnable_weapons = true
-# 
-- local bEnable_modules = true
--             if (bEnable_modules) == (true) then dprint('modules config Enabled...')
--  bEnable_combobags = true
-- 	else
-- 	    if (bEnable_modules) == (false) then dprint('Modules config Disabled...')
--  bEnable_combobags = false
-- end
-- end
-#
-#
 - Choppers and the sprut are DISABLED by default.
 - This is work in progress ,so ,don not enable them !
