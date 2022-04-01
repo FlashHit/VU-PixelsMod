@@ -20,93 +20,42 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
+# Last update: 01-04-2022
+- # Handguns weapons
+- ADDED: All default handguns has increased ammo size
+- M93r has unlimited ammo, but lower damage but bigger ammo clip
+
+- # Common weapons
+- ADDED: All shared weapons has increased ammo size
+
+- # Assault class
+- ADDED: All Asault weapons has increased ammo size
+
+- # Engineer class
+- ADDED: All Engineer weapons has increased ammo size !
+
+- # Support class
+- ADDED: All Support weapons has increased ammo size !
+
+- # Recon class
+- ADDED: All Sniper weapons has increased ammo size !
+
+
+
 # Previous update: 30-03-2022
 - CHANGED: 
 - **Sorted all weapons in its class group**
 
-- ADDED: Famas
-- **Famas** increased ammo size
- 
- - ADDED: Scar-L
-- **Scar-L** increased ammo size
- 
- - ADDED: Aug A3
-- **Aug A3** increased ammo size
-
-- ADDED: pp2000
-- **PP2000** increased ammo size
- 
- - ADDED: ump45
-- **Ump45** increased ammo size
- 
- - ADDED: mp7
-- **MP7** increased ammo size
- 
- - ADDED: pp19
-- **PP19** increased ammo size
-
-- ADDED: Acwr
-- **ACW-R** increased ammo size
- 
- - ADDED: Mtar
-- **Mtar** increased ammo size
-
-- ADDED: m27 iar
-- **M27 IAR** increased ammo size
- 
- - ADDED: M60e04 LMG
-- **M60E04 LMG** increased ammo size
-
-# Previous update: 29-03-2022
-- ADDED: Kinky PDW-R
-- **PDW-R** increased ammo size
-
-- ADDED: Kinky MP5K
-- **MP5K** increased ammo size
 
 # Previous update: 28-03-2022
 - **TUGS** is now super charged with double sweep range ! 
 
-# Previous update: 26-03-2022
-- ADDED: Kinky MK3A1 Jackhammer
-- **MK3A1 Jackhammer** Lethal as hell now !
-
-- ADDED: Kinky Remington 870 MCS
-- **Remington 870 MCS** Lethal as hell now !
-
-- ADDED: Kinky DAO-12
-- **DAO-12** Lethal as hell now !
-
-- ADDED: Kinky M1014
-- **M1014** Lethal as hell now !
-
-- ADDED: Kinky Saiga20K
-- **Saiga20K** Lethal as hell now !
-
-- ADDED: Kinky Usas12
-- **Usas12** increased ammo size - Lethal as hell now !
-
-# Previous update: 25-03-2022
-- ADDED: Kinky AS val
-- **ASval** increased ammo size
-
-- ADDED: Kinky aek971
-- **aek971** increased ammo size
-
-- ADDED: Kinky P90
-- **P90** increased ammo size
-
-- ADDED: Kinky Spas12
-- **Spas12** increased ammo size - Lethal as hell now !
-
-# Bug fix: 24-03-2022
-- bEnable_claymore = true is correct.
-- But if (bEnable_Claymore) wil not load the claymore module
 
 # Previous update: 24-03-2022
 - ADDED: Kinky Defib
 - Now you also can cover the area with smoke !
 - **Changed the module names**
+
 
 # Previous update: 23-03-2022
 - Changed: __init__ module loading procedure.
@@ -116,8 +65,10 @@
 - ADDED: EOD Bot has nut case repair range, and also shoots RPG
 - EOD Bot is now gamemode depending
 
+
 # Previous update: 20-03-2022
 - CHANGED: TUGs now beeps faster
+
 
 # Previous update: 15-03-2022
 - In general: Enough changes made !
