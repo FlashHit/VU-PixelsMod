@@ -75,9 +75,9 @@ end
 		bulletData.endDamage = 500
 		bulletData.damageFalloffStartDistance = 1
 		bulletData.damageFalloffEndDistance = 30
-		bulletData.timeToLive = 10
+		bulletData.timeToLive = 5
 		bulletData.impactImpulse = 250
-		dprint('Changed Crossbow HE bolt gravity xD...')
+		dprint('Changed Crossbow HE bolt Entity data...')
 	end
 
 	if (mmResources:IsLoaded('crossbolt_BA')) then
