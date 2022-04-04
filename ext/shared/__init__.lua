@@ -1,5 +1,13 @@
 -- global funcs and utils
 require('__shared/MMUtils')
+
+-- Values can be true false or hidden
+-- hidden is the same as false, but does not show up in the console !
+
+local bEnable_modules = true
+
+            if (bEnable_modules) == (true) then dprint('***** All modules Enabled... *****')
+
 require('__shared/__init_modules_shotguns')
 require('__shared/__init_modules_gadgets')
 require('__shared/__init_modules_handguns')
@@ -13,10 +21,13 @@ require('__shared/__init_modules_engineer_weapons')
 require('__shared/__init_modules_assault_weapons')
 require('__shared/__init_modules_recon_weapons')
 
--- Values can be true false or hidden
--- hidden is the same as false, but does not show up in the console !
+	else
+	    if (bEnable_modules) == (false) then dprint('***** All modules Disabled... *****')
+end
+end
+--
 
-local bEnable_players = true
+local bEnable_players = false
 local bEnable_weapons = false  -- Also contains some Gun Master setting stuff -
 
 -- load resource list
