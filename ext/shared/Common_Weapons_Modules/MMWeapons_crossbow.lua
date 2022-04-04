@@ -15,12 +15,12 @@ if (mmResources:IsLoaded('crossbolt_damage_HE')) then
 		mmResources:SetLoaded('crossbolt_damage_HE', false)
 		local expData = VeniceExplosionEntityData(mmResources:GetInstance('crossbolt_damage_HE'))
 		expData:MakeWritable()
-		expData.blastDamage = 100
+		expData.blastDamage = 70
 		expData.blastRadius = 5
 		expData.blastImpulse = 500
-		expData.shockwaveDamage = 150
-		expData.shockwaveRadius = 7
-		expData.shockwaveImpulse = 250
+		expData.shockwaveDamage = 10
+		expData.shockwaveRadius = 10
+		expData.shockwaveImpulse = 125
 		expData.shockwaveTime = 0.1
 		expData.triggerImpairedHearing = true
 		expData.isCausingSuppression = true 
@@ -37,7 +37,7 @@ end
 		bulletData.gravity = 0
 		bulletData.startDamage = 25
 		bulletData.endDamage = 25
-		bulletData.damageFalloffStartDistance = 1
+		bulletData.damageFalloffStartDistance = 30
 		bulletData.damageFalloffEndDistance = 30
 		bulletData.timeToLive = 15
 		bulletData.impactImpulse = 25
@@ -54,7 +54,7 @@ end
 		bulletData.gravity = 0
 		bulletData.startDamage = 25
 		bulletData.endDamage = 25
-		bulletData.damageFalloffStartDistance = 1
+		bulletData.damageFalloffStartDistance = 30
 		bulletData.damageFalloffEndDistance = 30
 		bulletData.timeToLive = 15
 		bulletData.impactImpulse = 25
@@ -69,14 +69,14 @@ end
 		bulletData:MakeWritable()
 
 --		bulletData.detonateOnTimeout = True
-		bulletData.initialSpeed = 5000
+		bulletData.initialSpeed = 500
 		bulletData.gravity = 0
-		bulletData.startDamage = 500
-		bulletData.endDamage = 500
-		bulletData.damageFalloffStartDistance = 1
-		bulletData.damageFalloffEndDistance = 30
+		bulletData.startDamage = 200
+		bulletData.endDamage = 200
+		bulletData.damageFalloffStartDistance = 50
+		bulletData.damageFalloffEndDistance = 50
 		bulletData.timeToLive = 5
-		bulletData.impactImpulse = 250
+		bulletData.impactImpulse = 100
 		dprint('Changed Crossbow HE bolt Entity data...')
 	end
 
@@ -90,7 +90,7 @@ end
 		bulletData.gravity = 0
 		bulletData.startDamage = 40
 		bulletData.endDamage = 40
-		bulletData.damageFalloffStartDistance = 1
+		bulletData.damageFalloffStartDistance = 30
 		bulletData.damageFalloffEndDistance = 30
 		bulletData.timeToLive = 15
 		bulletData.impactImpulse = 25
