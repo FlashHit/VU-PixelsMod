@@ -1,11 +1,11 @@
 class "MMRockets_javelin"
 
  function MMRockets_javelin:Write(instance)
+
 	if (mmResources:IsLoaded('fgm148')) then
 		mmResources:SetLoaded('fgm148', false)
-		dprint('Changed FGM148 Stinger - Increased AMMO size...')
+		dprint('Changed FGM148 Javelin - Increased AMMO size...')
 	end 
-
 
 	if (mmResources:IsLoaded('fgm148_lock')) then
 		mmResources:SetLoaded('fgm148_lock', false)
@@ -18,8 +18,9 @@ class "MMRockets_javelin"
 
 		local lockingData = LockingControllerData(lockingWeaponData.lockingController)
 		lockingData:MakeWritable()
-		lockingData.zoomLevelLock[2].lockType = LockType.LockAlways
-		lockingData.lockTime = 0.3
+--		lockingData.zoomLevelLock[2].lockType = LockType.LockAlways -- Also locks choppers and jets
+		lockingData.zoomLevelLock[2].lockType = LockType.LockNever
+		lockingData.lockTime = 2.0
 		lockingData.releaseTime = 0.2
 		lockingData.releaseOnNewTargetTime = 1
 		lockingData.acceptanceAngle = 10

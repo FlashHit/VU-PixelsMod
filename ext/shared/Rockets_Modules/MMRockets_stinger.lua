@@ -14,7 +14,7 @@ function MMRockets_stinger:Write(instance)
 		local lockingData = LockingControllerData(lockingWeaponData.lockingController)
 		lockingData:MakeWritable()
 		lockingData.zoomLevelLock[2].lockType = LockType.LockAlways
-		lockingData.lockTime = 0.3
+		lockingData.lockTime = 2.0
 		lockingData.releaseTime = 0.2
 		lockingData.releaseOnNewTargetTime = 1
 		lockingData.acceptanceAngle = 10

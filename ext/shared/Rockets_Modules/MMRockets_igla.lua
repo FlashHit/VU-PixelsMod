@@ -1,6 +1,7 @@
 class "MMRockets_igla"
 
  function MMRockets_igla:Write(instance)
+
 	if (mmResources:IsLoaded('igla_ammo')) then
 		mmResources:SetLoaded('igla_ammo', false)
 		dprint('Changed Sa18IGLA - Increased AMMO size...')
@@ -18,7 +19,7 @@ class "MMRockets_igla"
 		local lockingData = LockingControllerData(lockingWeaponData.lockingController)
 		lockingData:MakeWritable()
 		lockingData.zoomLevelLock[2].lockType = LockType.LockAlways
-		lockingData.lockTime = 0.3
+		lockingData.lockTime = 2.0
 		lockingData.releaseTime = 0.2
 		lockingData.releaseOnNewTargetTime = 1
 		lockingData.acceptanceAngle = 10
