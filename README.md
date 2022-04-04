@@ -20,7 +20,11 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
-# Last update: 01-04-2022
+# Last update: 04-04-2022
+- # Slightly changed the chopper, act more smoother
+- Tweaks: Turned down Crossbow HE damage stuff..
+
+# Previous update: 01-04-2022
 - # Handguns weapons
 - ADDED: All default handguns has increased ammo size
 - M93r has unlimited ammo, but lower damage but bigger ammo clip
