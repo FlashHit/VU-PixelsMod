@@ -5,6 +5,82 @@ function MMResources:__init()
 	self.MMResources = {}
 
 --  -----------------------------------------------------------------------------
+-- US Chopper mods --
+-- Venom_Recon_US --
+	self.MMResources["venomengine"] = {}
+	self.MMResources["venomengine"]["Partition"] = '97945D87-011D-11E0-B97C-FC495C335A52'
+	 self.MMResources["venomengine"]["Instance"] = '2B590EC0-F63D-482F-B210-0C707C9B71DB'
+
+	self.MMResources["venomrotors"] = {}
+	self.MMResources["venomrotors"]["Partition"] = '97945D87-011D-11E0-B97C-FC495C335A52'
+	 self.MMResources["venomrotors"]["Instance"] = 'CBA6B1C2-5690-4F23-9F2B-C24FB9C4958B'
+--  -----------------------------------------------------------------------------
+-- AH6_Light_Atack_US
+	self.MMResources["ah6engine"] = {}
+	self.MMResources["ah6engine"]["Partition"] = 'FD8AB747-FF4D-11DD-A7B1-F7C6DEEC9D32'
+	 self.MMResources["ah6engine"]["Instance"] = '15AB2B27-FF4E-11DD-A7B1-F7C6DEEC9D32'
+
+	self.MMResources["ah6rotors"] = {}
+	self.MMResources["ah6rotors"]["Partition"] = 'FD8AB747-FF4D-11DD-A7B1-F7C6DEEC9D32'
+	 self.MMResources["ah6rotors"]["Instance"] = '15AB2B28-FF4E-11DD-A7B1-F7C6DEEC9D32'
+
+--  -----------------------------------------------------------------------------
+-- AH1Z_Atack_US
+	self.MMResources["ah1zengine"] = {}
+	self.MMResources["ah1zengine"]["Partition"] = '643135EA-6CA7-11DF-B6FA-F715AA601362'
+	 self.MMResources["ah1zengine"]["Instance"] = 'DE4BF5C6-4EC4-45BE-9FDB-D71391F7D39B'
+
+	self.MMResources["ah1zrotors"] = {}
+	self.MMResources["ah1zrotors"]["Partition"] = '643135EA-6CA7-11DF-B6FA-F715AA601362'
+	 self.MMResources["ah1zrotors"]["Instance"] = '1822C40A-247F-4EDB-AF22-5409774543B5'
+
+
+--  -----------------------------------------------------------------------------
+
+	self.MMResources["rocketpods"] = {}
+	self.MMResources["rocketpods"]["Partition"] = 'E64E52BD-4E40-4BFE-B6C3-49523084AE94'
+	 self.MMResources["rocketpods"]["Instance"] = '3EE6789F-4113-42BA-B8FE-79DD5EF89FB1' -- FFD
+
+	self.MMResources["gunnercannon"] = {}
+	self.MMResources["gunnercannon"]["Partition"] = '0A232494-FB58-496E-BF30-FD9B39E12008'
+	 self.MMResources["gunnercannon"]["Instance"] = 'E06B6CCE-F5A3-40E6-A41F-D442AC4D7434' -- FFD
+
+
+
+--  -----------------------------------------------------------------------------
+-- RU Chopper mods --
+-- Z11W_Light_Atack_RU
+	self.MMResources["z11wengine"] = {}
+	self.MMResources["z11wengine"]["Partition"] = 'D78088E5-38B7-11DE-BF1C-984D9AEE762C'
+	 self.MMResources["z11wengine"]["Instance"] = 'D780B01D-38B7-11DE-BF1C-984D9AEE762C'
+
+	self.MMResources["z11wrotors"] = {}
+	self.MMResources["z11wrotors"]["Partition"] = 'D78088E5-38B7-11DE-BF1C-984D9AEE762C'
+ 	 self.MMResources["z11wrotors"]["Instance"] = 'D780B01E-38B7-11DE-BF1C-984D9AEE762C' 
+
+--  -----------------------------------------------------------------------------
+-- KA-60_Kasatka_Recon_RU
+	self.MMResources["ka60engine"] = {}
+	self.MMResources["ka60engine"]["Partition"] = '2C5892FC-37CB-4A4E-92E2-2DD7BAF08A5C'
+	 self.MMResources["ka60engine"]["Instance"] = '3B771741-64EC-4740-B340-88D69EDCB2A4'
+
+	self.MMResources["ka60rotors"] = {}
+	self.MMResources["ka60rotors"]["Partition"] = '2C5892FC-37CB-4A4E-92E2-2DD7BAF08A5C'
+	 self.MMResources["ka60rotors"]["Instance"] = '2D14442E-7269-4E54-9B53-5AFA0D64B302'
+
+--  -----------------------------------------------------------------------------
+-- Mi28_Atack_RU
+	self.MMResources["mi28engine"] = {}
+	self.MMResources["mi28engine"]["Partition"] = '89BE53B6-2FF4-11DE-8C23-DAB1D69416DE'
+	 self.MMResources["mi28engine"]["Instance"] = '89BEA1FD-2FF4-11DE-8C23-DAB1D69416DE'
+
+	self.MMResources["mi28rotors"] = {}
+	self.MMResources["mi28rotors"]["Partition"] = '89BE53B6-2FF4-11DE-8C23-DAB1D69416DE'
+	 self.MMResources["mi28rotors"]["Instance"] = '89BEA1FE-2FF4-11DE-8C23-DAB1D69416DE'
+
+--  -----------------------------------------------------------------------------
+
+
 -- Common Gadgets --
 	self.MMResources["grenade"] = {}
 	self.MMResources["grenade"]["Partition"] = 'FFF5DB09-E74B-11DF-9B5E-86394B544891'
@@ -171,9 +247,9 @@ function MMResources:__init()
 	self.MMResources["crossbolt_damage_HE"]["Instance"] = 'B85B6C38-0D14-4079-932A-237984798ADF'
 
 -- Crossbow Ammo types
-	self.MMResources["crossbolt"] = {}
-	self.MMResources["crossbolt"]["Partition"] = '26076E01-A015-44A8-BFBF-695187E25FFB'
-	self.MMResources["crossbolt"]["Instance"] = '81F4A9B1-0918-48EE-B097-63AA0B75F622'
+--	self.MMResources["crossbolt"] = {}
+--	self.MMResources["crossbolt"]["Partition"] = '26076E01-A015-44A8-BFBF-695187E25FFB'
+--	self.MMResources["crossbolt"]["Instance"] = '81F4A9B1-0918-48EE-B097-63AA0B75F622'
 
 	self.MMResources["crossbolt_default"] = {}
 	self.MMResources["crossbolt_default"]["Partition"] = '26076E01-A015-44A8-BFBF-695187E25FFB'
@@ -194,7 +270,8 @@ function MMResources:__init()
 -- Common class weapons --
 	self.MMResources["asval"] = {}
 	self.MMResources["asval"]["Partition"] = '330F6EB9-1740-11E0-B7E4-E4E608316920'
-	self.MMResources["asval"]["Instance"] = '22053930-04B1-826C-E0A1-D3308D940C9B'
+	self.MMResources["asval"]["Instance"] = '808AB537-87CF-4997-B6AD-B11111EE19C4'
+--	self.MMResources["asval"]["Instance"] = '22053930-04B1-826C-E0A1-D3308D940C9B' -- Org
 
 	self.MMResources["pdwr"] = {}
 	self.MMResources["pdwr"]["Partition"] = 'C47BFE6F-1F1E-11E0-AE3C-E30EAF72F572'
@@ -804,34 +881,6 @@ function MMResources:__init()
 	self.MMResources["persistance_"]["Instance"] = 'F39A8591-BA69-4BE9-B289-B2A0B336A7EE'
 -- ---------------------------------------------------------------------------------------------
 -- Weapons Shotguns - M26 MASS Shotgun -- WIP
-
-
--- ----------------- Unused Resources Choppers -- -----------------
-
---	self.MMResources["z11wengine"] = {}
---	self.MMResources["z11wengine"]["Partition"] = 'D78088E5-38B7-11DE-BF1C-984D9AEE762C'
---	self.MMResources["z11wengine"]["Instance"] = 'D780B01D-38B7-11DE-BF1C-984D9AEE762C'
---
---	self.MMResources["z11wrotors"] = {}
---	self.MMResources["z11wrotors"]["Partition"] = 'D78088E5-38B7-11DE-BF1C-984D9AEE762C'
---	self.MMResources["z11wrotors"]["Instance"] = 'D780B01E-38B7-11DE-BF1C-984D9AEE762C' 
---
---	self.MMResources["ah6engine"] = {}
---	self.MMResources["ah6engine"]["Partition"] = 'FD8AB747-FF4D-11DD-A7B1-F7C6DEEC9D32'
---	self.MMResources["ah6engine"]["Instance"] = '15AB2B27-FF4E-11DD-A7B1-F7C6DEEC9D32'
---
---	self.MMResources["ah6rotors"] = {}
---	self.MMResources["ah6rotors"]["Partition"] = 'FD8AB747-FF4D-11DD-A7B1-F7C6DEEC9D32'
---	self.MMResources["ah6rotors"]["Instance"] = '15AB2B28-FF4E-11DD-A7B1-F7C6DEEC9D32'
---
---	self.MMResources["venomengine"] = {}
---	self.MMResources["venomengine"]["Partition"] = '97945D87-011D-11E0-B97C-FC495C335A52'
---	self.MMResources["venomengine"]["Instance"] = '2B590EC0-F63D-482F-B210-0C707C9B71DB'
---
---	self.MMResources["venomrotors"] = {}
---	self.MMResources["venomrotors"]["Partition"] = '97945D87-011D-11E0-B97C-FC495C335A52'
---	self.MMResources["venomrotors"]["Instance"] = 'CBA6B1C2-5690-4F23-9F2B-C24FB9C4958B'
-
 
 
 -- ----------------- Unused Resources Tank -- -----------------

@@ -10,7 +10,7 @@ local bEnable_modules_vehicles = true
 
  bEnable_Mobile_AA = true
  bEnable_tank = true
- bEnable_sprut = false -- WORK IN PROGRESS DO NOT ENABLE
+ bEnable_sprut = hidden -- WORK IN PROGRESS DO NOT ENABLE
 
 	else
 	    if (bEnable_modules_vehicles) == (false) then dprint('Vehicles Modules config Disabled... ... ...')

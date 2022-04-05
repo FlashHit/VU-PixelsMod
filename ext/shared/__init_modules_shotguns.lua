@@ -3,7 +3,8 @@
 -- global shotgun funcs and utils
 require('__shared/MMUtils')
 
-local bEnable_modules_shotguns = true
+local bEnable_modules_shotguns = hidden
+
             if (bEnable_modules_shotguns) == (true) then dprint('Shotgun modules config Enabled... ... ...')
 
 

@@ -13,7 +13,7 @@ bEnable_Z11W_Light_Atack_RU = true
 bEnable_KA60_Kasatka_Recon_RU = true
 bEnable_Mi28_Atack_RU = true
 bEnable_AH1Z_Atack_US = true
-bEnable_Choppers_firedata = false
+bEnable_Choppers_firedata = true
 
 
 	else

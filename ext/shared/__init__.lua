@@ -8,18 +8,8 @@ local bEnable_modules = true
 
             if (bEnable_modules) == (true) then dprint('***** All modules Enabled... *****')
 
-require('__shared/__init_modules_shotguns')
-require('__shared/__init_modules_gadgets')
-require('__shared/__init_modules_handguns')
-require('__shared/__init_modules_rockets')
-require('__shared/__init_modules_vehicles')
-require('__shared/__init_modules_choppers')
-require('__shared/__init_modules_support')
-require('__shared/__init_modules_support_LMG')
-require('__shared/__init_modules_common_weapons')
-require('__shared/__init_modules_engineer_weapons')
-require('__shared/__init_modules_assault_weapons')
-require('__shared/__init_modules_recon_weapons')
+--require('__shared/__init_Global_init_module')
+
 
 	else
 	    if (bEnable_modules) == (false) then dprint('***** All modules Disabled... *****')
@@ -27,48 +17,14 @@ end
 end
 --
 
-local bEnable_players = false
-local bEnable_weapons = false  -- Also contains some Gun Master setting stuff -
 
 -- load resource list
 mmResources = require('__shared/MMResources')
 mmCustomResources = require('__shared/MMCustomResources')
 mmCustomResources:RegisterResources(mmResources)
 -- ---------------------------------------------------------------------
-
--- modules
-            if (bEnable_players) == (true) then dprint('Player stuff Enabled...')
-mmPlayers = require('__shared/MMPlayers')
-	else
-	    if (bEnable_players) == (false) then dprint('Player stuff Disabled...')
-end
-end
-
-            if (bEnable_weapons) == (true) then dprint('Weapon stuff Enabled...')
-mmWeapons = require('__shared/MMWeapons')
-	else
-	    if (bEnable_weapons) == (false) then dprint('Weapon stuff Disabled...')
-end
-end
-
--- ---------------------------------------------------------------------
-
--- Common Modules --
 mmResources:AddLoadHandler(mmCustomResources, mmCustomResources.Write)
 
-            if (bEnable_players) == (true) then dprint('player resources Enabled...')
-mmResources:AddLoadHandler(mmPlayers, mmPlayers.Write)
-	else
-	    if (bEnable_players) == (false) then dprint('player resources Disabled...')
-end
-end
-
-            if (bEnable_weapons) == (true) then dprint('Weapon resources Enabled...')
-mmResources:AddLoadHandler(mmWeapons, mmWeapons.Write)
-	else
-	    if (bEnable_weapons) == (false) then dprint('Weapon resources Disabled...')
-end
-end
 
 -- ---------------------------------------------------------------------
 
