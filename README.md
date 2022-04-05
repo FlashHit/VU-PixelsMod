@@ -20,7 +20,10 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
-# Last update: 04-04-2022
+# Last update: 05-04-2022
+- **Atack choppers has x3 more ammo**
+
+# Previous update: 04-04-2022
 - # Slightly changed the chopper, act more smoother
 - Tweaks: Turned down Crossbow HE damage stuff..
 
