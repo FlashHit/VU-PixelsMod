@@ -20,7 +20,15 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
-# Last update: 05-04-2022
+# Last update: 25-04-2022
+- # Shotguns:
+- Shotguns has massive increased ammo.
+
+# Previous update: 05-04-2022
+- **Added Sprut-SD and M1128 Stryker**
+- Gravity ? ,what was that ??
+
+# Previous update: 05-04-2022
 - **Atack choppers has x3 more ammo**
 
 # Previous update: 04-04-2022
@@ -57,12 +65,10 @@
 # Previous update: 28-03-2022
 - **TUGS** is now super charged with double sweep range ! 
 
-
 # Previous update: 24-03-2022
 - ADDED: Kinky Defib
 - Now you also can cover the area with smoke !
 - **Changed the module names**
-
 
 # Previous update: 23-03-2022
 - Changed: __init__ module loading procedure.
@@ -72,10 +78,8 @@
 - ADDED: EOD Bot has nut case repair range, and also shoots RPG
 - EOD Bot is now gamemode depending
 
-
 # Previous update: 20-03-2022
 - CHANGED: TUGs now beeps faster
-
 
 # Previous update: 15-03-2022
 - In general: Enough changes made !
