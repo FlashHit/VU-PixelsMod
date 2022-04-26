@@ -41,7 +41,7 @@ function MMWeapons_EOD_bot:Write(instance)
 		fireData:MakeWritable()
 		fireData.fireLogic.rateOfFire = 500 -- This is the amount in pulse a rocket is shot and repairs
 		fireData.shot.projectileData:MakeWritable()
-		fireData.shot.projectileData = ProjectileEntityData(mmResources:GetInstance('rpgprojectile'))
+--		fireData.shot.projectileData = ProjectileEntityData(mmResources:GetInstance('rpgprojectile'))
 		fireData.shot.initialSpeed.z = 100 -- Firespeed ! but lowers repair speed dramaticly
 	end
 
@@ -52,7 +52,7 @@ function MMWeapons_EOD_bot:Write(instance)
 		fireData:MakeWritable()
 		fireData.fireLogic.rateOfFire = 50 -- This is the amount in pulse a rocket is shot and repairs
 		fireData.shot.projectileData:MakeWritable()
-		fireData.shot.projectileData = ProjectileEntityData(mmResources:GetInstance('rpgprojectile'))
+--		fireData.shot.projectileData = ProjectileEntityData(mmResources:GetInstance('rpgprojectile'))
 		fireData.shot.initialSpeed.z = 25 -- Firespeed ! but lowers repair speed dramaticly
 	end
 
@@ -63,7 +63,7 @@ function MMWeapons_EOD_bot:Write(instance)
 		fireData:MakeWritable()
 		fireData.fireLogic.rateOfFire = 150 -- This is the amount in pulse a rocket is shot and repairs
 		fireData.shot.projectileData:MakeWritable()
-		fireData.shot.projectileData = ProjectileEntityData(mmResources:GetInstance('rpgprojectile'))
+--		fireData.shot.projectileData = ProjectileEntityData(mmResources:GetInstance('rpgprojectile'))
 		fireData.shot.initialSpeed.z = 50 -- Firespeed ! but lowers repair speed dramaticly
 	end
 

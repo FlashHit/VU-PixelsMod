@@ -45,7 +45,7 @@ function MMGadgets_defib:Write(mmResources)
 		if (bulletData ~= nil) then
 		bulletData:MakeWritable()
 		bulletData.timeToLive = 25 -- This the range !
-		bulletData.explosion = VeniceExplosionEntityData(mmResources:GetInstance('40mm_smokeburst_effect'))
+--		bulletData.explosion = VeniceExplosionEntityData(mmResources:GetInstance('40mm_smokeburst_effect'))
 
 		local fireData = FiringFunctionData(mmResources:GetInstance('defibs'))
 		fireData:MakeWritable()
@@ -57,7 +57,7 @@ function MMGadgets_defib:Write(mmResources)
 		if (bulletData ~= nil) then
 		bulletData:MakeWritable()
 		bulletData.timeToLive = 5 -- This the range !
-		bulletData.explosion = VeniceExplosionEntityData(mmResources:GetInstance('40mm_smokeburst_effect'))
+--		bulletData.explosion = VeniceExplosionEntityData(mmResources:GetInstance('40mm_smokeburst_effect'))
 
 		local fireData = FiringFunctionData(mmResources:GetInstance('defibs'))
 		fireData:MakeWritable()
@@ -69,7 +69,7 @@ function MMGadgets_defib:Write(mmResources)
 		if (bulletData ~= nil) then
 		bulletData:MakeWritable()
 		bulletData.timeToLive = 15 -- This the range !
-		bulletData.explosion = VeniceExplosionEntityData(mmResources:GetInstance('40mm_smokeburst_effect'))
+--		bulletData.explosion = VeniceExplosionEntityData(mmResources:GetInstance('40mm_smokeburst_effect'))
 
 		local fireData = FiringFunctionData(mmResources:GetInstance('defibs'))
 		fireData:MakeWritable()
