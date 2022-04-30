@@ -20,7 +20,7 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
-# Last update: 25-04-2022
+# Last update: 30-04-2022
 - ** Added BM-23 and M142
 - 6 shells ? ,meh 24 !!!
 
