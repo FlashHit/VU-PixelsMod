@@ -255,9 +255,9 @@ function MMResources:__init()
 
 -- common weapons --
 -- Crossbow --
---	self.MMResources["crossboltsound"] = {}
---	self.MMResources["crossboltsound"]["Partition"] = '591449E1-A47A-4768-A7A8-29DE293517E8'
---	self.MMResources["crossboltsound"]["Instance"] = '3C39A1D9-F161-4A4B-A065-9C70D13DBB81'
+	self.MMResources["crossboltsound"] = {}
+	self.MMResources["crossboltsound"]["Partition"] = '591449E1-A47A-4768-A7A8-29DE293517E8'
+	self.MMResources["crossboltsound"]["Instance"] = '3C39A1D9-F161-4A4B-A065-9C70D13DBB81'
 
 	self.MMResources["crossbow_ammo"] = {}
 	self.MMResources["crossbow_ammo"]["Partition"] = 'EEEC6E85-6A26-4C51-842E-55C5B75DE9DC'
@@ -268,10 +268,16 @@ function MMResources:__init()
 	self.MMResources["crossbolt_damage_HE"]["Instance"] = 'B85B6C38-0D14-4079-932A-237984798ADF'
 
 -- Crossbow Ammo types
---	self.MMResources["crossbolt"] = {}
---	self.MMResources["crossbolt"]["Partition"] = '26076E01-A015-44A8-BFBF-695187E25FFB'
---	self.MMResources["crossbolt"]["Instance"] = '81F4A9B1-0918-48EE-B097-63AA0B75F622'
+-- ----- Used for MAV pimping --------------
+	self.MMResources["crossbolt"] = {}
+	self.MMResources["crossbolt"]["Partition"] = '26076E01-A015-44A8-BFBF-695187E25FFB'
+	self.MMResources["crossbolt"]["Instance"] = '81F4A9B1-0918-48EE-B097-63AA0B75F622'
 
+	self.MMResources["crossbolt_he2"] = {}
+	self.MMResources["crossbolt_he2"]["Partition"] = '07E407B3-A4FE-4CD1-BABA-D8F6EB59FAEA'
+	self.MMResources["crossbolt_he2"]["Instance"] = 'CCE3BBAD-06BE-4EBC-8BA3-0CF8A4461AEE'
+
+-- --------------------------
 	self.MMResources["crossbolt_default"] = {}
 	self.MMResources["crossbolt_default"]["Partition"] = '26076E01-A015-44A8-BFBF-695187E25FFB'
 	self.MMResources["crossbolt_default"]["Instance"] = '391BB7D5-C4AE-4952-B103-189DC1700030'
@@ -707,26 +713,26 @@ function MMResources:__init()
 	self.MMResources["tugs_chassis"]["Partition"] = 'C6AC3720-4E44-11E0-B74F-973632ECCDB7'
 	self.MMResources["tugs_chassis"]["Instance"] = 'F9706033-B085-A573-1CF8-235C43B2FCAE'
 
---	self.MMResources["mav_pda"] = {}
---	self.MMResources["mav_pda"]["Partition"] = '1271F1BE-49D5-4599-AAD2-0D3BBAFB1EF7'
---	self.MMResources["mav_pda"]["Instance"] = '0A6952EC-1EF1-4B3C-80DC-DEC527096066'
---
---	self.MMResources["mav_chassis"] = {}
---	self.MMResources["mav_chassis"]["Partition"] = 'FDE06FAE-1D63-11E0-8A6F-FC9481BB4D51'
---	self.MMResources["mav_chassis"]["Instance"] = '53758EA5-4337-15BF-0987-2670ACE8CF01'
---
---	self.MMResources["mav_weapon"] = {}
---	self.MMResources["mav_weapon"]["Partition"] = 'CAFE2963-3F07-4254-A778-164F6772CA1E'
---	self.MMResources["mav_weapon"]["Instance"] = '5938891C-0CEC-4D08-8F34-0ACBB79D4693'
---
---	self.MMResources["mav_camera"] = {}
---	self.MMResources["mav_camera"]["Partition"] = 'FDE06FAE-1D63-11E0-8A6F-FC9481BB4D51'
---	self.MMResources["mav_camera"]["Instance"] = '27BE6159-8AA4-4E38-9DE8-4D1F9EE31C28'
---
---	self.MMResources["mav_camera2"] = {}
---	self.MMResources["mav_camera2"]["Partition"] = 'FDE06FAE-1D63-11E0-8A6F-FC9481BB4D51'
---	self.MMResources["mav_camera2"]["Instance"] = '2965A1A1-FF5A-44ED-86DC-88F7E23E652E'
---
+	self.MMResources["mav_pda"] = {}
+	self.MMResources["mav_pda"]["Partition"] = '1271F1BE-49D5-4599-AAD2-0D3BBAFB1EF7'
+	self.MMResources["mav_pda"]["Instance"] = '0A6952EC-1EF1-4B3C-80DC-DEC527096066'
+
+	self.MMResources["mav_chassis"] = {}
+	self.MMResources["mav_chassis"]["Partition"] = 'FDE06FAE-1D63-11E0-8A6F-FC9481BB4D51'
+	self.MMResources["mav_chassis"]["Instance"] = '53758EA5-4337-15BF-0987-2670ACE8CF01'
+
+	self.MMResources["mav_weapon"] = {}
+	self.MMResources["mav_weapon"]["Partition"] = 'CAFE2963-3F07-4254-A778-164F6772CA1E'
+	self.MMResources["mav_weapon"]["Instance"] = '5938891C-0CEC-4D08-8F34-0ACBB79D4693'
+
+	self.MMResources["mav_camera"] = {}
+	self.MMResources["mav_camera"]["Partition"] = 'FDE06FAE-1D63-11E0-8A6F-FC9481BB4D51'
+	self.MMResources["mav_camera"]["Instance"] = '27BE6159-8AA4-4E38-9DE8-4D1F9EE31C28'
+
+	self.MMResources["mav_camera2"] = {}
+	self.MMResources["mav_camera2"]["Partition"] = 'FDE06FAE-1D63-11E0-8A6F-FC9481BB4D51'
+	self.MMResources["mav_camera2"]["Instance"] = '2965A1A1-FF5A-44ED-86DC-88F7E23E652E'
+
 --	self.MMResources["soflam_pda"] = {}
 --	self.MMResources["soflam_pda"]["Partition"] = '54715D36-2C3C-49A6-9F60-90FA372068C5'
 --	self.MMResources["soflam_pda"]["Instance"] = '69592FE0-38B2-42D2-988C-813E5185F4C3'
@@ -816,6 +822,14 @@ function MMResources:__init()
 	self.MMResources["tunguskabullets"]["Instance"] = '78DE0889-A11A-7660-A607-BB57A2995BA3' 
 
 -- ----------------------------------------------------------------------------------------
+-- RU BM-23 -- US M142
+	self.MMResources["bm23shell"] = {}
+	self.MMResources["bm23shell"]["Partition"] = 'AB65DA57-DAC6-4201-AA97-F1B8F5328E80'
+	self.MMResources["bm23shell"]["Instance"] = '9520BC73-20E0-4C99-A61D-07D6E3397DA7' -- FFD
+
+	self.MMResources["bm23air"] = {}
+	self.MMResources["bm23air"]["Partition"] = '0029E9E6-AB7A-4C54-AA46-0465C2EAC6F1'
+	self.MMResources["bm23air"]["Instance"] = '2810291B-035F-4074-97D2-C8FC83AF95F7' -- FFD
 
 -- RU Sprut
 	self.MMResources["sprutsdshell"] = {}
