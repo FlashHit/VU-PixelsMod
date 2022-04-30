@@ -21,6 +21,10 @@
 * USE WITH CARE !
 
 # Last update: 25-04-2022
+- ** Added BM-23 and M142
+- 6 shells ? ,meh 24 !!!
+
+# Previous update: 25-04-2022
 - # Shotguns:
 - Shotguns has massive increased ammo.
 
