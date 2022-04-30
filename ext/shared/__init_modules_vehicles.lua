@@ -12,7 +12,7 @@ bEnable_tank_lbt_sprutsd = true
 bEnable_tank_lbt_stryker = true
 bEnable_tank_ru = true
 bEnable_tank_us = true
-
+bEnable_tank_ru_lbt_bm23 = true
 
 	else
 	    if (bEnable_modules_vehicles) == (false) then dprint('Vehicles Modules config Disabled... ... ...')
@@ -22,6 +22,7 @@ bEnable_tank_lbt_sprutsd = false
 bEnable_tank_lbt_stryker = false
 bEnable_tank_ru = false
 bEnable_tank_us = false
+bEnable_tank_ru_lbt_bm23 = false
 
  end
 end
@@ -33,6 +34,16 @@ mmCustomResources:RegisterResources(mmResources)
 
 -- ---------------------------------------------------------------------
 -- Vehicles modules --  
+
+
+              if (bEnable_tank_ru_lbt_bm23) == (true) then dprint('BM-23 Enabled...')
+MMVehicles_tank_ru_lbt_bm23 = require('__shared/Vehicles_Modules/MMVehicles_tank_ru_lbt_bm23')
+ mmResources:AddLoadHandler(MMVehicles_tank_ru_lbt_bm23, MMVehicles_tank_ru_lbt_bm23.Write)
+	else
+	    if (bEnable_tank_ru_lbt_bm23) == (false) then dprint('BM-23 Disabled...')
+end
+end
+--
 
               if (bEnable_Mobile_AA) == (true) then dprint('Mobile_AA Enabled...')
 MMVehicles_Mobile_AA = require('__shared/Vehicles_Modules/MMVehicles_Mobile_AA')
