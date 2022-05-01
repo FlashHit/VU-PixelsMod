@@ -458,15 +458,24 @@ function MMResources:__init()
 	self.MMResources["us_stinger_ammo"] = {}
 	self.MMResources["us_stinger_ammo"]["Partition"] = '28C2561D-EC16-11DF-BA9E-F3DCE5C70CB9'
 	self.MMResources["us_stinger_ammo"]["Instance"] = '2EEC7BB1-BFD2-41C5-AFEF-C36A61BB9E6D'
-
+--
 	self.MMResources["smaw"] = {}
 	self.MMResources["smaw"]["Partition"] = 'BCE98CA0-17EC-11E0-8CD8-85483A75A7C5'
 	self.MMResources["smaw"]["Instance"] = 'AB8577C5-D5F9-4A17-BEB2-2E153E171630'
 
+	self.MMResources["smawgravity"] = {}
+	self.MMResources["smawgravity"]["Partition"] = '168F529B-17F6-11E0-8CD8-85483A75A7C5'
+	self.MMResources["smawgravity"]["Instance"] = '168F529C-17F6-11E0-8CD8-85483A75A7C5' -- MED
+
+--
 	self.MMResources["rpg7"] = {}
 	self.MMResources["rpg7"]["Partition"] = 'E7F8EC1A-E8F5-11DF-AC96-84E6B0EFF32E'
-	self.MMResources["rpg7"]["Instance"] = '7584D16E-6B77-4A7B-BEEE-15DA5EF98E2E'
+	self.MMResources["rpg7"]["Instance"] = '7584D16E-6B77-4A7B-BEEE-15DA5EF98E2E' -- FFD
 
+	self.MMResources["rpg7gravity"] = {}
+	self.MMResources["rpg7gravity"]["Partition"] = '6C857FD9-6FB3-11DE-B35E-864CF572E1C4'
+	self.MMResources["rpg7gravity"]["Instance"] = 'CDD3A384-8243-A258-E23D-239CC0D52698' -- MED
+--
 	self.MMResources["fgm148_lock"] = {}
 	self.MMResources["fgm148_lock"]["Partition"] = 'F4C6BD34-0D15-11E0-99FE-EA6897C76A7E'
 	self.MMResources["fgm148_lock"]["Instance"] = 'F3150F93-C300-43A1-96AA-9453DBD159E8'
