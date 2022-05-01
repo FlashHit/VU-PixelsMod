@@ -7,6 +7,19 @@ class "MMRockets_rpg"
 	end 
 
 
+	if (mmResources:IsLoaded('rpg7gravity')) then
+		mmResources:SetLoaded('rpg7gravity', false)
+		local fireData = MissileEntityData(mmResources:GetInstance('rpg7gravity'))
+--		if (fireData ~= nil) then
+		fireData:MakeWritable()
+		fireData.initialSpeed = 500.0
+		fireData.timeToLive = 8
+		fireData.gravity = 0
+		dprint('Changed RPG-7 - Gravity ...')
+	end 
+
+
+
  Events:Subscribe('Level:Loaded',  function()
 
 	local balanceGameModes_tdm = {

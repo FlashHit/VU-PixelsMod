@@ -6,6 +6,17 @@ class "MMRockets_smaw"
 		dprint('Changed SMAW - Increased AMMO size...')
 	end 
 
+	if (mmResources:IsLoaded('smawgravity')) then
+		mmResources:SetLoaded('smawgravity', false)
+		local fireData = MissileEntityData(mmResources:GetInstance('smawgravity'))
+--		if (fireData ~= nil) then
+		fireData:MakeWritable()
+		fireData.initialSpeed = 500.0
+		fireData.timeToLive = 8
+		fireData.gravity = 0
+		dprint('Changed SMAW - Gravity ...')
+	end 
+
 
  Events:Subscribe('Level:Loaded',  function()
 
