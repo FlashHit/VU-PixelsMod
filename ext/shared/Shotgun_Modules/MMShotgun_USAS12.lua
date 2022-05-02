@@ -20,6 +20,8 @@ function MMShotgun_USAS12:Write(mmResources)
 			fireData[i].fireLogic.rateOfFire = 500
 			fireData[i].ammo.magazineCapacity = 40
 			fireData[i].ammo.numberOfMagazines = 10
+			fireData[i].shot.numberOfBulletsPerShell = 50
+
 		dprint('Changed USAS12 - AMMO entity changed ...')
 		
 	end

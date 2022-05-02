@@ -20,6 +20,8 @@ function MMShotgun_MK3A1:Write(mmResources)
 			fireData[i].fireLogic.rateOfFire = 500
 			fireData[i].ammo.magazineCapacity = 40
 			fireData[i].ammo.numberOfMagazines = 10
+			fireData[i].shot.numberOfBulletsPerShell = 50
+
 		dprint('Changed MK3A1 Jackhammer - AMMO entity changed ...')
 		
 	end
