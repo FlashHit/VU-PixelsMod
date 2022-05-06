@@ -5,6 +5,34 @@ function MMResources:__init()
 	self.MMResources = {}
 
 --  -----------------------------------------------------------------------------
+-- AMTRAC AAV-7A1
+	self.MMResources["lbt_shell3"] = {}
+	self.MMResources["lbt_shell3"]["Partition"] = '1995BB90-5EB4-4FA9-85B6-EC33AB985CE3'
+	 self.MMResources["lbt_shell3"]["Instance"] = '1EFBF8CE-016A-4D78-AC3D-066463871BAA' -- FFD
+
+	self.MMResources["lbt_shell3grav"] = {}
+	self.MMResources["lbt_shell3grav"]["Partition"] = '1995BB90-5EB4-4FA9-85B6-EC33AB985CE3'
+	 self.MMResources["lbt_shell3grav"]["Instance"] = 'CF718E63-EDA0-4A87-BEE5-CBF5CE3F66F8' -- BED
+
+-- US Phoenix - RU Barsuk
+	self.MMResources["lbt_shell4"] = {}
+	self.MMResources["lbt_shell4"]["Partition"] = 'E8E52039-27D8-4629-8E4D-7B1F8A419175'
+	 self.MMResources["lbt_shell4"]["Instance"] = '36BB119F-DD27-4DE5-93A1-644BB5F12A99' -- FFD
+
+
+--  -----------------------------------------------------------------------------
+-- US LAV-25 - RU BMP-2M - RU BTR 90 - 
+	self.MMResources["lbt_shell1"] = {}
+	self.MMResources["lbt_shell1"]["Partition"] = '347C7F28-38E4-4888-8567-AD4FFBD25299'
+	 self.MMResources["lbt_shell1"]["Instance"] = 'F0F54699-EE70-4F17-8416-DF41912E183F' -- FFD
+
+	self.MMResources["lbt_shell2"] = {}
+	self.MMResources["lbt_shell2"]["Partition"] = '35DA1164-EAA9-4622-8D5A-704FF73DD295'
+	 self.MMResources["lbt_shell2"]["Instance"] = '382C510B-6F52-4FA3-9D4A-C113F05323B8' -- FFD
+
+
+
+--  -----------------------------------------------------------------------------
 -- M220 TOW launcher RU --
 	self.MMResources["kornet_launcher"] = {}
 	self.MMResources["kornet_launcher"]["Partition"] = '814B23C4-E1D9-4E12-9E8C-3EFC4ADAAAC6'
