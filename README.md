@@ -28,6 +28,7 @@
 - Changed BTR-90 - BMP-2M - LAV-25 Ammo size, from 9 to 24
 - Changed Phoenix - Barsuk Ammo size, from 9 to 24
 - Changed Amtrav AAV-7a1 Ammo size, from 9 to 24
+-- Updates the firedata file for the atack choppers, both AH1Z and MI28 have 45 rocketpods and 90 gunner cannon bullits
 
 # Previous update: 30-04-2022
 - ** Added BM-23 and M142
