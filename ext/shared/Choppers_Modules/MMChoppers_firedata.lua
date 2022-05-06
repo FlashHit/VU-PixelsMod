@@ -28,13 +28,13 @@ function MMChoppers_firedata:Write(mmResources)
 
 
 --
---	if (mmResources:IsLoaded('gunnercannon')) then
---		mmResources:SetLoaded('gunnercannon', false)
---
+	if (mmResources:IsLoaded('gunnercannon')) then
+		mmResources:SetLoaded('gunnercannon', false)
+
 ----		local bulletData = BulletEntityData(mmResources:GetInstance('gunnercannon'))
---		local bulletData = FiringFunctionData(mmResources:GetInstance('gunnercannon'))
---		bulletData:MakeWritable()
---
+		local bulletData = FiringFunctionData(mmResources:GetInstance('gunnercannon'))
+		bulletData:MakeWritable()
+
 ----		bulletData.initialSpeed = 400
 ----		bulletData.gravity = 0
 ----		bulletData.startDamage = 25
@@ -48,10 +48,35 @@ function MMChoppers_firedata:Write(mmResources)
 ----		bulletData.numberOfBulletsPerShell = 1
 ----		bulletData.numberOfBulletsPerShot = 1
 ----		bulletData.numberOfBulletsPerBurst = 3
---		bulletData.ammo.magazineCapacity = 90
---		bulletData.ammo.numberOfMagazines = -1
---		dprint('Changed Atack Chopper - Gunner bullet entity ammo... ... ... ... ... ')
---	end
+		bulletData.ammo.magazineCapacity = 90
+		bulletData.ammo.numberOfMagazines = -1
+		dprint('Changed US Atack Chopper - Gunner bullet entity ammo... ... ... ... ... ')
+	end
+
+	if (mmResources:IsLoaded('gunnercannon1')) then
+		mmResources:SetLoaded('gunnercannon1', false)
+
+----		local bulletData = BulletEntityData(mmResources:GetInstance('gunnercannon'))
+		local bulletData = FiringFunctionData(mmResources:GetInstance('gunnercannon1'))
+		bulletData:MakeWritable()
+
+----		bulletData.initialSpeed = 400
+----		bulletData.gravity = 0
+----		bulletData.startDamage = 25
+----		bulletData.endDamage = 25
+----		bulletData.damageFalloffStartDistance = 100
+----		bulletData.damageFalloffEndDistance = 300
+----		bulletData.timeToLive = 15
+----		bulletData.impactImpulse = 25
+----		bulletData.reloadTime = 2.0
+--
+----		bulletData.numberOfBulletsPerShell = 1
+----		bulletData.numberOfBulletsPerShot = 1
+----		bulletData.numberOfBulletsPerBurst = 3
+		bulletData.ammo.magazineCapacity = 90
+		bulletData.ammo.numberOfMagazines = -1
+		dprint('Changed RU Atack Chopper - Gunner bullet entity ammo... ... ... ... ... ')
+	end
 
 
 end
