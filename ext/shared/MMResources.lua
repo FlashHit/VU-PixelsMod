@@ -91,6 +91,11 @@ function MMResources:__init()
 	self.MMResources["gunnercannon"]["Partition"] = '0A232494-FB58-496E-BF30-FD9B39E12008'
 	 self.MMResources["gunnercannon"]["Instance"] = 'E06B6CCE-F5A3-40E6-A41F-D442AC4D7434' -- FFD
 
+	self.MMResources["gunnercannon1"] = {} -- aplies on to the MI28
+	self.MMResources["gunnercannon1"]["Partition"] = '0D61B717-18D3-4295-9070-9AB925B1C784'
+	 self.MMResources["gunnercannon1"]["Instance"] = 'CAB59337-47AF-4742-9CEC-3EEA7EA20E92' -- FFD
+
+
 	self.MMResources["tv_missile"] = {} -- 
 	self.MMResources["tv_missile"]["Partition"] = 'B0ABD608-1E4E-4F82-9742-BED2CEC60940'
 	 self.MMResources["tv_missile"]["Instance"] = 'D19A7398-0024-4FE0-81FB-7530CA0A353D' -- VPE
