@@ -13,6 +13,10 @@ bEnable_tank_lbt_stryker = true
 bEnable_tank_ru = true
 bEnable_tank_us = true
 bEnable_tank_ru_lbt_bm23 = true
+--bEnable_tank_us_lbt_test = hidden
+bEnable_tank_lbt_lav25_bmp2m = true
+bEnable_tank_lbt_amtrac = true
+bEnable_tank_lbt_phoenix_barsuk = true
 
 	else
 	    if (bEnable_modules_vehicles) == (false) then dprint('Vehicles Modules config Disabled... ... ...')
@@ -23,6 +27,10 @@ bEnable_tank_lbt_stryker = false
 bEnable_tank_ru = false
 bEnable_tank_us = false
 bEnable_tank_ru_lbt_bm23 = false
+--bEnable_tank_us_lbt_test = false
+bEnable_tank_lbt_lav25_bmp2m = false
+bEnable_tank_lbt_amtrac = false
+bEnable_tank_lbt_phoenix_barsuk = false
 
  end
 end
@@ -35,12 +43,46 @@ mmCustomResources:RegisterResources(mmResources)
 -- ---------------------------------------------------------------------
 -- Vehicles modules --  
 
+--	      if (bEnable_tank_us_lbt_test) == (true) then dprint('EXPERIMENTAL Enabled...')
+--MMVehicles_tank_us_lbt_test = require('__shared/Vehicles_Modules/MMVehicles_tank_us_lbt_test')
+-- mmResources:AddLoadHandler(MMVehicles_tank_us_lbt_test, MMVehicles_tank_us_lbt_test.Write)
+--	else
+--	    if (bEnable_tank_us_lbt_test) == (false) then dprint('EXPERIMENTAL Disabled...')
+--end
+--end
+--
 
-              if (bEnable_tank_ru_lbt_bm23) == (true) then dprint('BM-23 Enabled...')
+	      if (bEnable_tank_lbt_amtrac) == (true) then dprint('Amtrac AAV-7A1 Enabled...')
+MMVehicles_tank_lbt_amtrac = require('__shared/Vehicles_Modules/MMVehicles_tank_lbt_amtrac')
+ mmResources:AddLoadHandler(MMVehicles_tank_lbt_amtrac, MMVehicles_tank_lbt_amtrac.Write)
+	else
+	    if (bEnable_tank_lbt_amtrac) == (false) then dprint('Amtrac AAV-7A1 Disabled...')
+end
+end
+--
+	      if (bEnable_tank_lbt_phoenix_barsuk) == (true) then dprint('Phoenix and Barsuk Enabled...')
+MMVehicles_tank_us_lbt_test = require('__shared/Vehicles_Modules/MMVehicles_tank_us_lbt_test')
+ mmResources:AddLoadHandler(MMVehicles_tank_us_lbt_test, MMVehicles_tank_us_lbt_test.Write)
+	else
+	    if (bEnable_tank_lbt_phoenix_barsuk) == (false) then dprint('Phoenix and Barsuk Disabled...')
+end
+end
+--
+
+              if (bEnable_tank_lbt_lav25_bmp2m) == (true) then dprint('tank_lbt_lav25_bmp2m Enabled...')
+MMVehicles_tank_lbt_lav25_bmp2m = require('__shared/Vehicles_Modules/MMVehicles_tank_lbt_lav25_bmp2m')
+ mmResources:AddLoadHandler(MMVehicles_tank_lbt_lav25_bmp2m, MMVehicles_tank_lbt_lav25_bmp2m.Write)
+	else
+	    if (bEnable_tank_lbt_lav25_bmp2m) == (false) then dprint('tank_lbt_lav25_bmp2m Disabled...')
+end
+end
+--
+
+	      if (bEnable_tank_ru_lbt_bm23) == (true) then dprint('BM-23 / M142 Enabled...')
 MMVehicles_tank_ru_lbt_bm23 = require('__shared/Vehicles_Modules/MMVehicles_tank_ru_lbt_bm23')
  mmResources:AddLoadHandler(MMVehicles_tank_ru_lbt_bm23, MMVehicles_tank_ru_lbt_bm23.Write)
 	else
-	    if (bEnable_tank_ru_lbt_bm23) == (false) then dprint('BM-23 Disabled...')
+	    if (bEnable_tank_ru_lbt_bm23) == (false) then dprint('BM-23 / M142 Disabled...')
 end
 end
 --
