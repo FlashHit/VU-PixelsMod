@@ -39,7 +39,7 @@ end
 		bulletData.endDamage = 25
 		bulletData.damageFalloffStartDistance = 30
 		bulletData.damageFalloffEndDistance = 30
-		bulletData.timeToLive = 15
+		bulletData.timeToLive = 10
 		bulletData.impactImpulse = 25
 		dprint('Changed Crossbow Default bolt gravity xD...')
 	end
@@ -56,7 +56,7 @@ end
 		bulletData.endDamage = 25
 		bulletData.damageFalloffStartDistance = 30
 		bulletData.damageFalloffEndDistance = 30
-		bulletData.timeToLive = 15
+		bulletData.timeToLive = 10
 		bulletData.impactImpulse = 25
 		dprint('Changed Crossbow SCAN bolt gravity xD...')
 	end
@@ -75,8 +75,9 @@ end
 		bulletData.endDamage = 200
 		bulletData.damageFalloffStartDistance = 50
 		bulletData.damageFalloffEndDistance = 50
-		bulletData.timeToLive = 5
+		bulletData.timeToLive = 10
 		bulletData.impactImpulse = 100
+
 		dprint('Changed Crossbow HE bolt Entity data...')
 	end
 
@@ -92,7 +93,7 @@ end
 		bulletData.endDamage = 40
 		bulletData.damageFalloffStartDistance = 30
 		bulletData.damageFalloffEndDistance = 30
-		bulletData.timeToLive = 15
+		bulletData.timeToLive = 10
 		bulletData.impactImpulse = 25
 		dprint('Changed Crossbow BA bolt gravity xD...')
 	end
@@ -134,6 +135,8 @@ end
 
 		fireData.ammo.magazineCapacity = 1
 		fireData.ammo.numberOfMagazines = 40
+		fireData.shot.numberOfBulletsPerShell = 15
+		fireData.fireLogic.rateOfFire = 900
 	end
 
 
