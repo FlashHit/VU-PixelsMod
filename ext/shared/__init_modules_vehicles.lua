@@ -61,8 +61,8 @@ end
 end
 --
 	      if (bEnable_tank_lbt_phoenix_barsuk) == (true) then dprint('Phoenix and Barsuk Enabled...')
-MMVehicles_tank_us_lbt_test = require('__shared/Vehicles_Modules/MMVehicles_tank_us_lbt_test')
- mmResources:AddLoadHandler(MMVehicles_tank_us_lbt_test, MMVehicles_tank_us_lbt_test.Write)
+MMVehicles_tank_lbt_phoenix_barsuk = require('__shared/Vehicles_Modules/MMVehicles_tank_lbt_phoenix_barsuk')
+ mmResources:AddLoadHandler(MMVehicles_tank_lbt_phoenix_barsuk, MMVehicles_tank_lbt_phoenix_barsuk.Write)
 	else
 	    if (bEnable_tank_lbt_phoenix_barsuk) == (false) then dprint('Phoenix and Barsuk Disabled...')
 end
