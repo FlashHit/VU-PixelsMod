@@ -20,7 +20,16 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
-# Last update: 30-04-2022
+# Last update: 06-05-2022
+- MP443 Gun Master Modded ammo size
+- Magnum 44 Gun Master Modded ammo size
+- Changed Magnum 44 scoped entity
+- M9 Gun Master Modded ammo size
+- Changed BTR-90 - BMP-2M - LAV-25 Ammo size, from 9 to 24
+- Changed Phoenix - Barsuk Ammo size, from 9 to 24
+- Changed Amtrav AAV-7a1 Ammo size, from 9 to 24
+
+# Previous update: 30-04-2022
 - ** Added BM-23 and M142
 - 6 shells ? ,meh 24 !!!
 

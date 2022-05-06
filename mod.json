@@ -1,7 +1,7 @@
 {
     "Name": "Iamadeadpixel's Mod",
     "Description": "pimped gadgets for Battlefield 3: Venice Unleashed",
-    "Version": "1.4.0",
+    "Version": "1.4.1",
     "Authors": [ "MajorVictory87, iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {
