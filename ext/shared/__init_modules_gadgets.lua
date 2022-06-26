@@ -13,13 +13,13 @@ local bEnable_modules_gadgets = true
  bEnable_C4 = true
  bEnable_M15 = true
  bEnable_EOD = true
- bEnable_grenade = true
+-- bEnable_grenade = true
  bEnable_claymore = true
  bEnable_Repairtool = true
  bEnable_mortar = true
  bEnable_tugs_sweep = true
- bEnable_kornet = hidden -- WIP
-
+ bEnable_mav = hidden -- WIP do not use
+ bEnable_kornet = hidden -- WIP do not use
 
 	else
 	    if (bEnable_modules_gadgets) == (false) then dprint('Gadgets Modules config Disabled... ... ...')
@@ -30,14 +30,32 @@ local bEnable_modules_gadgets = true
  bEnable_C4 = false
  bEnable_M15 = false
  bEnable_EOD = false
- bEnable_grenade = false
+-- bEnable_grenade = false
  bEnable_claymore = false
  bEnable_Repairtool = false
  bEnable_mortar = false
  bEnable_tugs_sweep = false
+ bEnable_mav = true
  bEnable_kornet = false
 
  end
+end
+----------------
+local bEnable_nade_modules_gadgets = true
+            if (bEnable_nade_modules_gadgets) == (true) then dprint('Gadgets Nade modules config Enabled... ... ...')
+-- Here u can set the grenades
+-- ONE config only can be active here !
+ bEnable_turbo_grenade = true
+ bEnable_grenade = false
+
+	else
+	    if (bEnable_nade_modules_gadgets) == (false) then dprint('Gadgets Nade Modules config Disabled... ... ...')
+
+-- Gadgets stuff --
+ bEnable_turbo_grenade = false
+ bEnable_grenade = false
+
+end
 end
 
 -- load resource list
@@ -46,8 +64,35 @@ mmCustomResources = require('__shared/MMCustomResources')
 mmCustomResources:RegisterResources(mmResources)
 
 -- ---------------------------------------------------------------------
+
+	    if (bEnable_grenade) == (true) then dprint('grenade Enabled...')
+MMGadgets_grenade = require('__shared/Gadgets_Modules/MMGadgets_grenade')
+mmResources:AddLoadHandler(MMGadgets_grenade, MMGadgets_grenade.Write)
+	else
+	    if (bEnable_grenade) == (false) then dprint('grenade Disabled...')
+end
+end
+--
+	    if (bEnable_turbo_grenade) == (true) then dprint('SUPER grenade Enabled...')
+MMGadgets_turbo_grenade = require('__shared/Gadgets_Modules/MMGadgets_turbo_grenade')
+mmResources:AddLoadHandler(MMGadgets_turbo_grenade, MMGadgets_turbo_grenade.Write)
+	else
+	    if (bEnable_turbo_grenade) == (false) then dprint('SUPER grenade Disabled...')
+end
+end
+--
+
+
 -- Gadgets modules --
-            if (bEnable_defib) == (true) then dprint('Kinky defib Enabled...')
+            if (bEnable_mav) == (true) then dprint('Kinky MAV Enabled...')
+   MMGadgets_mav = require('__shared/Gadgets_Modules/MMGadgets_mav')
+mmResources:AddLoadHandler(MMGadgets_mav, MMGadgets_mav.Write)
+	else
+	    if (bEnable_defib) == (false) then dprint('kinky MAV Disabled...')
+end
+end
+
+	    if (bEnable_defib) == (true) then dprint('Kinky defib Enabled...')
    MMGadgets_defib = require('__shared/Gadgets_Modules/MMGadgets_defib')
 mmResources:AddLoadHandler(MMGadgets_defib, MMGadgets_defib.Write)
 	else
@@ -90,14 +135,6 @@ end
 end
 --
 
-	    if (bEnable_grenade) == (true) then dprint('grenade Enabled...')
-MMGadgets_grenade = require('__shared/Gadgets_Modules/MMGadgets_grenade')
-mmResources:AddLoadHandler(MMGadgets_grenade, MMGadgets_grenade.Write)
-	else
-	    if (bEnable_grenade) == (false) then dprint('grenade Disabled...')
-end
-end
---
 
             if (bEnable_M15) == (true) then dprint('M15 Enabled...')
 MMGadgets_m15_tankmine = require('__shared/Gadgets_Modules/MMGadgets_m15_tankmine')
