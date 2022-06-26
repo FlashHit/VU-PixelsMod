@@ -168,6 +168,3 @@ Now u can select in the config normale grenades, or super charched grenades
 - **T90** no damage mod, but no shell drop due no gravity ,time to live decreased to 4 seconds
 - **Tunguska** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
 - **LAV25** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
-
-- Choppers and the sprut are DISABLED by default.
-- This is work in progress ,so ,don not enable them !
