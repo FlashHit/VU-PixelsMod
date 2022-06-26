@@ -8,7 +8,10 @@
 - Make things go more fun and kinky
 - This is a massive stripped down version, but only gadgets are pimped
 - Tank, AA/Tunguska had some small modification
-
+-
+- Read down below the changes
+- Version 1.4.2
+-
 # WARNING
 * DO NOT RUN THIS MOD WITH MAJORVICTORY87 ! IT WILL GIVE MASSIVE CONFLICTS !
 
@@ -20,7 +23,11 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
-# Last update: 06-05-2022
+# Last update: 26-06-2022
+Make more fun with grenades.
+Now u can select in the config normale grenades, or super charched grenades
+
+# Previous update: 06-05-2022
 - MP443 Gun Master Modded ammo size
 - Magnum 44 Gun Master Modded ammo size
 - Changed Magnum 44 scoped entity
