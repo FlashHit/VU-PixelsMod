@@ -10,7 +10,7 @@
 - Tank, AA/Tunguska had some small modification
 -
 - Read down below the changes
-- Version 1.4.2
+- Version 1.4.3
 -
 # WARNING
 * DO NOT RUN THIS MOD WITH MAJORVICTORY87 ! IT WILL GIVE MASSIVE CONFLICTS !
@@ -70,7 +70,11 @@
 - __init_modules_vehicles.lua
 - Here u can enable or disable most of the vehicles weapon mods
 
-# Last update: 26-06-2022
+# Last update: 29-06-2022
+Make more fun with the EOD bot
+Now u can select in the config normale long distance repair, or super charched rockets with repair fun
+
+# Previous update: 26-06-2022
 Make more fun with grenades.
 Now u can select in the config normale grenades, or super charched grenades
 
