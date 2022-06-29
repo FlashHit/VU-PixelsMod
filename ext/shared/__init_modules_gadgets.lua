@@ -12,8 +12,6 @@ local bEnable_modules_gadgets = true
  bEnable_defib = true
  bEnable_C4 = true
  bEnable_M15 = true
- bEnable_EOD = true
--- bEnable_grenade = true
  bEnable_claymore = true
  bEnable_Repairtool = true
  bEnable_mortar = true
@@ -29,8 +27,6 @@ local bEnable_modules_gadgets = true
  bEnable_defib = false
  bEnable_C4 = false
  bEnable_M15 = false
- bEnable_EOD = false
--- bEnable_grenade = false
  bEnable_claymore = false
  bEnable_Repairtool = false
  bEnable_mortar = false
@@ -51,12 +47,33 @@ local bEnable_nade_modules_gadgets = true
 	else
 	    if (bEnable_nade_modules_gadgets) == (false) then dprint('Gadgets Nade Modules config Disabled... ... ...')
 
--- Gadgets stuff --
  bEnable_turbo_grenade = false
  bEnable_grenade = false
 
 end
 end
+--
+
+----------------
+local bEnable_eod_modules_gadgets = true
+            if (bEnable_eod_modules_gadgets) == (true) then dprint('Gadgets EOD modules config Enabled... ... ...')
+-- Here u can set the tweaked EOD bot
+-- ONE config only can be active here !
+ bEnable_turbo_EOD = true
+ bEnable_EOD = false
+
+	else
+	    if (bEnable_eod_modules_gadgets) == (false) then dprint('Gadgets EOD Modules config Disabled... ... ...')
+
+ bEnable_turbo_EOD = false
+ bEnable_EOD = false
+
+end
+end
+--
+
+
+
 
 -- load resource list
 mmResources = require('__shared/MMResources')
@@ -82,6 +99,28 @@ end
 end
 --
 
+	    if (bEnable_EOD) == (true) then dprint('EOD Bot Enabled...')
+   MMGadgets_EOD_bot = require('__shared/Gadgets_Modules/MMGadgets_EOD_bot')
+mmResources:AddLoadHandler(MMGadgets_EOD_bot, MMGadgets_EOD_bot.Write)
+	else
+	    if (bEnable_EOD) == (false) then dprint('EOD Bot Disabled...')
+end
+end
+
+	    if (bEnable_turbo_EOD) == (true) then dprint('Turbo EOD Bot Enabled...')
+   MMGadgets_turbo_EOD_bot = require('__shared/Gadgets_Modules/MMGadgets_turbo_EOD_bot')
+mmResources:AddLoadHandler(MMGadgets_turbo_EOD_bot, MMGadgets_turbo_EOD_bot.Write)
+	else
+	    if (bEnable_turbo_EOD) == (false) then dprint('Turbo EOD Bot Disabled...')
+end
+end
+
+
+
+
+
+
+
 
 -- Gadgets modules --
             if (bEnable_mav) == (true) then dprint('Kinky MAV Enabled...')
@@ -100,13 +139,6 @@ mmResources:AddLoadHandler(MMGadgets_defib, MMGadgets_defib.Write)
 end
 end
 
-	    if (bEnable_EOD) == (true) then dprint('EOD Bot Enabled...')
-   MMGadgets_EOD_bot = require('__shared/Gadgets_Modules/MMGadgets_EOD_bot')
-mmResources:AddLoadHandler(MMGadgets_EOD_bot, MMGadgets_EOD_bot.Write)
-	else
-	    if (bEnable_EOD) == (false) then dprint('EOD Bot Disabled...')
-end
-end
 
             if (bEnable_claymore) == (true) then dprint('Claymore Enabled...')
 MMGadgets_claymore = require('__shared/Gadgets_Modules/MMGadgets_claymore')
