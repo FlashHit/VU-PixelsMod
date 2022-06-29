@@ -6,8 +6,6 @@
 # Modded version:
 ## iamadeadpixel
 - Make things go more fun and kinky
-- This is a massive stripped down version, but only gadgets are pimped
-- Tank, AA/Tunguska had some small modification
 -
 - Read down below the changes
 - Version 1.4.3
