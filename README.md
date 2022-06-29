@@ -23,6 +23,53 @@
 * This mod can give conflicts with the funbots mod, and nags the server to reboot.
 * USE WITH CARE !
 
+# How to adjust settings on the __init_modules files
+- __init__.lua : This is the master file
+- Here u can enable or fully disable the modules
+- true or false can be used, also hidden, this wil supress any text output on the server on startup
+
+- __init_Generic_Modules.lua
+- Here u can enable or disable player tweaks and some Weapon stuff, this is a WIP,so disabled.
+
+- __init_Global_init_module.lua
+- Here u can enable or disable sub modules,each module contains classes for its core.
+
+- __init_modules_choppers.lua
+- Here u can enable or disable any chopper type there is.
+
+- __init_modules_common_weapons.lua
+- Here u can enable or disable the common shared weapons.
+
+- __init_modules_assault_weapons.lua
+- Here u can enable or disable ALL modded assault weapons
+
+- __init_modules_recon_weapons.lua
+- Here u can enable or disable the recon class weapons
+
+- __init_modules_support.lua
+- Here u can enable or disable the default support class weapons
+
+- __init_modules_support_LMG.lua
+- Here u can enable or disable all the LMG classes
+
+- __init_modules_engineer_weapons.lua
+- Here u can enable or disable the engineer class weapons
+
+- __init_modules_gadgets.lua
+- Here u can enable or disable most of the gadgets.
+
+- __init_modules_handguns.lua
+- Here u can enable or disable most of the handguns (still WIP,but working)
+
+- __init_modules_rockets.lua
+- Here u can enable or disable RPG/IGLA/STINGER
+
+- __init_modules_shotguns.lua
+- Here u can enable or disable the shotguns
+
+- __init_modules_vehicles.lua
+- Here u can enable or disable most of the vehicles weapon mods
+
 # Last update: 26-06-2022
 Make more fun with grenades.
 Now u can select in the config normale grenades, or super charched grenades
