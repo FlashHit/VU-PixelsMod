@@ -71,7 +71,7 @@
 
 # Last update: 17-07-2022
 # Changed C4: Normal or turbo mode.
-- Added small variable section in C4 and grenade turbo mode
+- Added small variable section in C4,M15 and grenade turbo mode
 - for faster modifications. - Regular values on the end.
 
 # previous update: 29-06-2022
