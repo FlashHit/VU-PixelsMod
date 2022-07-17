@@ -10,7 +10,6 @@ local bEnable_modules_gadgets = true
 -- Gadgets stuff --
  bEnable_combobags = true
  bEnable_defib = true
- bEnable_C4 = true
  bEnable_M15 = true
  bEnable_claymore = true
  bEnable_Repairtool = true
@@ -25,7 +24,6 @@ local bEnable_modules_gadgets = true
 -- Gadgets stuff --
  bEnable_combobags = false
  bEnable_defib = false
- bEnable_C4 = false
  bEnable_M15 = false
  bEnable_claymore = false
  bEnable_Repairtool = false
@@ -36,6 +34,24 @@ local bEnable_modules_gadgets = true
 
  end
 end
+----------------
+local bEnable_c4_modules_gadgets = true
+            if (bEnable_c4_modules_gadgets) == (true) then dprint('Gadgets c4 modules config Enabled... ... ...')
+-- Here u can set the C4
+-- ONE config only can be active here !
+ bEnable_turbo_C4 = true
+ bEnable_C4 = false
+
+	else
+	    if (bEnable_c4_modules_gadgets) == (false) then dprint('Gadgets c4 modules config Disabled... ... ...')
+
+ bEnable_turbo_C4 = false
+ bEnable_C4 = false
+
+end
+end
+--
+
 ----------------
 local bEnable_nade_modules_gadgets = true
             if (bEnable_nade_modules_gadgets) == (true) then dprint('Gadgets Nade modules config Enabled... ... ...')
@@ -115,7 +131,24 @@ mmResources:AddLoadHandler(MMGadgets_turbo_EOD_bot, MMGadgets_turbo_EOD_bot.Writ
 end
 end
 
+	    if (bEnable_C4) == (true) then dprint('C4 Enabled...')
+MMGadgets_C4 = require('__shared/Gadgets_Modules/MMGadgets_C4')
+mmResources:AddLoadHandler(MMGadgets_C4, MMGadgets_C4.Write)
+	else
+	    if (bEnable_C4) == (false) then dprint('C4 Disabled...')
+end
+end
+--
 
+	    if (bEnable_turbo_C4) == (true) then dprint('Turbo C4 Enabled...')
+MMGadgets_turbo_C4 = require('__shared/Gadgets_Modules/MMGadgets_turbo_C4')
+mmResources:AddLoadHandler(MMGadgets_turbo_C4, MMGadgets_turbo_C4.Write)
+	else
+	    if (bEnable_turbo_C4) == (false) then dprint('Turbo C4 Disabled...')
+end
+end
+--
+-- --------------------------------------------
 
 
 
@@ -158,14 +191,6 @@ end
 end
 --
 
-	    if (bEnable_C4) == (true) then dprint('C4 Enabled...')
-MMGadgets_C4 = require('__shared/Gadgets_Modules/MMGadgets_C4')
-mmResources:AddLoadHandler(MMGadgets_C4, MMGadgets_C4.Write)
-	else
-	    if (bEnable_C4) == (false) then dprint('C4 Disabled...')
-end
-end
---
 
 
             if (bEnable_M15) == (true) then dprint('M15 Enabled...')
