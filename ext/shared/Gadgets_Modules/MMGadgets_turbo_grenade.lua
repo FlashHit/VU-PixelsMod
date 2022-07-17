@@ -1,5 +1,22 @@
 class "MMWeapons_grenade"
 
+-- global setings for ALL mapmodes
+var_timeToLive = 3 -- Time till the grenades explode, 2 = normal time
+var_gravity = -3.5 -- The efect gravity has, 0 = no gravity + values pulls the nades up, -9.8 = normal
+var_initialSpeed = 25 -- Speed you trow the grenades 35 = normal
+
+var_numberOfBulletsPerShell = 15
+var_numberOfBulletsPerShot = 15
+-- Number of grenades you trow
+-- --------------------------------------
+var_blastDamage = 1500 -- 112 normal damage rate
+var_blastRadius = 12 -- radius damage aplies, 7 = normal
+var_blastImpulse = 140 -- impulse damage, 2000 = normal
+var_shockwaveDamage = 40 -- Shockwave damage to area and player, 1 = normal
+var_shockwaveRadius = 10 -- Damage radius for shockwave, 8 = normal
+var_shockwaveImpulse = 60 -- shockwavedamage to area and player, 500 = normal
+
+
  function MMWeapons_grenade:Write(instance)
 	if (mmResources:IsLoaded('grenade')) then
 		mmResources:SetLoaded('grenade', false)
@@ -16,8 +33,8 @@ class "MMWeapons_grenade"
 		grenadeData.transform.up.y = 8
 		grenadeData.transform.forward.z = 8
 
---		grenadeData.timeToLive = 2
---		grenadeData.gravity = -0.5
+		grenadeData.timeToLive = var_timeToLive
+		grenadeData.gravity = var_gravity
 --		dprint('Changed M67 Grenade Entity...')
 	end
 
@@ -26,12 +43,13 @@ class "MMWeapons_grenade"
 
 		local expData = VeniceExplosionEntityData(mmResources:GetInstance('grenadeexp'))
 		expData:MakeWritable()
-		expData.blastDamage = 150
-		expData.blastRadius = 12
-		expData.blastImpulse = 60
-		expData.shockwaveDamage = 40
-		expData.shockwaveRadius = 10
-		expData.shockwaveImpulse = 60 
+
+		expData.blastDamage = var_blastDamage
+		expData.blastRadius = var_blastRadius
+		expData.blastImpulse = var_blastImpulse
+		expData.shockwaveDamage = var_shockwaveDamage
+		expData.shockwaveRadius = var_shockwaveRadius
+		expData.shockwaveImpulse = var_shockwaveImpulse
 		expData.triggerImpairedHearing = true
 		expData.isCausingSuppression = true
 		dprint('Changed M67 Grenade Explosion...')
@@ -81,9 +99,9 @@ class "MMWeapons_grenade"
 		fireData.weaponDispersion.proneDispersion.maxAngle = 7
 		fireData.weaponDispersion.proneDispersion.increasePerShot = 0.8
 
-		fireData.shot.initialSpeed.z = 25
-		fireData.shot.numberOfBulletsPerShell = 10
-		fireData.shot.numberOfBulletsPerShot = 10
+		fireData.shot.initialSpeed.z = var_initialSpeed
+		fireData.shot.numberOfBulletsPerShell = var_numberOfBulletsPerShell
+		fireData.shot.numberOfBulletsPerShot = var_numberOfBulletsPerShot
 
 		fireData.ammo.magazineCapacity = 1
 		fireData.ammo.numberOfMagazines = 16
@@ -107,9 +125,9 @@ class "MMWeapons_grenade"
 		fireData.weaponDispersion.proneDispersion.maxAngle = 7
 		fireData.weaponDispersion.proneDispersion.increasePerShot = 0.8
 
-		fireData.shot.initialSpeed.z = 25
-		fireData.shot.numberOfBulletsPerShell = 10
-		fireData.shot.numberOfBulletsPerShot = 10
+		fireData.shot.initialSpeed.z = var_initialSpeed
+		fireData.shot.numberOfBulletsPerShell = var_numberOfBulletsPerShell
+		fireData.shot.numberOfBulletsPerShot = var_numberOfBulletsPerShot
 
 		fireData.ammo.magazineCapacity = 1
 		fireData.ammo.numberOfMagazines = 3
@@ -132,9 +150,9 @@ class "MMWeapons_grenade"
 		fireData.weaponDispersion.proneDispersion.maxAngle = 7
 		fireData.weaponDispersion.proneDispersion.increasePerShot = 0.8
 
-		fireData.shot.initialSpeed.z = 25
-		fireData.shot.numberOfBulletsPerShell = 10
-		fireData.shot.numberOfBulletsPerShot = 10
+		fireData.shot.initialSpeed.z = var_initialSpeed
+		fireData.shot.numberOfBulletsPerShell = var_numberOfBulletsPerShell
+		fireData.shot.numberOfBulletsPerShot = var_numberOfBulletsPerShot
 
 		fireData.ammo.magazineCapacity = 1
 		fireData.ammo.numberOfMagazines = 6
