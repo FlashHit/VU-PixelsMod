@@ -8,7 +8,7 @@
 - Make things go more fun and kinky
 -
 - Read down below the changes
-- Version 1.4.3
+- Version 1.4.4 (17-07-2022)
 -
 # WARNING
 * DO NOT RUN THIS MOD WITH MAJORVICTORY87 ! IT WILL GIVE MASSIVE CONFLICTS !
@@ -68,7 +68,13 @@
 - __init_modules_vehicles.lua
 - Here u can enable or disable most of the vehicles weapon mods
 
-# Last update: 29-06-2022
+
+# Last update: 17-07-2022
+# Changed C4: Normal or turbo mode.
+- Added small variable section in C4 and grenade turbo mode
+- for faster modifications. - Regular values on the end.
+
+# previous update: 29-06-2022
 Make more fun with the EOD bot
 Now u can select in the config normale long distance repair, or super charched rockets with repair fun
 
