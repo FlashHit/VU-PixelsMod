@@ -70,8 +70,10 @@
 
 
 # Last update: 17-07-2022
-# Changed C4: Normal or turbo mode.
-- Added small variable section in C4,M15 and grenade turbo mode
+# Changed C4,Grenades,Claymores,M15: Normal or turbo mode.
+- Normal mode: Behaves as stock stuff.
+- Turbo mode: Things goes BOOOOOOOOOOM !
+- Added small variable section in C4,M15,claymore and grenade turbo mode
 - for faster modifications. - Regular values on the end.
 
 # previous update: 29-06-2022
