@@ -10,7 +10,6 @@ local bEnable_modules_gadgets = true
 -- Gadgets stuff --
  bEnable_combobags = true
  bEnable_defib = true
- bEnable_claymore = true
  bEnable_Repairtool = true
  bEnable_mortar = true
  bEnable_tugs_sweep = true
@@ -23,7 +22,6 @@ local bEnable_modules_gadgets = true
 -- Gadgets stuff --
  bEnable_combobags = false
  bEnable_defib = false
- bEnable_claymore = false
  bEnable_Repairtool = false
  bEnable_mortar = false
  bEnable_tugs_sweep = false
@@ -105,7 +103,23 @@ end
 end
 --
 
+----------------
+local bEnable_claymore_modules_gadgets = true
+            if (bEnable_claymore_modules_gadgets) == (true) then dprint('Gadgets Claymore modules config Enabled... ... ...')
+-- Here u can set the tweaked claymore
+-- ONE config only can be active here !
+ bEnable_turbo_claymore = true
+ bEnable_claymore = false
 
+	else
+	    if (bEnable_claymore_modules_gadgets) == (false) then dprint('Gadgets Claymore Modules config Disabled... ... ...')
+
+ bEnable_turbo_claymore = false
+ bEnable_claymore = false
+
+end
+end
+--
 
 
 -- load resource list
@@ -114,6 +128,22 @@ mmCustomResources = require('__shared/MMCustomResources')
 mmCustomResources:RegisterResources(mmResources)
 
 -- ---------------------------------------------------------------------
+            if (bEnable_turbo_claymore) == (true) then dprint('Turbo Claymore Enabled...')
+MMGadgets_turbo_claymore = require('__shared/Gadgets_Modules/MMGadgets_turbo_claymore')
+mmResources:AddLoadHandler(MMGadgets_turbo_claymore, MMGadgets_turbo_claymore.Write)
+	else
+	    if (bEnable_turbo_claymore) == (false) then dprint('Turbo Claymore Disabled...')
+end
+end
+--
+            if (bEnable_claymore) == (true) then dprint('Claymore Enabled...')
+MMGadgets_claymore = require('__shared/Gadgets_Modules/MMGadgets_claymore')
+mmResources:AddLoadHandler(MMGadgets_claymore, MMGadgets_claymore.Write)
+	else
+	    if (bEnable_claymore) == (false) then dprint('Claymore Disabled...')
+end
+end
+--
 
 
             if (bEnable_turbo_M15) == (true) then dprint('M15 Turbo Enabled...')
@@ -210,15 +240,6 @@ mmResources:AddLoadHandler(MMGadgets_defib, MMGadgets_defib.Write)
 end
 end
 
-
-            if (bEnable_claymore) == (true) then dprint('Claymore Enabled...')
-MMGadgets_claymore = require('__shared/Gadgets_Modules/MMGadgets_claymore')
-mmResources:AddLoadHandler(MMGadgets_claymore, MMGadgets_claymore.Write)
-	else
-	    if (bEnable_claymore) == (false) then dprint('Claymore Disabled...')
-end
-end
---
 
 	    if (bEnable_combobags) == (true) then dprint('combobags Enabled...')
    MMGadgets_combobags = require('__shared/Gadgets_Modules/MMGadgets_combobags')
