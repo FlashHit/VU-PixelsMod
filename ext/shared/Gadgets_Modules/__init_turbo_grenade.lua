@@ -7,25 +7,7 @@
    local partition_grenadeexp = Guid ("CF031A0B-2492-11E0-85B7-F234A394297F")
    local instance_grenadeexp = Guid ("0E0932A0-E8EF-4037-983B-F35A6F7FEEE5")
 
-
--- global setings for ALL mapmodes
-var_timeToLive = 3 -- Time till the grenades explode, 2 = normal time
-var_gravity = -3.5 -- The efect gravity has, 0 = no gravity + values pulls the nades up, -9.8 = normal
-var_initialSpeed = 25 -- Speed you trow the grenades 35 = normal
-
-var_numberOfBulletsPerShell = 15
-var_numberOfBulletsPerShot = 15
--- Number of grenades you trow
 -- --------------------------------------
-var_blastDamage = 1500 -- 112 normal damage rate
-var_blastRadius = 12 -- radius damage aplies, 7 = normal
-var_blastImpulse = 140 -- impulse damage, 2000 = normal
-var_shockwaveDamage = 40 -- Shockwave damage to area and player, 1 = normal
-var_shockwaveRadius = 10 -- Damage radius for shockwave, 8 = normal
-var_shockwaveImpulse = 60 -- shockwavedamage to area and player, 500 = normal
-
-
-
 
 ResourceManager:RegisterInstanceLoadHandler(partition_grenadeent, instance_grenadeent, function(loadedInstance)
      loadedInstance = GrenadeEntityData(loadedInstance)
@@ -36,8 +18,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenadeent, instance_grena
     loadedInstance.transform.up.y = 8
     loadedInstance.transform.forward.z = 8
 
-    loadedInstance.timeToLive = var_timeToLive
-    loadedInstance.gravity = var_gravity
+    loadedInstance.timeToLive = 3
+    loadedInstance.gravity = -3.5
 	print('Changed M67 Grenade is now lighter ...')
 	end)
 
@@ -46,12 +28,12 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenadeexp, instance_grena
      loadedInstance = VeniceExplosionEntityData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.blastDamage = var_blastDamage
-    loadedInstance.blastRadius = var_blastRadius
-    loadedInstance.blastImpulse = var_blastImpulse
-    loadedInstance.shockwaveDamage = var_shockwaveDamage
-    loadedInstance.shockwaveRadius = var_shockwaveRadius
-    loadedInstance.shockwaveImpulse = var_shockwaveImpulse
+    loadedInstance.blastDamage = 1500 -- 112 normal damage rate
+    loadedInstance.blastRadius = 12 -- radius damage aplies, 7 = normal
+    loadedInstance.blastImpulse = 140 -- impulse damage, 2000 = normal
+    loadedInstance.shockwaveDamage = 40 -- Shockwave damage to area and player, 1 = normal
+    loadedInstance.shockwaveRadius = 10 -- Damage radius for shockwave, 8 = normal
+    loadedInstance.shockwaveImpulse = 60 -- shockwavedamage to area and player, 500 = normal
     loadedInstance.triggerImpairedHearing = true
     loadedInstance.isCausingSuppression = true
 	print('Changed M67 Grenade Explosion...')
@@ -72,9 +54,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenade, instance_grenade,
     loadedInstance.weaponDispersion.proneDispersion.maxAngle = 7
     loadedInstance.weaponDispersion.proneDispersion.increasePerShot = 0.8
 
-    loadedInstance.shot.initialSpeed.z = var_initialSpeed
-    loadedInstance.shot.numberOfBulletsPerShell = var_numberOfBulletsPerShell
-    loadedInstance.shot.numberOfBulletsPerShot = var_numberOfBulletsPerShot
+    loadedInstance.shot.initialSpeed.z = 25
+    loadedInstance.shot.numberOfBulletsPerShell = 15
+    loadedInstance.shot.numberOfBulletsPerShot = 15
 
     loadedInstance.ammo.magazineCapacity = 1
     loadedInstance.ammo.numberOfMagazines = 32

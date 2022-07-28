@@ -1,10 +1,4 @@
 -- Kinky Claymore
-var_blastDamage = 200 -- Normal = 112
-var_blastRadius = 10 -- Normal = 4
-var_blastImpulse = 3000 -- Normal = 2000
-var_shockwaveDamage = 10 -- Normal = 1
-var_shockwaveRadius = 15 -- Normal = 6
-var_shockwaveImpulse = 1500 -- Normal = 500
 
    local partition_claymore = Guid ("D9EAFB20-1357-11E0-B5EB-8AEE7FB8A0AF")
     local instance_claymore = Guid ("526C78FC-D2CA-491B-9D18-1EDEFB10A762")
@@ -54,12 +48,12 @@ ResourceManager:RegisterInstanceLoadHandler(partition_claymore, instance_claymor
       loadedInstance = VeniceExplosionEntityData(loadedInstance)
      loadedInstance:MakeWritable()
  
-     loadedInstance.blastDamage = var_blastDamage
-     loadedInstance.blastRadius = var_blastRadius
-     loadedInstance.blastImpulse = var_blastImpulse
-     loadedInstance.shockwaveDamage = var_shockwaveDamage
-     loadedInstance.shockwaveRadius = var_shockwaveRadius
-     loadedInstance.shockwaveImpulse = var_shockwaveImpulse
+     loadedInstance.blastDamage = 200 -- Normal = 112
+     loadedInstance.blastRadius = 10 -- Normal = 4
+     loadedInstance.blastImpulse = 3000 -- Normal = 2000
+     loadedInstance.shockwaveDamage = 10 -- Normal = 1
+     loadedInstance.shockwaveRadius = 15 -- Normal = 6
+     loadedInstance.shockwaveImpulse = 1500 -- Normal = 500
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true

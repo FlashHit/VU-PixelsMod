@@ -7,24 +7,16 @@
    local partition_c4expentity = Guid ("910AD7C5-2558-11E0-96DC-FF63A5537869")
    local instance_c4expentity = Guid ("09DCA5BB-BB2E-4EC6-B07F-5F74863EB458")
 
-var_blastDamage = 1500 -- Normal = 500
-var_blastRadius = 15.0 -- Normal = 5.0
-var_blastImpulse = 6000.0 -- Normal = 6000
-var_shockwaveDamage = 5.0 -- Normal = 1.0
-var_shockwaveRadius = 12.0 -- Normal = 6.0
-var_shockwaveImpulse = 4000.0 -- Normal = 2000
-
-
 ResourceManager:RegisterInstanceLoadHandler(partition_c4exp, instance_c4exp, function(loadedInstance)
      loadedInstance = VeniceExplosionEntityData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.blastDamage = var_blastDamage
-    loadedInstance.blastRadius = var_blastRadius
-    loadedInstance.blastImpulse = var_blastImpulse
-    loadedInstance.shockwaveDamage = var_shockwaveDamage
-    loadedInstance.shockwaveRadius = var_shockwaveRadius
-    loadedInstance.shockwaveImpulse = var_shockwaveImpulse
+    loadedInstance.blastDamage = 1500 -- Normal = 500
+    loadedInstance.blastRadius = 15 -- Normal = 5.0
+    loadedInstance.blastImpulse = 6000 -- Normal = 6000
+    loadedInstance.shockwaveDamage = 15 -- Normal = 1.0
+    loadedInstance.shockwaveRadius = 15 -- Normal = 6.0
+    loadedInstance.shockwaveImpulse = 4000 -- Normal = 2000
     loadedInstance.shockwaveTime = 0
     loadedInstance.triggerImpairedHearing = false
     loadedInstance.isCausingSuppression = false

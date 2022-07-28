@@ -7,13 +7,6 @@
    local partition_m15expentity = Guid ("49F4451D-D64E-45E5-BC96-B39CE8BC4D10")
     local instance_m15expentity = Guid ("D936971A-354B-49B7-BCCA-4FE01B68D395")
 
-var_blastDamage = 1500 -- Normal = 500
-var_blastRadius = 15 -- Normal = 5
-var_blastImpulse = 9000 -- Normal = 6000
-var_shockwaveDamage = 10 -- Normal = 1
-var_shockwaveRadius = 15 -- Normal = 6
-var_shockwaveImpulse = 2000-- Normal = 2000
-
 
 ResourceManager:RegisterInstanceLoadHandler(partition_m15, instance_m15, function(loadedInstance)
      loadedInstance = FiringFunctionData(loadedInstance)
@@ -44,12 +37,12 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m15exp, instance_m15exp, f
      loadedInstance = VeniceExplosionEntityData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.blastDamage = var_blastDamage
-    loadedInstance.blastRadius = var_blastRadius
-    loadedInstance.blastImpulse = var_blastImpulse
-    loadedInstance.shockwaveDamage = var_shockwaveDamage
-    loadedInstance.shockwaveRadius = var_shockwaveRadius
-    loadedInstance.shockwaveImpulse = var_shockwaveImpulse
+    loadedInstance.blastDamage = 1500 -- Normal = 500
+    loadedInstance.blastRadius = 15 -- Normal = 5
+    loadedInstance.blastImpulse = 9000 -- Normal = 6000
+    loadedInstance.shockwaveDamage = 10 -- Normal = 1
+    loadedInstance.shockwaveRadius = 15 -- Normal = 6
+    loadedInstance.shockwaveImpulse = 2000 -- Normal = 2000
     loadedInstance.shockwaveTime = 0
     loadedInstance.triggerImpairedHearing = true
     loadedInstance.isCausingSuppression = true
