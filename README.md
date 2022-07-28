@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.0
+# Welcome to Version 2.0.1
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,6 +16,12 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
+# Last Update: 28-07-2022
+- Version 2.0.1 - Bug fix
+- Fixed C4 explosion data, should be a huge bang.
+- Fixed M15 explosion data, should be a huge bang.
+- Fixed M67 explosion data, should be a huge bang.
+- Fixed Claymore explosion data, should be a huge bang.
 
 - Read down below the changes
 - Version 2.0.0 (28-07-2022)
@@ -79,7 +85,7 @@
 - Here u can enable or disable most of the vehicles weapon mods
 
 
-# Last update: 17-07-2022
+# Previous update: 17-07-2022
 # Changed C4,Grenades,Claymores,M15: Normal or turbo mode.
 - Normal mode: Behaves as stock stuff.
 - Turbo mode: Things goes BOOOOOOOOOOM !
@@ -234,4 +240,4 @@ Now u can select in the config normale grenades, or super charched grenades
 - **M1A2 Abrams** no damage mod, but no shell drop due no gravity ,time to live decreased to 4 seconds
 - **T90** no damage mod, but no shell drop due no gravity ,time to live decreased to 4 seconds
 - **Tunguska** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
-- **LAV25** cannon is more accurate, fire time doubled, finaly a nemesis against tanks !
+- **LAV25** cannon is more accurate, fire time doubled, finaly a nemesis against tanks ! 
