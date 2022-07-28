@@ -7,11 +7,24 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
+# Welcome to Version 2.0.0
+- This is complete overworked version from 1.4.4
+- Every item is now its own instance file
+- Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
+- the only thing is that u need to make is its own directory structure and have some
+- basic knowledge how to cook your own files
+
+# If you stil want pixelmod 1.4.4 ,dont worry look in archive.
+
+
 - Read down below the changes
-- Version 1.4.4 (17-07-2022)
+- Version 2.0.0 (28-07-2022)
 -
 # WARNING
 * DO NOT RUN THIS MOD WITH MAJORVICTORY87 ! IT WILL GIVE MASSIVE CONFLICTS !
+* This is a overworked version of the original pixelmod.
+* Each item can now be run as a own instance
+* The configuration script are stil working, so any item can be turned on or off.
 
 # About me:
 - Short: i am a lazy prick, not the pro in coding but am pretty good in understand the programming concept.
@@ -43,9 +56,6 @@
 
 - __init_modules_recon_weapons.lua
 - Here u can enable or disable the recon class weapons
-
-- __init_modules_support.lua
-- Here u can enable or disable the default support class weapons
 
 - __init_modules_support_LMG.lua
 - Here u can enable or disable all the LMG classes
