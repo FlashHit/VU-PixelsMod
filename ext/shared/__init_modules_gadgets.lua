@@ -12,7 +12,6 @@ local bEnable_modules_gadgets = true
  bEnable_claymore = true
  bEnable_defib = true
  bEnable_EOD = true
- bEnable_turbo_C4 = true
  bEnable_turbo_grenade = true
  bEnable_turbo_M15 = true
 
@@ -27,7 +26,6 @@ local bEnable_modules_gadgets = true
  bEnable_claymore = false
  bEnable_defib = false
  bEnable_EOD = false
- bEnable_turbo_C4 = false
  bEnable_turbo_grenade = false
  bEnable_turbo_M15 = false
 
@@ -44,24 +42,12 @@ __init_turbo_m15_tankmine = require('__shared/Gadgets_Modules/__init_turbo_m15_t
 end
 end
 
-
-
 	    if (bEnable_turbo_grenade) == (true) then print('SUPER grenade Enabled...')
 __init_turbo_grenade = require('__shared/Gadgets_Modules/__init_turbo_grenade')
 	else
 	    if (bEnable_turbo_grenade) == (false) then print('SUPER grenade Disabled...')
 end
 end
-
-
-	    if (bEnable_turbo_C4) == (true) then print('Turbo C4 Enabled...')
-__init_turbo_C4 = require('__shared/Gadgets_Modules/__init_turbo_C4')
-	else
-	    if (bEnable_turbo_C4) == (false) then print('Turbo C4 Disabled...')
-end
-end
-
-	    
 	    
 	    if (bEnable_EOD) == (true) then print('EOD Bot Enabled...')
    __init_EOD_bot = require('__shared/Gadgets_Modules/__init_EOD_bot')
@@ -69,7 +55,6 @@ end
 	    if (bEnable_EOD) == (false) then print('EOD Bot Disabled...')
 end
 end
-
 	    
 	    if (bEnable_defib) == (true) then print('Kinky defib Enabled...')
 __init_defib = require('__shared/Gadgets_Modules/__init_defib')
@@ -78,8 +63,6 @@ __init_defib = require('__shared/Gadgets_Modules/__init_defib')
 end
 end
 
-
-
             if (bEnable_claymore) == (true) then print('Claymore Enabled...')
 __init_claymore = require('__shared/Gadgets_Modules/__init_claymore')
 	else
@@ -87,7 +70,6 @@ __init_claymore = require('__shared/Gadgets_Modules/__init_claymore')
 end
 end
 --
-
 
 	    if (bEnable_combobags) == (true) then print('combobags Enabled...')
    __init_ComboBags = require('__shared/Gadgets_Modules/__init_ComboBags')
