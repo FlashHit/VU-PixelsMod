@@ -17,7 +17,7 @@ bEnable_tank_lbt_amtrac = true
 bEnable_tank_lbt_phoenix_barsuk = true
 bEnable_vehicle_radarsweep_data = true
 bEnable_vehicle_ammodata = true
-
+bEnable_vehicle_jeepstuff = true
 	else
 	    if (bEnable_modules_vehicles) == (false) then print('Vehicles Modules config Disabled... ... ...')
 
@@ -32,6 +32,7 @@ bEnable_tank_lbt_amtrac = false
 bEnable_tank_lbt_phoenix_barsuk = false
 bEnable_vehicle_radarsweep_data = false
 bEnable_vehicle_ammodata = false
+bEnable_vehicle_jeepstuff = false
 
  end
 end
@@ -40,10 +41,18 @@ end
 -- Vehicles modules --  
 
 
-	      if (bEnable_vehicle_radarsweep_data) == (true) then print('Vehicle Ammodata Enabled...')
+	      if (bEnable_vehicle_jeepstuff) == (true) then print('Vehicle Jeep stuff Enabled...')
+__init_jeepstuff = require('__shared/Vehicles_Modules/__init_jeepstuff')
+	else
+	    if (bEnable_vehicle_jeepstuff) == (false) then print('Vehicle Jeep stuff Disabled...')
+end
+end
+--
+
+	      if (bEnable_vehicle_ammodata) == (true) then print('Vehicle Ammodata Enabled...')
 __init_ammodata = require('__shared/Vehicles_Modules/__init_ammodata')
 	else
-	    if (bEnable_vehicle_radarsweep_data) == (false) then print('Vehicle Ammodata Disabled...')
+	    if (bEnable_vehicle_ammodata) == (false) then print('Vehicle Ammodata Disabled...')
 end
 end
 --
