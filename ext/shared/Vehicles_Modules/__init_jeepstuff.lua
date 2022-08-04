@@ -98,6 +98,23 @@ ResourceManager:RegisterInstanceLoadHandler(partition_dpvengine, instance_dpveng
 
 -- ################
 
+   local partition_skidloaderengine = Guid ("EB384F9B-929B-11E0-8E2E-9D80798C8C1C")
+   local instance_skidloaderengine = Guid ("E973406D-A701-45FB-84C0-FB3D8DF51B69")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_skidloaderengine, instance_skidloaderengine, function(loadedInstance)
+     loadedInstance = CombustionEngineConfigData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.rpmMin = 500 -- default = 00
+    loadedInstance.rpmMax = 4000 -- default = 1600
+    loadedInstance.rpmCut = 9500 -- default = 9500
+    loadedInstance.enginePowerMultiplier = 5 -- default = 2.2
+    loadedInstance.boost.accelerationScale = 3 -- default = 1
+	print('Changed Vehicle: Skid Loader Engine...')
+	end)
+
+-- ################
+
 -- Growler US
 -- VDV buggy RU
 -- DPV US
