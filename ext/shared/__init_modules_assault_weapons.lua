@@ -19,6 +19,7 @@ local bEnable_modules_assault_weapons = true
  bEnable_aek971 = true
  bEnable_auga3 = true
  bEnable_scarl = true
+ bEnable_m320 = true
 
 	else
 	    if (bEnable_modules_assault_weapons) == (false) then print('Assault Weapons Modules config Disabled... ... ...')
@@ -36,12 +37,21 @@ local bEnable_modules_assault_weapons = true
  bEnable_aek971 = false
  bEnable_auga3 = false
  bEnable_scarl = false
+ bEnable_m320 = false
 
  end
 end
 
 -- ---------------------------------------------------------------------
 -- Assault weapons modules --  
+
+            if (bEnable_m320) == (true) then print('m320 Enabled...')
+    __init_m320 = require('__shared/Assault_weapons_Modules/__init_m320')
+	else
+	    if (bEnable_m320) == (false) then print('M320 Disabled...')
+end
+end
+--
 
             if (bEnable_l85a2) == (true) then print('l85a2 Enabled...')
     __init_l85a2 = require('__shared/Assault_weapons_Modules/__init_l85a2')
