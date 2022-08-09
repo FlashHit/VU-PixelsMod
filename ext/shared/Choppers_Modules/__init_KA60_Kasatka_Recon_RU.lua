@@ -7,20 +7,19 @@ ResourceManager:RegisterInstanceLoadHandler(partition_ka60engine, instance_ka60e
      loadedInstance = PropellerEngineConfigData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.enginePowerMultiplier = 1.5
-    loadedInstance.forceMagnitudeMultiplier = 3
-    loadedInstance.spForwardStrength = 30.0
-    loadedInstance.spSidewaysStrength = 15.0
-    loadedInstance.spVerticalStrength = 20.0
+    loadedInstance.enginePowerMultiplier = 2 -- Default = 1
+    loadedInstance.forceMagnitudeMultiplier = 30 -- Default = 75
+    loadedInstance.spForwardStrength = 40.0 -- Default = 30
+    loadedInstance.spSidewaysStrength = 15.0 -- Default = 10
+    loadedInstance.spVerticalStrength = 20.0 -- Default = 10
 	print('Changed Chopper: KA-60 Engine... (KA-60_Kasatka_Recon_RU) ... ...')
 	end)
-
 
 
 ResourceManager:RegisterInstanceLoadHandler(partition_ka60rotors, instance_ka60rotors, function(loadedInstance)
      loadedInstance = RotorParameters(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.horizontalForceModifier = 2
+    loadedInstance.horizontalForceModifier = 2 -- Default = 1.2
 	print('Changed Chopper: KA-60 Rotors... (KA-60_Kasatka_Recon_RU) ... ...')
 	end)

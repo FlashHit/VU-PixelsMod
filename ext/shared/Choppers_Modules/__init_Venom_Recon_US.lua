@@ -7,11 +7,11 @@ ResourceManager:RegisterInstanceLoadHandler(partition_venomengine, instance_veno
      loadedInstance = PropellerEngineConfigData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.enginePowerMultiplier = 1.5
-    loadedInstance.forceMagnitudeMultiplier = 3
-    loadedInstance.spForwardStrength = 30.0
-    loadedInstance.spSidewaysStrength = 15.0
-    loadedInstance.spVerticalStrength = 20.0
+    loadedInstance.enginePowerMultiplier = 2 -- Default = 1
+    loadedInstance.forceMagnitudeMultiplier = 30 -- Default = 75
+    loadedInstance.spForwardStrength = 40.0 -- Default = 30
+    loadedInstance.spSidewaysStrength = 15.0 -- Default = 10
+    loadedInstance.spVerticalStrength = 20.0 -- Default = 10
 	print('Changed Chopper: Venom Engine... (Venom_Recon_US) ... ...')
 	end)
 
@@ -20,6 +20,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_venomrotors, instance_veno
      loadedInstance = RotorParameters(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.horizontalForceModifier = 2
+    loadedInstance.horizontalForceModifier = 2 -- Default = 1.2
 	print('Changed Venom Chopper: Rotors... (Venom_Recon_US) ... ...')
 	end)
