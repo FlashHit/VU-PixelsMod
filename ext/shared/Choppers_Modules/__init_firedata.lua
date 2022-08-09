@@ -1,3 +1,6 @@
+   local partition_litlebird = Guid ("5490C4AB-A322-3F65-9680-CF9CD9D32705")
+   local instance_litlebird = Guid ("FB438F0C-EB84-A96A-4836-F6C624FE21E0")
+
    local partition_rocketpods = Guid ("E64E52BD-4E40-4BFE-B6C3-49523084AE94")
    local instance_rocketpods = Guid ("3EE6789F-4113-42BA-B8FE-79DD5EF89FB1")
    local partition_gunnercannon = Guid ("0A232494-FB58-496E-BF30-FD9B39E12008")
@@ -31,3 +34,13 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunnercannon1, instance_gu
     loadedInstance.ammo.numberOfMagazines = -1
 	print('Changed Chopper Firedata: RU Atack Chopper - Gunner bullet entity ammo... ... ... ... ... ')
 	end)
+
+ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litlebird, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1000
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed Chopper Firedata: US/RU  Light Atack Chopper - Gunner bullet entity ammo... ... ... ... ... ')
+	end)
+
