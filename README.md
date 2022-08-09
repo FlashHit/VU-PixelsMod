@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.4
+# Welcome to Version 2.0.4a
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
-# Last Update: 07-08-2022
+# Last Update: 09-08-2022
+- Fixed the Russian recon chopper, now it fly as it should be.
+
+# Previous Update: 07-08-2022
 - Added * More fun with the M320 and M26 *
 - Sorry, could not yet find the M320 Buckshot data ,WIP :)
 
