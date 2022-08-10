@@ -16,7 +16,7 @@ bEnable_tank_lbt_lav25_bmp2m = true
 bEnable_tank_lbt_amtrac = true
 bEnable_tank_lbt_phoenix_barsuk = true
 bEnable_vehicle_radarsweep_data = true
-bEnable_vehicle_ASRAD_Vodnik-AA = true
+bEnable_vehicle_ASRAD_Vodnik_AA = true
 bEnable_vehicle_jeepstuff = true
 	else
 	    if (bEnable_modules_vehicles) == (false) then print('Vehicles Modules config Disabled... ... ...')
@@ -31,7 +31,7 @@ bEnable_tank_lbt_lav25_bmp2m = false
 bEnable_tank_lbt_amtrac = false
 bEnable_tank_lbt_phoenix_barsuk = false
 bEnable_vehicle_radarsweep_data = false
-bEnable_vehicle_ASRAD_Vodnik-AA = false
+bEnable_vehicle_ASRAD_Vodnik_AA = false
 bEnable_vehicle_jeepstuff = false
 
  end
@@ -49,10 +49,10 @@ end
 end
 --
 
-	      if (bEnable_vehicle_ASRAD_Vodnik-AA) == (true) then print('Vehicle Ammodata Enabled...')
-__init_ASRAD_Vodnik-AA = require('__shared/Vehicles_Modules/__init_ASRAD_Vodnik-AA')
+	      if (bEnable_vehicle_ASRAD_Vodnik_AA) == (true) then print('Vehicle Ammodata Enabled...')
+__init_ASRAD_Vodnik_AA = require('__shared/Vehicles_Modules/__init_ASRAD_Vodnik_AA')
 	else
-	    if (bEnable_vehicle_ASRAD_Vodnik-AA) == (false) then print('Vehicle Ammodata Disabled...')
+	    if (bEnable_vehicle_ASRAD_Vodnik_AA) == (false) then print('Vehicle Ammodata Disabled...')
 end
 end
 --
