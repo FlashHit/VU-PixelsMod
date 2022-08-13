@@ -20,6 +20,7 @@
 - Fixed the shockwave time on the grenades.
 - Javelin now also can shoot down choppers and jets
 - but at the cost of locking range !
+- The T-UGS is now a small nuke on detonation, hehe
 
 # Previous Update: 09-08-2022
 - Fixed the Russian recon chopper, now it fly as it should be.
