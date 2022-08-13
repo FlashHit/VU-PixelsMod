@@ -11,7 +11,7 @@
 
 ResourceManager:RegisterInstanceLoadHandler(partition_grenadeent, instance_grenadeent, function(loadedInstance)
      loadedInstance = GrenadeEntityData(loadedInstance)
-    loadedInstance:MakeWritable()
+   loadedInstance:MakeWritable()
 
 
     loadedInstance.transform.left.x = 8
@@ -34,6 +34,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenadeexp, instance_grena
     loadedInstance.shockwaveDamage = 40 -- Shockwave damage to area and player, 1 = normal
     loadedInstance.shockwaveRadius = 10 -- Damage radius for shockwave, 8 = normal
     loadedInstance.shockwaveImpulse = 60 -- shockwavedamage to area and player, 500 = normal
+    loadedInstance.shockwaveTime = 0
     loadedInstance.triggerImpairedHearing = true
     loadedInstance.isCausingSuppression = true
 	print('Changed M67 Grenade Explosion...')
