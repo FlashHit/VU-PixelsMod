@@ -18,6 +18,8 @@
 
 # Last Update: 13-08-2022
 - Fixed the shockwave time on the grenades.
+- Javelin now also can shoot down choppers and jets
+- but at the cost of locking range !
 
 # Previous Update: 09-08-2022
 - Fixed the Russian recon chopper, now it fly as it should be.
@@ -121,10 +123,7 @@ Make more fun with grenades.
 Now u can select in the config normale grenades, or super charched grenades
 
 # Previous update: 06-05-2022
-- MP443 Gun Master Modded ammo size
-- Magnum 44 Gun Master Modded ammo size
 - Changed Magnum 44 scoped entity
-- M9 Gun Master Modded ammo size
 - Changed BTR-90 - BMP-2M - LAV-25 Ammo size, from 9 to 24
 - Changed Phoenix - Barsuk Ammo size, from 9 to 24
 - Changed Amtrav AAV-7a1 Ammo size, from 9 to 24
@@ -169,12 +168,9 @@ Now u can select in the config normale grenades, or super charched grenades
 - # Recon class
 - ADDED: All Sniper weapons has increased ammo size !
 
-
-
 # Previous update: 30-03-2022
 - CHANGED: 
 - **Sorted all weapons in its class group**
-
 
 # Previous update: 28-03-2022
 - **TUGS** is now super charged with double sweep range ! 
