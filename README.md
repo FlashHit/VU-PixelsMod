@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.4c
+# Welcome to Version 2.0.4d
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
-# Last Update: 13-08-2022
+# Last Update: 28-08-2022
+- Added normal M67 script with extended ammo.
+
+# Previous Update: 13-08-2022
 - Fixed the shockwave time on the grenades.
 - Javelin now also can shoot down choppers and jets
 - but at the cost of locking range !
