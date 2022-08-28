@@ -12,8 +12,11 @@ local bEnable_modules_gadgets = true
  bEnable_claymore = true
  bEnable_defib = true
  bEnable_EOD = true
- bEnable_turbo_grenade = true
  bEnable_turbo_M15 = true
+--
+-- Only ONE can be active !
+ bEnable_grenade = true
+ bEnable_turbo_grenade = false
 
 
 	else
@@ -27,6 +30,7 @@ local bEnable_modules_gadgets = true
  bEnable_defib = false
  bEnable_EOD = false
  bEnable_turbo_grenade = false
+ bEnable_grenade = false
  bEnable_turbo_M15 = false
 
  end
@@ -35,10 +39,10 @@ end
 
 -- Gadgets modules --
 
-            if (bEnable_turbo_M15) == (true) then print('M15 Turbo Enabled...')
-__init_turbo_m15_tankmine = require('__shared/Gadgets_Modules/__init_turbo_m15_tankmine')
+	    if (bEnable_grenade) == (true) then print('grenade Enabled...')
+__init_grenade = require('__shared/Gadgets_Modules/__init_grenade')
 	else
-	    if (bEnable_turbo_M15) == (false) then print('M15 Turbo Disabled...')
+	    if (bEnable_turbo_grenade) == (false) then print('grenade Disabled...')
 end
 end
 
@@ -46,6 +50,14 @@ end
 __init_turbo_grenade = require('__shared/Gadgets_Modules/__init_turbo_grenade')
 	else
 	    if (bEnable_turbo_grenade) == (false) then print('SUPER grenade Disabled...')
+end
+end
+-- ----------------------
+
+            if (bEnable_turbo_M15) == (true) then print('M15 Turbo Enabled...')
+__init_turbo_m15_tankmine = require('__shared/Gadgets_Modules/__init_turbo_m15_tankmine')
+	else
+	    if (bEnable_turbo_M15) == (false) then print('M15 Turbo Disabled...')
 end
 end
 	    
