@@ -36,5 +36,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lockdata, instance_
     loadedInstance.releaseTime = 0.2
     loadedInstance.releaseOnNewTargetTime = 1
     loadedInstance.acceptanceAngle = 2
+    loadedInstance.rayLength = 1000.0 -- default 500
 	print('Changed FGM148 Javelin Turbo locking...')
 	end)
