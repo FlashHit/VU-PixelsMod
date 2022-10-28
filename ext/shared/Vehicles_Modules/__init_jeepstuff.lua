@@ -105,7 +105,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_skidloaderengine, instance
      loadedInstance = CombustionEngineConfigData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.rpmMin = 500 -- default = 00
+    loadedInstance.rpmMin = 500 -- default = 500
     loadedInstance.rpmMax = 4000 -- default = 1600
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 5 -- default = 2.2

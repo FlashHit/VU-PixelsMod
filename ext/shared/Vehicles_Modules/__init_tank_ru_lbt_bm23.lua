@@ -18,3 +18,36 @@ ResourceManager:RegisterInstanceLoadHandler(partition_bm23air, instance_bm23air,
     loadedInstance.ammo.magazineCapacity = 24
 		print('Changed RU BM-23 and US M142 Air Shell Modifier ... ... ...')
 	end)
+
+
+-- ################
+   local partition_himarengine = Guid ("65CE090F-3CFC-11E1-BDB2-A81058AAD7AA")
+   local instance_himarengine = Guid ("E0B772EC-8CD0-4046-AEF0-DC65229ABEFA")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_himarengine, instance_himarengine, function(loadedInstance)
+     loadedInstance = CombustionEngineConfigData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.rpmMin = 500 -- default = 500
+    loadedInstance.rpmMax = 8000 -- default = 1600
+    loadedInstance.rpmCut = 15000 -- default = 9500
+    loadedInstance.enginePowerMultiplier = 8 -- default = 5
+    loadedInstance.boost.accelerationScale = 5 -- default = 2
+	print('Changed Vehicle: Himar Engine RU...')
+	end)
+
+-- ################
+   local partition_himarengine2 = Guid ("ECE82307-9454-11E1-9418-9BD47D974A22")
+   local instance_himarengine2 = Guid ("D9F3198B-8CCA-4D86-9CE4-963FE3C350F0")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_himarengine2, instance_himarengine2, function(loadedInstance)
+     loadedInstance = CombustionEngineConfigData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.rpmMin = 500 -- default = 500
+    loadedInstance.rpmMax = 8000 -- default = 1600
+    loadedInstance.rpmCut = 15000 -- default = 9500
+    loadedInstance.enginePowerMultiplier = 8 -- default = 5
+    loadedInstance.boost.accelerationScale = 5 -- default = 2
+	print('Changed Vehicle: Himar Engine US...')
+	end)
