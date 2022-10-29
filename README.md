@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.4d
+# Welcome to Version 2.0.4e
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,7 +16,19 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
-# Last Update: 28-08-2022
+# Last update: 28-10-2022
+- Added on BM23 and M142 more engine power
+
+# Previous Update: 23-10-2022
+- Changed the damage on the Javelin
+- Added option to lock on jets/choppers
+- trying to fix the option to destroy ground vehicles with igla/stinger
+
+# Previous Update: 13-10-2022
+- Moved C4 to its own instance section.
+- now you can tweak the option for global item count or selective item count based on the map mode.
+
+# Previous Update: 28-08-2022
 - Added normal M67 script with extended ammo.
 
 # Previous Update: 13-08-2022
