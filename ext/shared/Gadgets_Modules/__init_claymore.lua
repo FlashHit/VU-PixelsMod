@@ -18,8 +18,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_claymore, instance_claymor
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.numberOfMagazines = 32
-    loadedInstance.ammo.autoReplenishDelay = 0.1
-    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.1
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
     loadedInstance.fireLogic.rateOfFire = 250.0
 	print('Changed Claymore magazine ...')
 	end)

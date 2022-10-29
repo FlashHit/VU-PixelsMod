@@ -61,6 +61,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenade, instance_grenade,
 
     loadedInstance.ammo.magazineCapacity = 1
     loadedInstance.ammo.numberOfMagazines = 32
-    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 2
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
 	print('Changed M67 SUPER Grenade - Increased AMMO size...')
 	end)

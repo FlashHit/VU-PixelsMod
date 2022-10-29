@@ -13,8 +13,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m15, instance_m15, functio
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.numberOfMagazines = 16 -- atention, this is a multiplier x2
-    loadedInstance.ammo.autoReplenishDelay = 0.1
-    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.1
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
     loadedInstance.fireLogic.rateOfFire = 250.0
 	print('Changed Turbo M15 tank mine - Increased AMMO size ...')
 	end)
