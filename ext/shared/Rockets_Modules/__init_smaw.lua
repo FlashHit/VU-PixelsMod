@@ -20,6 +20,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_smaw, instance_smaw, funct
     loadedInstance:MakeWritable()
     loadedInstance.ammo.magazineCapacity = 1
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
 	print('Changed SMAW - Ammo size increased ...')
 	end)
 

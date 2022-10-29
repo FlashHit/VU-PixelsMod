@@ -44,6 +44,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_ammo, instance_igla_a
 
     loadedInstance.ammo.magazineCapacity = 1
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
+
 	print('Changed Sa18IGLA - Increased AMMO size...')
 	end)
 	

@@ -43,6 +43,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_us_stinger_ammo, instance_
 
     loadedInstance.ammo.magazineCapacity = 1
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
 	print('Changed Stinger - Increased AMMO size...')
 	end)
 	

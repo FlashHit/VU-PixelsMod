@@ -20,6 +20,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rpg7, instance_rpg7, funct
     loadedInstance:MakeWritable()
     loadedInstance.ammo.magazineCapacity = 1
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
+    loadedInstance.ammo.autoReplenishDelay = 0.5
+    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
 	print('Changed RPG-7 - Ammo size increased ...')
 	end)
 
