@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.4e
+# Welcome to Version 2.0.4f
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,7 +16,11 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
-# Last update: 28-10-2022
+# Last update: 31-10-2022
+- Added Added nutcase damage for the TOWs on MB23 M142 BTR90 and LAV25 (needs tweak)
+- Added Added nutcase damage for the airburst (primary weapon) on MB23 and M142  (needs tweak)
+
+# Previous update: 28-10-2022
 - Added on BM23 and M142 more engine power
 
 # Previous Update: 23-10-2022
