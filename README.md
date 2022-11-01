@@ -17,8 +17,8 @@
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
 # Last update: 31-10-2022
-- Added Added nutcase damage for the TOWs on MB23 M142 BTR90 and LAV25 (needs tweak)
-- Added Added nutcase damage for the airburst (primary weapon) on MB23 and M142  (needs tweak)
+- Added nutcase damage for the TOWs on MB23 M142 BTR90 and LAV25 (needs tweak)
+- Added nutcase damage for the airburst (primary weapon) on MB23 and M142  (needs tweak)
 
 # Previous update: 28-10-2022
 - Added on BM23 and M142 more engine power
