@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.4f
+# Welcome to Version 2.0.4g
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.
 
-# Last update: 31-10-2022
+# Last update: 02-11-2022
+- Changed Stinger/igla and Javelin lock data
+
+# Previous update: 31-10-2022
 - Added nutcase damage for the TOWs on MB23 M142 BTR90 and LAV25 (needs tweak)
 - Added nutcase damage for the airburst (primary weapon) on MB23 and M142  (needs tweak)
 
