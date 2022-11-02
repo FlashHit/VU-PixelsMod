@@ -1,21 +1,6 @@
-   local partition_igla_lock = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
-   local instance_igla_lock = Guid ("BA1B7D20-46F4-40E2-9835-B963CFF07527")
-
-   local partition_igla_ammo = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
-   local instance_igla_ammo = Guid ("CE53E1AB-2B5B-4844-97B7-5A4990EB3913")
-
-   local partition_igla_lockdata = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
-   local instance_igla_lockdata = Guid ("CDC3C3F1-C14A-43D4-B97B-68C286DEFEA8")
-
---
-   local partition_igla_damage = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
-   local instance_igla_damage = Guid ("2ABC6E49-3D6E-4578-B64B-7BED0960AB5D")
-
+-- #############
    local partition_igla_speed = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
    local instance_igla_speed = Guid ("5DFC8761-7C3F-26EB-79F0-A40D780C5A82")
-
-   local partition_igla_lockrange = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
-   local instance_igla_lockrange = Guid ("DFA0EF35-6E53-477C-9CB9-38B271AFC18C")
 
 ResourceManager:RegisterInstanceLoadHandler(partition_igla_speed, instance_igla_speed, function(loadedInstance)
      loadedInstance = MissileEntityData(loadedInstance)
@@ -28,15 +13,21 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_speed, instance_igla_
 	print('Changed Sa18IGLA - changed speed / TTL ...')
 	end)
 
+-- ############
+   local partition_igla_lockrange = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
+   local instance_igla_lockrange = Guid ("DFA0EF35-6E53-477C-9CB9-38B271AFC18C")
+
 ResourceManager:RegisterInstanceLoadHandler(partition_igla_lockrange, instance_igla_lockrange, function(loadedInstance)
      loadedInstance = LockingControllerData(loadedInstance)
-    loadedInstance:MakeWritable()
 
-    loadedInstance.rayLength = 3000.0
+    loadedInstance:MakeWritable()
+    loadedInstance.rayLength = 1500.0
 	print('Changed Sa18IGLA - Increased locking range ...')
 	end)
---
 
+-- ###############
+   local partition_igla_ammo = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
+   local instance_igla_ammo = Guid ("CE53E1AB-2B5B-4844-97B7-5A4990EB3913")
 
 ResourceManager:RegisterInstanceLoadHandler(partition_igla_ammo, instance_igla_ammo, function(loadedInstance)
      loadedInstance = FiringFunctionData(loadedInstance)
@@ -46,10 +37,13 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_ammo, instance_igla_a
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
-
 	print('Changed Sa18IGLA - Increased AMMO size...')
 	end)
 	
+-- ###############
+   local partition_igla_lock = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
+   local instance_igla_lock = Guid ("BA1B7D20-46F4-40E2-9835-B963CFF07527")
+
 ResourceManager:RegisterInstanceLoadHandler(partition_igla_lock, instance_igla_lock, function(loadedInstance)
      loadedInstance = LockingWeaponData(loadedInstance)
     loadedInstance:MakeWritable()
@@ -60,17 +54,29 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_lock, instance_igla_l
 	print('Changed Sa18IGLA guided data...')
 	end)
 
+-- #################
+   local partition_igla_lockdata = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
+   local instance_igla_lockdata = Guid ("CDC3C3F1-C14A-43D4-B97B-68C286DEFEA8")
+
 ResourceManager:RegisterInstanceLoadHandler(partition_igla_lockdata, instance_igla_lockdata, function(loadedInstance)
      loadedInstance = LockingControllerData(loadedInstance)
     loadedInstance:MakeWritable()
-    loadedInstance.zoomLevelLock[2].lockType = LockType.LockAlways
+
+    loadedInstance.zoomLevelLock[2].lockType = LockType.LockAlways -- Also locks choppers and jets
+--    loadedInstance.zoomLevelLock[2].lockType = LockType.LockNever -- Default , locks only ground stuff
     loadedInstance.lockTime = 0.5
     loadedInstance.releaseTime = 0.2
-    loadedInstance.releaseOnNewTargetTime = 1
-    loadedInstance.acceptanceAngle = 10
-    loadedInstance.rayLength = 800.0 -- Default = 400 <-- this is the distanceto get a lock
+    loadedInstance.releaseOnNewTargetTime = 0.5
+    loadedInstance.acceptanceAngle = 2
+    loadedInstance.rayLength = 750.0 -- default 400
+    loadedInstance.lockOnVisibleTargetsOnly = true
+    loadedInstance.lockOnEmptyVehicles = false
 	print('Changed Sa18IGLA turbo locking...')
 	end)
+
+-- ##############
+   local partition_igla_damage = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
+   local instance_igla_damage = Guid ("2ABC6E49-3D6E-4578-B64B-7BED0960AB5D")
 
 ResourceManager:RegisterInstanceLoadHandler(partition_igla_damage, instance_igla_damage, function(loadedInstance)
      loadedInstance = VeniceExplosionEntityData(loadedInstance)

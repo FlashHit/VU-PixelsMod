@@ -1,10 +1,6 @@
-   local partition_fgm148_lock = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
-   local instance_fgm148_lock = Guid ("F3150F93-C300-43A1-96AA-9453DBD159E8")
+-- ###########
    local partition_fgm148_ammo = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
    local instance_fgm148_ammo = Guid ("C1CE96A7-C9DD-43B3-822F-1B5BAC0F331A")
-   local partition_fgm148_lockdata = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
-   local instance_fgm148_lockdata = Guid ("4A956A3A-CEA0-455C-A8DE-674A6940407D")
---   local instance_fgm148_lockdata = Guid ("31745EFE-125F-481C-940D-D9F76EB41116") -- ??
 
 ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_ammo, instance_fgm148_ammo, function(loadedInstance)
      loadedInstance = FiringFunctionData(loadedInstance)
@@ -18,6 +14,10 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_ammo, instance_fgm1
 	end)
 
 
+-- ###########
+   local partition_fgm148_lock = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
+   local instance_fgm148_lock = Guid ("F3150F93-C300-43A1-96AA-9453DBD159E8")
+
 ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lock, instance_fgm148_lock, function(loadedInstance)
      loadedInstance = LockingWeaponData(loadedInstance)
     loadedInstance:MakeWritable()
@@ -29,20 +29,29 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lock, instance_fgm1
 	end)
 
 
+-- ###########
+   local partition_fgm148_lockdata = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
+   local instance_fgm148_lockdata = Guid ("4A956A3A-CEA0-455C-A8DE-674A6940407D")
+--   local instance_fgm148_lockdata = Guid ("31745EFE-125F-481C-940D-D9F76EB41116") -- ??
+
 ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lockdata, instance_fgm148_lockdata, function(loadedInstance)
      loadedInstance = LockingControllerData(loadedInstance)
     loadedInstance:MakeWritable()
 
     loadedInstance.zoomLevelLock[2].lockType = LockType.LockAlways -- Also locks choppers and jets
---    loadedInstance.zoomLevelLock[2].lockType = LockType.LockNever
+--    loadedInstance.zoomLevelLock[2].lockType = LockType.LockNever -- Default , locks only ground stuff
     loadedInstance.lockTime = 0.5
     loadedInstance.releaseTime = 0.2
-    loadedInstance.releaseOnNewTargetTime = 1
+    loadedInstance.releaseOnNewTargetTime = 0.5
     loadedInstance.acceptanceAngle = 2
-    loadedInstance.rayLength = 1000.0 -- default 500
+    loadedInstance.rayLength = 750.0 -- default 500
+    loadedInstance.lockOnVisibleTargetsOnly = true
+    loadedInstance.lockOnEmptyVehicles = false
+
 	print('Changed FGM148 Javelin Turbo locking...')
 	end)
 
+-- ###########
    local partition_fgm148_dmg = Guid ("742C0343-1E94-11E0-833E-D522F39B6476")
    local instance_fgm148_dmg = Guid ("811A9EA4-4B44-4D91-B0D4-12B2C5CD12A8")
 
