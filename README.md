@@ -18,6 +18,8 @@
 
 # Last Update: 04-11-2022
 - Pimped the Atack choppers TV Missile explosion data
+- changed russian atack chopper and jet heatseekers to 12
+- changed American atack chopper and jet heatseekers to 12
 
 # Previous update: 02-11-2022
 - Changed Stinger/igla and Javelin lock data
@@ -203,7 +205,6 @@ Now u can select in the config normale grenades, or super charched grenades
 
 # Previous update: 24-03-2022
 - ADDED: Kinky Defib
-- Now you also can cover the area with smoke !
 - **Changed the module names**
 
 # Previous update: 23-03-2022
