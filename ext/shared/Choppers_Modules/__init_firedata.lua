@@ -50,43 +50,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
 	print('Changed Chopper Firedata: US/RU  Light Atack Chopper - Gunner bullet entity ammo ...')
 	end)
 
--- ---------------------------------------------------------------------------------------
--- Section is work in progress, The US heatseakers work, the Russian part not yet.
--- Disabled for now.
-
--- Heatseakers on US Atack chopper and US Jet FA18E increased
-
---    local partition_viper_heatseaker = Guid ("085E96E4-5C8C-4A79-A819-1D4B0B4137E7") -- US
---    local instance_viper_heatseaker = Guid ("63E6F602-7274-4AB8-8CFB-E2C00EAF2A73") -- US
--- 
--- ResourceManager:RegisterInstanceLoadHandler(partition_viper_heatseaker, instance_viper_heatseaker, function(loadedInstance)
---      loadedInstance = FiringFunctionData(loadedInstance)
---     loadedInstance:MakeWritable()
--- 
---     loadedInstance.ammo.magazineCapacity = 6 -- x2
---     loadedInstance.ammo.numberOfMagazines = -1
--- 
---     loadedInstance.fireLogic.reloadTime = 4.0
--- 	print('Changed Chopper Firedata : US Atack Chopper / FA18E - Increased Heatseakers ...')
--- 	end)
-
--- ----------------------------------------
--- Heatseakers on RU Atack chopper and RU Jet increased
-
---    local partition_mi28_heatseaker = Guid ("34EFA6A0-D3EE-4219-BE3F-7F0DC993E1B7") -- 
---    local instance_mi28_heatseaker = Guid ("59B9B446-3866-47FC-8B97-5DFFF64945AA") --
--- 
--- ResourceManager:RegisterInstanceLoadHandler(partition_mi28_heatseaker, instance_mi28_heatseaker, function(loadedInstance)
---      loadedInstance = FiringFunctionData(loadedInstance)
---     loadedInstance:MakeWritable()
--- 
---     loadedInstance.ammo.magazineCapacity = 6 -- x2
---     loadedInstance.ammo.numberOfMagazines = -1
--- 
---     loadedInstance.fireLogic.reloadTime = 4.0
--- 	print('Changed UNKNOWN Firedata : ??????????????????????????????????? ...')
--- 	end)
--- ----------------------------------------
 
 -- ##################
    local partition_pimped_tv = Guid ("1DF6F9A2-8BA1-11E0-9EF7-9C4CA6DBFDF3")
@@ -105,5 +68,56 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
      loadedInstance.shockwaveTime = 0 -- Deafault = 0.14
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed TV Missile Pimped Explosion data ...')
+ 	print('Changed TV Missile Pimped Explosion data US - RU ...')
  	end) 
+
+-- ---------------------------------------------------------------------------------------
+-- Heatseakers on US Atack chopper and US Jet FA18E increased
+
+    local partition_viper_heatseaker = Guid ("085E96E4-5C8C-4A79-A819-1D4B0B4137E7") -- US
+    local instance_viper_heatseaker = Guid ("63E6F602-7274-4AB8-8CFB-E2C00EAF2A73") -- US
+ 
+ ResourceManager:RegisterInstanceLoadHandler(partition_viper_heatseaker, instance_viper_heatseaker, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+     loadedInstance:MakeWritable()
+ 
+     loadedInstance.ammo.magazineCapacity = 6 -- x2
+     loadedInstance.ammo.numberOfMagazines = -1
+ 
+     loadedInstance.fireLogic.reloadTime = 4.0
+ 	print('Changed Chopper Firedata : US Atack Chopper / US Jets - Increased Heatseakers ...')
+ 	end)
+
+-- ----------------------------------------
+-- Heatseakers on RU Atack chopper
+
+    local partition_mi28_heatseaker = Guid ("1290B4D8-B303-64CD-12C6-1BD1D852D4C5") -- 
+    local instance_mi28_heatseaker = Guid ("7559DD8D-CFD0-819B-31E7-5B5D72853110") --
+ 
+ ResourceManager:RegisterInstanceLoadHandler(partition_mi28_heatseaker, instance_mi28_heatseaker, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+     loadedInstance:MakeWritable()
+ 
+     loadedInstance.ammo.magazineCapacity = 6 -- x2
+     loadedInstance.ammo.numberOfMagazines = -1
+ 
+     loadedInstance.fireLogic.reloadTime = 4.0
+ 	print('Changed Chopper Firedata : RU Atack Chopper - Increased Heatseakers ...')
+ 	end)
+-- ----------------------------------------
+-- ----------------------------------------
+-- Heatseakers on RU Jet increased
+
+    local partition_mi28_heatseaker_jet = Guid ("C01964E4-CD56-7C2A-BFEE-5391515CB973") -- 
+    local instance_mi28_heatseaker_jet = Guid ("DF898A20-E1DC-7AB6-824C-7E1EE3B6BE0B") --
+ 
+ ResourceManager:RegisterInstanceLoadHandler(partition_mi28_heatseaker_jet, instance_mi28_heatseaker_jet, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+     loadedInstance:MakeWritable()
+ 
+     loadedInstance.ammo.magazineCapacity = 6 -- x2
+     loadedInstance.ammo.numberOfMagazines = -1
+ 
+     loadedInstance.fireLogic.reloadTime = 4.0
+ 	print('Changed Chopper Firedata : RU jet - Increased Heatseakers ...')
+ 	end)
