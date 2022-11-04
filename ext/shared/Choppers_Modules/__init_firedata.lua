@@ -119,5 +119,5 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
      loadedInstance.ammo.numberOfMagazines = -1
  
      loadedInstance.fireLogic.reloadTime = 4.0
- 	print('Changed Chopper Firedata : RU jet - Increased Heatseakers ...')
+ 	print('Changed jet Firedata : RU jet - Increased Heatseakers ...')
  	end)
