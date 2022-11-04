@@ -2,7 +2,7 @@
 -- hidden is the same as false, but does not show up in the console !
 -- global Vehicles funcs and utils
 
-local bEnable_modules_vehicles = false
+local bEnable_modules_vehicles = true
 
             if (bEnable_modules_vehicles) == (true) then print('Vehicles modules config Enabled... ... ...')
 
@@ -18,6 +18,8 @@ bEnable_tank_lbt_phoenix_barsuk = true
 bEnable_vehicle_radarsweep_data = true
 bEnable_vehicle_ASRAD_Vodnik_AA = true
 bEnable_vehicle_jeepstuff = true
+bEnable_vehicle_firedata = true
+
 	else
 	    if (bEnable_modules_vehicles) == (false) then print('Vehicles Modules config Disabled... ... ...')
 
@@ -33,12 +35,21 @@ bEnable_tank_lbt_phoenix_barsuk = false
 bEnable_vehicle_radarsweep_data = false
 bEnable_vehicle_ASRAD_Vodnik_AA = false
 bEnable_vehicle_jeepstuff = false
+bEnable_vehicle_firedata = false
 
  end
 end
 
 -- ---------------------------------------------------------------------
 -- Vehicles modules --  
+
+            if (bEnable_vehicle_firedata) == (true) then print('Pimped vehicle firedata Enabled...')
+  __init_firedata = require('__shared/vehicles_Modules/__init_firedata')
+	else
+	    if (bEnable_vehicle_firedata) == (false) then print('Pimped vehicle firedata Disabled...')
+end
+end
+--
 
 
 	      if (bEnable_vehicle_jeepstuff) == (true) then print('Vehicle Jeep stuff Enabled...')
