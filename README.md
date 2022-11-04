@@ -7,16 +7,19 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.4g
+# Welcome to Version 2.0.5
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
 - the only thing is that u need to make is its own directory structure and have some
 - basic knowledge how to cook your own files
 
-# If you stil want pixelmod 1.4.4 ,dont worry look in archive.
+# If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# Last update: 02-11-2022
+# Last Update: 04-11-2022
+- Pimped the Atack choppers TV Missile explosion data
+
+# Previous update: 02-11-2022
 - Changed Stinger/igla and Javelin lock data
 
 # Previous update: 31-10-2022
