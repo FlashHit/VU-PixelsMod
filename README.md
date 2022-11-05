@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# Last Update: 04-11-2022
+# LAst Update: 05-11-2022
+- Decreased the damage for the M142 and BM32, it was a bit overkill.
+
+# Previous Update: 04-11-2022
 - Pimped the Atack choppers TV Missile explosion data
 - changed russian atack chopper and jet heatseekers to 12
 - changed American atack chopper and jet heatseekers to 12
