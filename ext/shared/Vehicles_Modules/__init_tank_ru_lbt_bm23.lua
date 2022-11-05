@@ -62,12 +62,12 @@ ResourceManager:RegisterInstanceLoadHandler(partition_himarengine2, instance_him
       loadedInstance = VeniceExplosionEntityData(loadedInstance)
      loadedInstance:MakeWritable()
  
-     loadedInstance.blastDamage = 2000 -- Normal = 200
-     loadedInstance.blastRadius = 100 -- Normal = 5
-     loadedInstance.blastImpulse = 3000 -- Normal = 500
-     loadedInstance.shockwaveDamage = 100 -- Normal = 1
-     loadedInstance.shockwaveRadius = 150 -- Normal = 10
-     loadedInstance.shockwaveImpulse = 1500 -- Normal = 100
+     loadedInstance.blastDamage = 1200 -- Normal = 200
+     loadedInstance.blastRadius = 15 -- Normal = 5
+     loadedInstance.blastImpulse = 1000 -- Normal = 500
+     loadedInstance.shockwaveDamage = 25 -- Normal = 1
+     loadedInstance.shockwaveRadius = 25 -- Normal = 10
+     loadedInstance.shockwaveImpulse = 200 -- Normal = 100
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
@@ -82,12 +82,12 @@ ResourceManager:RegisterInstanceLoadHandler(partition_himarengine2, instance_him
       loadedInstance = VeniceExplosionEntityData(loadedInstance)
      loadedInstance:MakeWritable()
  
-     loadedInstance.blastDamage = 2000 -- Normal = 200
-     loadedInstance.blastRadius = 100 -- Normal = 5
-     loadedInstance.blastImpulse = 3000 -- Normal = 500
-     loadedInstance.shockwaveDamage = 100 -- Normal = 1
-     loadedInstance.shockwaveRadius = 150 -- Normal = 10
-     loadedInstance.shockwaveImpulse = 1500 -- Normal = 100
+     loadedInstance.blastDamage = 1200 -- Normal = 200
+     loadedInstance.blastRadius = 15 -- Normal = 5
+     loadedInstance.blastImpulse = 1000 -- Normal = 500
+     loadedInstance.shockwaveDamage = 25 -- Normal = 1
+     loadedInstance.shockwaveRadius = 25 -- Normal = 10
+     loadedInstance.shockwaveImpulse = 200 -- Normal = 100
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
