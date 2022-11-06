@@ -16,7 +16,11 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# LAst Update: 05-11-2022
+# Last Update: 06-11-2022
+-- Tweaked the Tugs.
+-- Tweaked the ammocrate and the medicbag, now u can place 3 of them !
+
+# Previous Update: 05-11-2022
 - Decreased the damage for the M142 and BM32, it was a bit overkill.
 
 # Previous Update: 04-11-2022
