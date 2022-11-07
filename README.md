@@ -16,7 +16,12 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# Last Update: 06-11-2022
+# Last Update: 07-11-2022
+- Pimped the mortar
+- 25 shells for explosion and smoke
+- Mortar went to yoga class !
+
+# Previous Update: 06-11-2022
 -- Tweaked the Tugs.
 -- Tweaked the ammocrate and the medicbag, now u can place 3 of them !
 
