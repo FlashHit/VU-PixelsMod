@@ -13,6 +13,7 @@ local bEnable_modules_gadgets = true
  bEnable_defib = true
  bEnable_EOD = true
  bEnable_turbo_M15 = true
+ bEnable_mortar = true
 --
 -- Only ONE can be active !
  bEnable_grenade = true
@@ -32,6 +33,7 @@ local bEnable_modules_gadgets = true
  bEnable_turbo_grenade = false
  bEnable_grenade = false
  bEnable_turbo_M15 = false
+ bEnable_mortar = false
 
  end
 end
@@ -39,6 +41,14 @@ end
 
 -- Gadgets modules --
 
+	    if (bEnable_mortar) == (true) then print('Mortar Enabled...')
+__init_mortar = require('__shared/Gadgets_Modules/__init_mortar')
+	else
+	    if (bEnable_turbo_mortar) == (false) then print('mortar Disabled...')
+end
+end
+
+-- ----------------------
 	    if (bEnable_grenade) == (true) then print('grenade Enabled...')
 __init_grenade = require('__shared/Gadgets_Modules/__init_grenade')
 	else
