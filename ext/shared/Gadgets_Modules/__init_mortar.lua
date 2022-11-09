@@ -1,25 +1,5 @@
 -- Pimped Mortar
 
-   local partition_mortarexp2 = Guid ("5350B268-18C9-11E0-B820-CD6C272E4FCC")
-    local instance_mortarexp2 = Guid ("BF5478A3-77E5-4F87-BAC7-91936CAD1C81")
-
-ResourceManager:RegisterInstanceLoadHandler(partition_mortarexp2, instance_mortarexp2, function(loadedInstance)
-     loadedInstance = VeniceExplosionEntityData(loadedInstance)
-    loadedInstance:MakeWritable()
-
-    loadedInstance.blastDamage = 15000      -- Default = 20
-    loadedInstance.blastRadius = 15          -- Default = 5
-    loadedInstance.blastImpulse = 18000     -- Default = 500
-    loadedInstance.shockwaveDamage = 1000   -- Default = 1
-    loadedInstance.shockwaveRadius = 15     -- Default = 7
-    loadedInstance.shockwaveImpulse = 15000 -- Default = 300
-    loadedInstance.shockwaveTime = 0.15     -- Default = 0.25
-    loadedInstance.triggerImpairedHearing = true
-    loadedInstance.isCausingSuppression = true
-
-    dprint("Chanched Mortar:  Explosion (2) ... ... ...")
-	end)
-
 -- ###############################################
 
    local partition_mortarexp = Guid ("5350B268-18C9-11E0-B820-CD6C272E4FCC")
@@ -30,38 +10,20 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortarexp, instance_mortar
     loadedInstance:MakeWritable()
 
     loadedInstance.blastDamage = 15000      -- Default = 60
-    loadedInstance.blastRadius = 15          -- Default = 5
+    loadedInstance.blastRadius = 30          -- Default = 5
     loadedInstance.blastImpulse = 18000     -- Default = 1500
     loadedInstance.shockwaveDamage = 1000   -- Default = 1
-    loadedInstance.shockwaveRadius = 15     -- Default = 8
+    loadedInstance.shockwaveRadius = 30     -- Default = 8
     loadedInstance.shockwaveImpulse = 15000 -- Default = 300
     loadedInstance.shockwaveTime = 0.15     -- Default = 0.25
     loadedInstance.triggerImpairedHearing = true
     loadedInstance.isCausingSuppression = true
 
-    dprint("Chanched Mortar:  Explosion (1) ... ... ...")
+    dprint("Changed Mortar:  Explosion (1) ... ... ...")
 	end)
 
 -- ###############################################
 
-   local partition_mortarsmk = Guid ("7C592ADA-6915-4969-BFF2-A875027A9962")
-    local instance_mortarsmk = Guid ("A420BDD8-F89F-49E3-B6DB-E8327253A589")
-
-ResourceManager:RegisterInstanceLoadHandler(partition_mortarsmk, instance_mortarsmk, function(loadedInstance)
-     loadedInstance = MissileEntityData(loadedInstance)
-    loadedInstance:MakeWritable()
-
-    loadedInstance.timeToArm = 0         -- Default = 0.5
-    loadedInstance.nearTargetDetonation.detonationRadius = 100 -- Default = 10.0
-    loadedInstance.visualConvergeDistance = 300.0 -- Default = 30
-    loadedInstance.timeToLive = 15       -- Default = 5.0
-    loadedInstance.damage = 420          -- Default = 100
-    loadedInstance.maxCount = 100        -- Default = 1
-    loadedInstance.impactImpulse = 5000 -- Default = 500
-	dprint('Changed Mortar Explosion (Smoke)...')
-	end)
-
--- ###############################################
 
    local partition_mortardeployedff1 = Guid ("A381F7C8-18DD-11E0-9A44-B310CA9F1EC8")
     local instance_mortardeployedff1 = Guid ("060D79AA-4FFB-4087-9D29-1D7015945B8A")
@@ -140,3 +102,33 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortardeployedrot3, instan
 	end)
 
 -- ###############################################
+
+   local partition_mortar_med = Guid ("5350B268-18C9-11E0-B820-CD6C272E4FCC")
+    local instance_mortar_med = Guid ("145C4108-7660-1329-4599-4402DA4801A0")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_mortar_med, instance_mortar_med, function(loadedInstance)
+     loadedInstance = MissileEntityData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.initialSpeed = 500.0 -- default = 350
+    loadedInstance.timeToLive = 20.0 -- default = 5
+    loadedInstance.detonateOnTimeout = true -- default = false
+
+	dprint('Changed Mortar: Longer time till it goes self destruct...')
+	end)
+
+-- ###############################################
+
+   local partition_mortar_smk4 = Guid ("6A2C27D9-D455-458D-A542-C212C6F8F69C")
+    local instance_mortar_smk4 = Guid ("7D0007C8-A755-41BB-A1F5-8455C31B2258")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_mortar_smk4, instance_mortar_smk4, function(loadedInstance)
+     loadedInstance = EmitterEntityData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.transform.left.x = 2.5
+    loadedInstance.transform.up.y = 2.5
+    loadedInstance.transform.forward.z = 2.5
+    print("Changed mortar: Smoke size (3) ... ... ...")
+end)
+
