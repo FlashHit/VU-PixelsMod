@@ -11,7 +11,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -25,7 +25,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -38,7 +38,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -51,7 +51,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150

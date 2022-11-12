@@ -6,13 +6,12 @@ local partition_DAO12_FireFunction2 = Guid ("C601149B-890A-453E-8C9D-AE9C8B4216F
 local partition_DAO12_FireFunction3 = Guid ("4F027BBA-5AE6-4DE1-B900-4461FC479015") -- 12g_frag
 local partition_DAO12_FireFunction4 = Guid ("38C05E70-31E9-4A41-A3CA-4FD74B079CF9") -- 12g_slug
 
-
 ResourceManager:RegisterInstanceLoadHandler(partition_DAO12, partition_DAO12_FireFunction1, function(loadedInstance)
 
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -26,7 +25,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_DAO12, partition_DAO12_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -39,7 +38,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_DAO12, partition_DAO12_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -52,7 +51,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_DAO12, partition_DAO12_Fir
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150

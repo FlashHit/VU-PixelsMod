@@ -11,10 +11,11 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
+
     print("Shotgun Spas12 12g_Buckshot ... ... ...")
 end)
 
@@ -24,7 +25,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -36,7 +37,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
@@ -48,7 +49,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 500
+--    loadedInstance.fireLogic.rateOfFire = 500
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
