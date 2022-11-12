@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# Last Update: 09-11-2022
+# Last Update: 12-11-2022
+- Retweaked the shutguns
+
+# Previous Update: 09-11-2022
 - Tweaked the mortar even more.
 - bigger smoke size when using the smoke function
 - Tweaked the damage for the explosion shells
