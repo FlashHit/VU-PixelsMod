@@ -8,6 +8,9 @@ local bEnable_modules_shotguns = true
 
 -- Shotgun stuff combined --
  bEnable_firedata = true
+ bEnable_Shotgun_no_recoil = true
+
+-- Shotgun data --
  bEnable_spas12 = true
  bEnable_MK3A1 = true
  bEnable_Remington870MCS = true
@@ -21,6 +24,7 @@ local bEnable_modules_shotguns = true
 
 -- Shotgun stuff combined --
  bEnable_firedata = false
+ bEnable_Shotgun_no_recoil = false
  bEnable_spas12 = false
  bEnable_MK3A1 = false
  bEnable_Remington870MCS = false
@@ -33,6 +37,16 @@ local bEnable_modules_shotguns = true
 end
 
 -- ---------------------------------------------------------------------
+-- Shotgun tweaked recoil data --
+
+            if (bEnable_Shotgun_no_recoil) == (true) then print('Shotgun no recoil Enabled...')
+        __init_Shotgun_no_recoil = require('__shared/Shotgun_Modules/__init_Shotgun_no_recoil')
+	else
+	    if (bEnable_Shotgun_no_recoil) == (false) then print('Shotgun no recoil Disabled...')
+end
+end
+--
+
 -- Shotgun tweaked firedata --
 
             if (bEnable_firedata) == (true) then print('Shotgun tweaked firedata Enabled...')
@@ -43,7 +57,7 @@ end
 end
 --
 
-
+-- ######################
 -- Weapons Shotguns combined modules --
             if (bEnable_DAO12) == (true) then print('DAO12 Enabled...')
         __init_Shotgun_DAO12 = require('__shared/Shotgun_Modules/__init_Shotgun_DAO12')
