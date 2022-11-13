@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# Last Update: 12-11-2022
+# Last Update: 13-11-2022
+- Merged the no recoil data for the jackhammer and usas12 in the shotgun section
+
+# Previous Update: 12-11-2022
 - Retweaked the shutguns
 
 # Previous Update: 09-11-2022
