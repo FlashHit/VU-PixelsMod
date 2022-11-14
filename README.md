@@ -16,8 +16,11 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
+# On default ALL modules are active !
+
 # Last Update: 14-11-2022
-- All LMG class has now no recoil/spread (can be turned off)
+- All Support LMG class has now no recoil/spread (can be turned off)
+- All Assault class has now no recoil/spread (can be turned off)
 
 # Previous Update: 13-11-2022
 - Merged the no recoil data for the jackhammer and usas12 in the shotgun section
