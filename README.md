@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.5
+# Welcome to Version 2.0.6
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -16,7 +16,10 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# Last Update: 13-11-2022
+# Last Update: 14-11-2022
+- All LMG class has now no recoil/spread (can be turned off)
+
+# Previous Update: 13-11-2022
 - Merged the no recoil data for the jackhammer and usas12 in the shotgun section
 
 # Previous Update: 12-11-2022
