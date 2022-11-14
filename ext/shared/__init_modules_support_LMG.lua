@@ -5,6 +5,7 @@ local __init_modules_support_LMG = true
 
             if (__init_modules_support_LMG) == (true) then print('Support LMG modules config Enabled... ... ...')
 
+ bEnable_recoilremoved = true
  bEnable_m27iar = true
  bEnable_lsat_lmg = true
  bEnable_l86_lmg = true
@@ -20,6 +21,7 @@ local __init_modules_support_LMG = true
 	else
 	    if (__init_modules_support_LMG) == (false) then print('Support LMG Modules config Disabled... ... ...')
 
+ bEnable_recoilremoved = false
  bEnable_m27iar = false
  bEnable_lsat_lmg = false
  bEnable_l86_lmg = false
@@ -36,6 +38,14 @@ local __init_modules_support_LMG = true
 end
 
 -- ---------------------------------------------------------------------
+            if (bEnable_recoilremoved) == (true) then print('Support weapons Recoil removal Enabled...')
+        __init_support_no_recoil = require('__shared/Support_Weapons_Modules/__init_support_no_recoil')
+	else
+	    if (bEnable_recoilremoved) == (false) then print('Support weapons Recoil removal Disabled...')
+end
+end
+--
+-- ---------------------------------------------------------------------
             if (bEnable_m27iar) == (true) then print('m27iar Enabled...')
         __init_m27iar = require('__shared/Support_Weapons_Modules/__init_m27iar')
 	else
@@ -43,6 +53,7 @@ end
 end
 end
 --
+-- ---------------------------------------------------------------------
 -- Support LMG modules --  
 
             if (bEnable_lsat_lmg) == (true) then print('lsat Enabled...')
