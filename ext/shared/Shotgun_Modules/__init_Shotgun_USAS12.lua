@@ -1,4 +1,22 @@
 -- Shotgun USAS12 tweaks
+
+-- #####################
+              local partition_USAS12 = Guid ("F4F57492-38F5-11E0-845E-D6BEC180D605")
+  local instance_USAS12_instance_mag = Guid ("3CB3FB83-43F0-4E9B-8985-0C230289A1F3")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_USAS12, instance_USAS12_instance_mag, function(loadedInstance)
+
+    loadedInstance = WeaponMagazineModifier(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.magazineCapacity = 200
+    loadedInstance.numberOfMagazines = 1000
+
+    print("Shotgun USAS12 Extended magazine ...")
+end)
+
+-- #####################
+
 -- ###### AMMO TWEAK
               local partition_USAS12 = Guid ("F4F57492-38F5-11E0-845E-D6BEC180D605")
 local instance_USAS12_FireFunction1 = Guid ("682FE06E-ECD8-4F30-9A6C-600F279D2FC2") -- 12g_buckshot
