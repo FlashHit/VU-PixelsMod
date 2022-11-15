@@ -18,7 +18,11 @@
 
 # On default ALL modules are active !
 
-# Last Update: 14-11-2022
+# Last Update: 15-11-2022
+- Fixed the shotguns extended magazine isue, magazine has now double ammount.
+- Other weapons are work in progress.
+
+# Previous Update: 14-11-2022
 - WARNING !, THIS INCREASES SERVER LOADING TIME, AND CLIENT LOADING TIME !
 - All Support LMG class has now no recoil/spread (can be turned off)
 - All Assault class has now no recoil/spread (can be turned off)
@@ -27,7 +31,7 @@
 - Merged the no recoil data for the jackhammer and usas12 in the shotgun section
 
 # Previous Update: 12-11-2022
-- Retweaked the shutguns
+- Retweaked the shotguns
 
 # Previous Update: 09-11-2022
 - Tweaked the mortar even more.
