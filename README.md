@@ -19,8 +19,12 @@
 # On default ALL modules are active !
 
 # Last Update: 15-11-2022
-- Fixed the shotguns extended magazine isue, magazine has now double ammount.
-- Other weapons are work in progress.
+- Assault class:  has no option for extended magazine
+- Engineer class: has no option for extended magazine
+- Recon class:    has no option for extended magazine
+- Common class:   Only PP2000 - PDW-R - MP7 - ASval and MP5K has extended magazine
+- Shotguns:       has extended magazine
+- Support class:  has extended magazine
 
 # Previous Update: 14-11-2022
 - WARNING !, THIS INCREASES SERVER LOADING TIME, AND CLIENT LOADING TIME !
