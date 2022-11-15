@@ -19,6 +19,7 @@
 # On default ALL modules are active !
 
 # Last Update: 14-11-2022
+- WARNING !, THIS INCREASES SERVER LOADING TIME, AND CLIENT LOADING TIME !
 - All Support LMG class has now no recoil/spread (can be turned off)
 - All Assault class has now no recoil/spread (can be turned off)
 
