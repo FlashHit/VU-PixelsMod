@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.6
+# Welcome to Version 2.0.7
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -18,7 +18,10 @@
 
 # On default ALL modules are active !
 
-# Last Update: 15-11-2022
+# Last Update: 16-11-2022
+- Kornet and tow launchers have pimped ammo and explosion xD
+
+# Previous Update: 15-11-2022
 - Assault class:  has no option for extended magazine
 - Engineer class: has no option for extended magazine
 - Recon class:    has no option for extended magazine
@@ -46,6 +49,7 @@
 - Pimped the mortar
 - 25 shells for explosion and smoke
 - Mortar went to yoga class !
+- Smoke size doubled !
 
 # Previous Update: 06-11-2022
 -- Tweaked the Tugs.
