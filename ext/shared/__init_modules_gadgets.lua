@@ -14,6 +14,8 @@ local bEnable_modules_gadgets = true
  bEnable_EOD = true
  bEnable_turbo_M15 = true
  bEnable_mortar = true
+ bEnable_mav = true
+ bEnable_kornet = true
 --
 -- Only ONE can be active !
  bEnable_grenade = true
@@ -34,6 +36,8 @@ local bEnable_modules_gadgets = true
  bEnable_grenade = false
  bEnable_turbo_M15 = false
  bEnable_mortar = false
+ bEnable_mav = false
+ bEnable_kornet = false
 
  end
 end
@@ -41,10 +45,27 @@ end
 
 -- Gadgets modules --
 
+	    if (bEnable_kornet) == (true) then print('pimped TOW/Kornet Enabled...')
+__init_kornet = require('__shared/Gadgets_Modules/__init_kornet')
+	else
+	    if (bEnable_kornet) == (false) then print('Pimped TOW/Kornet Disabled...')
+end
+end
+
+-- ----------------------
+	    if (bEnable_mav) == (true) then print('pimped MAV Enabled...')
+__init_mav = require('__shared/Gadgets_Modules/__init_mav')
+	else
+	    if (bEnable_mav) == (false) then print('Pimped MAV Disabled...')
+end
+end
+
+-- ----------------------
+
 	    if (bEnable_mortar) == (true) then print('Mortar Enabled...')
 __init_mortar = require('__shared/Gadgets_Modules/__init_mortar')
 	else
-	    if (bEnable_turbo_mortar) == (false) then print('mortar Disabled...')
+	    if (bEnable_mortar) == (false) then print('mortar Disabled...')
 end
 end
 
@@ -52,7 +73,7 @@ end
 	    if (bEnable_grenade) == (true) then print('grenade Enabled...')
 __init_grenade = require('__shared/Gadgets_Modules/__init_grenade')
 	else
-	    if (bEnable_turbo_grenade) == (false) then print('grenade Disabled...')
+	    if (bEnable_grenade) == (false) then print('grenade Disabled...')
 end
 end
 
