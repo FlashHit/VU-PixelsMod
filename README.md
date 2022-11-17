@@ -20,7 +20,11 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 16-11-2022
+# Last Update: 17-11-2022
+- Created a no-recoil config module
+- Handguns has now a no-recoil section (can be turned on/off)
+
+# Previous Update: 16-11-2022
 - Kornet and tow launchers have pimped ammo and explosion xD
 
 # Previous Update: 15-11-2022
@@ -33,8 +37,8 @@
 
 # Previous Update: 14-11-2022
 - WARNING !, THIS INCREASES SERVER LOADING TIME, AND CLIENT LOADING TIME !
-- All Support LMG class has now no recoil/spread (can be turned off)
-- All Assault class has now no recoil/spread (can be turned off)
+- All Support LMG class has now no recoil/spread (can be turned on/off)
+- All Assault class has now no recoil/spread (can be turned on/off)
 - * Engineer ,recon and common class weapons is work in progress *
 
 # Previous Update: 13-11-2022
