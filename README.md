@@ -16,7 +16,9 @@
 
 # If you stil want pixelmod 1.4.4 ,dont worry look in archive.(not updated !)
 
-# On default ALL modules are active !
+# On default almost all modules are active !
+# The no recoil mods are inactive due long loading time
+# Firedata can be shared with other type class vehicles or weapons.
 
 # Last Update: 16-11-2022
 - Kornet and tow launchers have pimped ammo and explosion xD
@@ -33,6 +35,7 @@
 - WARNING !, THIS INCREASES SERVER LOADING TIME, AND CLIENT LOADING TIME !
 - All Support LMG class has now no recoil/spread (can be turned off)
 - All Assault class has now no recoil/spread (can be turned off)
+- * Engineer ,recon and common class weapons is work in progress *
 
 # Previous Update: 13-11-2022
 - Merged the no recoil data for the jackhammer and usas12 in the shotgun section
