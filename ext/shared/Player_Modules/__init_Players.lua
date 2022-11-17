@@ -4,11 +4,11 @@ var_yump_heigt = 1
 var_yump_size = 5
 
 -- pose_stand instance
-var_stand_velocity = 7  -- 4.5
+var_stand_velocity = 6  -- 4.5
 var_stand_multiplier = 2
 
 -- pose_standair instance
-var_air_velocity = 7
+var_air_velocity = 6
 var_air_miltiplier = 2
 
 -- pose_swimming instance
