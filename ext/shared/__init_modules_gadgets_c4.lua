@@ -6,13 +6,15 @@ local bEnable_modules_gadgets_c4 = true
 
 
 -- Gadgets stuff --
- bEnable_turbo_C4 = true
+ bEnable_C4 = true
+ bEnable_turbo_C4 = false
 
 	else
 	    if (bEnable_modules_gadgets_c4) == (false) then print('C4 Gadgets Modules config Disabled... ... ...')
 
 -- Gadgets stuff --
  bEnable_turbo_C4 = false
+ bEnable_C4 = false
 
  end
 end
@@ -41,4 +43,12 @@ end
 end
 --
 
+	    if (bEnable_C4) == (true) then print('C4 Enabled...')
+__init_turbo_C4 = require('__shared/Gadgets_Modules_c4/__init_turbo_C4')
+	
+	else
+	    if (bEnable_C4) == (false) then print('C4 Disabled...')
+end
+end
+--
 

@@ -6,8 +6,6 @@ local bEnable_modules_assault_weapons = true
 
             if (bEnable_modules_assault_weapons) == (true) then print('Assault Weapons modules config Enabled... ... ...')
 
- bEnable_recoil = true
---
  bEnable_l85a2 = true
  bEnable_ak74m = true
  bEnable_kh2002 = true
@@ -26,9 +24,7 @@ local bEnable_modules_assault_weapons = true
 	else
 	    if (bEnable_modules_assault_weapons) == (false) then print('Assault Weapons Modules config Disabled... ... ...')
 
- bEnable_recoil = false
---
-bEnable_l85a2 = false
+ bEnable_l85a2 = false
  bEnable_ak74m = false
  bEnable_kh2002 = false
  bEnable_an94 = false
@@ -46,16 +42,6 @@ bEnable_l85a2 = false
  end
 end
 
--- ---------------------------------------------------------------------
--- Assault recoil module --  
-
-            if (bEnable_recoil) == (true) then print('Assault recoil module Enabled...')
-    __init_assault_no_recoil = require('__shared/Assault_weapons_Modules/__init_assault_no_recoil')
-	else
-	    if (bEnable_recoil) == (false) then print('Assault recoil module Disabled...')
-end
-end
---
 -- ---------------------------------------------------------------------
 -- Assault weapons modules --  
 

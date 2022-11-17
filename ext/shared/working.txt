@@ -1,0 +1,46 @@
+
+   local partition_
+ = Guid ("
+")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_repairtool, instance_repairtool, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+
+
+
+
+class "_repairtool"
+
+   local partition_repairtool = Guid ("9D6458CD-2955-11E0-864C-EDEE51946146")
+    local instance_repairtool = Guid ("4D509E54-0572-4D7D-BF49-3D83AFCFD73D")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_repairtool, instance_repairtool, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.shot.initialSpeed.z = 20
+    loadedInstance.shot.numberOfBulletsPerShell = 3
+    loadedInstance.overHeat.heatPerBullet = 0
+    print("Chanched Repairtool  ... ... ...")
+end)
+
+end
+ return _repairtool()
+-- --------
+
+Events:Subscribe('Level:LoadResources', function()
+
+	if SharedUtils:GetLevelName() == "Levels/XP3_Desert/XP3_Desert" and SharedUtils:GetCurrentGameMode() == "ConquestSmall0" then
+    print("... ... ... Removing Gunship Conquest Small - Bandaar Desert ... ... ...")
+--		end
+	else
+	if SharedUtils:GetLevelName() == "Levels/XP3_Desert/XP3_Desert" and SharedUtils:GetCurrentGameMode() == "ConquestLarge0" then
+    print("... ... ... Removing Gunship Conquest Large - Bandaar Desert  ... ... ...")
+	end
+end
+end)
+
+
+
