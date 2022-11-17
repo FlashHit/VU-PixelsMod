@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.7
+# Welcome to Version 2.0.8
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -23,6 +23,9 @@
 # Last Update: 17-11-2022
 - Created a no-recoil config module
 - Handguns has now a no-recoil section (can be turned on/off)
+- Common class has now no recoil/spread (can be turned on/off)
+- Recon class has now no recoil/spread (can be turned on/off)
+- * Steady Scope function not yet fixed *
 
 # Previous Update: 16-11-2022
 - Kornet and tow launchers have pimped ammo and explosion xD
@@ -37,9 +40,8 @@
 
 # Previous Update: 14-11-2022
 - WARNING !, THIS INCREASES SERVER LOADING TIME, AND CLIENT LOADING TIME !
-- All Support LMG class has now no recoil/spread (can be turned on/off)
-- All Assault class has now no recoil/spread (can be turned on/off)
-- * Engineer ,recon and common class weapons is work in progress *
+- Support LMG class has now no recoil/spread (can be turned on/off)
+- Assault class has now no recoil/spread (can be turned on/off)
 
 # Previous Update: 13-11-2022
 - Merged the no recoil data for the jackhammer and usas12 in the shotgun section
