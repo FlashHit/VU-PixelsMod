@@ -20,7 +20,11 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 17-11-2022
+# Last Update: 19-11-2022
+- Trying to fix the amount on T-UGS that can be placed on the same time.
+- Disabled by now, back to 1 T-UGS only, Work in progress.
+
+# Previous Update: 17-11-2022
 - Created a no-recoil config module
 - Handguns has now a no-recoil section (can be turned on/off)
 - Common class has now no recoil/spread (can be turned on/off)
