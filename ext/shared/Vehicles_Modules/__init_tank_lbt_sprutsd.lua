@@ -5,7 +5,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_sprutsdshell, instance_spr
      loadedInstance = BulletEntityData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.gravity = 0.5
+    loadedInstance.gravity = 0
     loadedInstance.timeToLive = 4
 	print('Changed Sprut-SD Shell Modifier ... ... ...')
 	end)

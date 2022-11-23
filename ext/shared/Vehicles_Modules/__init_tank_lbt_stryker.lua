@@ -5,7 +5,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m1128shell, instance_m1128
      loadedInstance = BulletEntityData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.gravity = 0.5
+    loadedInstance.gravity = 0
     loadedInstance.timeToLive = 4
 	print('Changed M1128 Stryker Shell Modifier ... ... ...')
 	end)
