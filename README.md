@@ -21,8 +21,11 @@
 # Firedata can be shared with other type class vehicles or weapons.
 
 # Last Update: 23-11-2022
+- AC130 now has its own module entry
 - Tweaked on the Gunship the main cannon's damage
 - Tweaked on the Gunship the autocannon ammo size and damage
+- Tweaked on the Gunship the railgun ammo size
+- Tweaked on the Gunship the railgun recoil,smaller firebeam and faster shooting
 
 # Previous Update: 19-11-2022
 - Trying to fix the amount on T-UGS that can be placed on the same time.
