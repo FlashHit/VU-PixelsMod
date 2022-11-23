@@ -26,6 +26,7 @@
 - Tweaked on the Gunship the autocannon ammo size and damage
 - Tweaked on the Gunship the railgun ammo size
 - Tweaked on the Gunship the railgun recoil,smaller firebeam and faster shooting
+- Slightly increased the firepower on the T90 and Abrahams tank.
 
 # Previous Update: 19-11-2022
 - Trying to fix the amount on T-UGS that can be placed on the same time.
