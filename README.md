@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.8
+# Welcome to Version 2.0.9
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -20,7 +20,11 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 19-11-2022
+# Last Update: 23-11-2022
+- Tweaked on the Gunship the main cannon's damage
+- Tweaked on the Gunship the autocannon ammo size and damage
+
+# Previous Update: 19-11-2022
 - Trying to fix the amount on T-UGS that can be placed on the same time.
 - Disabled by now, back to 1 T-UGS only, Work in progress.
 
