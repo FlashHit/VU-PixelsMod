@@ -34,6 +34,11 @@
 - Retweaked the grenade section, moved to own instance
 - now u can select normal pimped grenades, or super M67 package.
 
+- Update (4)
+- M15 Tankmine has now its own module instance
+- you can select now or the pimped M15 tankmine, or the kinky M15 tankmine
+- Pimped has 32 mines and kinky also has increased damage modifier
+
 # Previous Update: 23-11-2022
 - AC130 now has its own module entry
 - Tweaked on the Gunship the main cannon's damage
