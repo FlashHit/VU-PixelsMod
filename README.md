@@ -33,7 +33,7 @@
 - Update (3)
 - Retweaked the grenade section, moved to own instance
 - now u can select normal pimped grenades, or super M67 package.
-
+-
 - Update (4)
 - M15 Tankmine has now its own module instance
 - you can select now or the pimped M15 tankmine, or the kinky M15 tankmine
