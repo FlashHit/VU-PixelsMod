@@ -16,10 +16,6 @@ local bEnable_modules_gadgets = true
  bEnable_mortar = true
  bEnable_mav = true
  bEnable_kornet = true
---
--- Only ONE can be active !
- bEnable_grenade = true
- bEnable_turbo_grenade = false
 
 
 	else
@@ -32,8 +28,6 @@ local bEnable_modules_gadgets = true
  bEnable_claymore = false
  bEnable_defib = false
  bEnable_EOD = false
- bEnable_turbo_grenade = false
- bEnable_grenade = false
  bEnable_turbo_M15 = false
  bEnable_mortar = false
  bEnable_mav = false
@@ -69,20 +63,6 @@ __init_mortar = require('__shared/Gadgets_Modules/__init_mortar')
 end
 end
 
--- ----------------------
-	    if (bEnable_grenade) == (true) then print('grenade Enabled...')
-__init_grenade = require('__shared/Gadgets_Modules/__init_grenade')
-	else
-	    if (bEnable_grenade) == (false) then print('grenade Disabled...')
-end
-end
-
-	    if (bEnable_turbo_grenade) == (true) then print('SUPER grenade Enabled...')
-__init_turbo_grenade = require('__shared/Gadgets_Modules/__init_turbo_grenade')
-	else
-	    if (bEnable_turbo_grenade) == (false) then print('SUPER grenade Disabled...')
-end
-end
 -- ----------------------
 
             if (bEnable_turbo_M15) == (true) then print('M15 Turbo Enabled...')
