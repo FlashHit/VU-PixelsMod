@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.0.9
+# Welcome to Version 2.1.0
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -20,7 +20,12 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 23-11-2022
+# Last Update: 25-11-2022
+- Asrad / vodnik - no gravity on shells, increased rocket speed by 50%
+- phoenix - barsuk - no gravity on shells / increased damage a bit
+- lav25 - BMP-2M - BTR90 - no gravity on shells / increased damage a bit
+
+# Previous Update: 23-11-2022
 - AC130 now has its own module entry
 - Tweaked on the Gunship the main cannon's damage
 - Tweaked on the Gunship the autocannon ammo size and damage
