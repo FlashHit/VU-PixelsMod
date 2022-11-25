@@ -5,7 +5,6 @@ local bEnable_modules_common_weapons = true
 
             if (bEnable_modules_common_weapons) == (true) then print('Common Weapons modules config Enabled... ... ...')
 
- bEnable_crossbow = true
  bEnable_P90 = true
  bEnable_ASval = true
  bEnable_PDW_R = true
@@ -18,7 +17,6 @@ local bEnable_modules_common_weapons = true
 	else
 	    if (bEnable_modules_common_weapons) == (false) then print('Common Weapons Modules config Disabled... ... ...')
 
- bEnable_crossbow = false
  bEnable_P90 = false
  bEnable_ASval = false
  bEnable_PDW_R = false
@@ -34,13 +32,6 @@ end
 
 -- ---------------------------------------------------------------------
 
-	    if (bEnable_crossbow) == (true) then print('crossbow Enabled...')
-    __init_Crossbow = require('__shared/Common_Weapons_Modules/__init_Crossbow')
-	else
-	    if (bEnable_crossbow) == (false) then print('crossbow Disabled...')
-end
-end
---
 
             if (bEnable_P90) == (true) then print('P90 Enabled...')
         __init_P90 = require('__shared/Common_Weapons_Modules/__init_P90')
