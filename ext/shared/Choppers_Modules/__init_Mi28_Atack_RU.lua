@@ -1,7 +1,5 @@
    local partition_mi28engine = Guid ("89BE53B6-2FF4-11DE-8C23-DAB1D69416DE")
    local instance_mi28engine = Guid ("89BEA1FD-2FF4-11DE-8C23-DAB1D69416DE")
-   local partition_mi28rotors = Guid ("89BE53B6-2FF4-11DE-8C23-DAB1D69416DE")
-   local instance_mi28rotors = Guid ("89BEA1FE-2FF4-11DE-8C23-DAB1D69416DE")
 
 ResourceManager:RegisterInstanceLoadHandler(partition_mi28engine, instance_mi28engine, function(loadedInstance)
      loadedInstance = PropellerEngineConfigData(loadedInstance)
@@ -16,6 +14,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mi28engine, instance_mi28e
 	end)
 
 
+-- ------------------
+   local partition_mi28rotors = Guid ("89BE53B6-2FF4-11DE-8C23-DAB1D69416DE")
+   local instance_mi28rotors = Guid ("89BEA1FE-2FF4-11DE-8C23-DAB1D69416DE")
 
 ResourceManager:RegisterInstanceLoadHandler(partition_mi28rotors, instance_mi28rotors, function(loadedInstance)
      loadedInstance = RotorParameters(loadedInstance)
