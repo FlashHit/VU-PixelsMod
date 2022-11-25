@@ -25,9 +25,14 @@
 - phoenix - barsuk - no gravity on shells / increased damage a bit
 - lav25 - BMP-2M - BTR90 - no gravity on shells / increased damage a bit
 -
+- Update (2)
 - Super tweaked the crossbow
 - Crossbow has its own module now
 - you can select now or the pimped crossbow, or the kinky crossbow
+-
+- Update (3)
+- Retweaked the grenade section, moved to own instance
+- now u can select normal pimped grenades, or super M67 package.
 
 # Previous Update: 23-11-2022
 - AC130 now has its own module entry
