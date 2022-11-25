@@ -12,7 +12,6 @@ local bEnable_modules_gadgets = true
  bEnable_claymore = true
  bEnable_defib = true
  bEnable_EOD = true
- bEnable_turbo_M15 = true
  bEnable_mortar = true
  bEnable_mav = true
  bEnable_kornet = true
@@ -28,7 +27,6 @@ local bEnable_modules_gadgets = true
  bEnable_claymore = false
  bEnable_defib = false
  bEnable_EOD = false
- bEnable_turbo_M15 = false
  bEnable_mortar = false
  bEnable_mav = false
  bEnable_kornet = false
@@ -65,12 +63,6 @@ end
 
 -- ----------------------
 
-            if (bEnable_turbo_M15) == (true) then print('M15 Turbo Enabled...')
-__init_turbo_m15_tankmine = require('__shared/Gadgets_Modules/__init_turbo_m15_tankmine')
-	else
-	    if (bEnable_turbo_M15) == (false) then print('M15 Turbo Disabled...')
-end
-end
 	    
 	    if (bEnable_EOD) == (true) then print('EOD Bot Enabled...')
    __init_EOD_bot = require('__shared/Gadgets_Modules/__init_EOD_bot')
