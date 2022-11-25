@@ -24,6 +24,10 @@
 - Asrad / vodnik - no gravity on shells, increased rocket speed by 50%
 - phoenix - barsuk - no gravity on shells / increased damage a bit
 - lav25 - BMP-2M - BTR90 - no gravity on shells / increased damage a bit
+-
+- Super tweaked the crossbow
+- Crossbow has its own module now
+- you can select now or the pimped crossbow, or the kinky crossbow
 
 # Previous Update: 23-11-2022
 - AC130 now has its own module entry
