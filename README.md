@@ -20,7 +20,10 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 25-11-2022
+# Last Update: 26-11-2022
+- Retweaked the C4 section.
+
+# Previous Update: 25-11-2022
 - Asrad / vodnik - no gravity on shells, increased rocket speed by 50%
 - phoenix - barsuk - no gravity on shells / increased damage a bit
 - lav25 - BMP-2M - BTR90 - no gravity on shells / increased damage a bit
