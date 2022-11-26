@@ -2,27 +2,31 @@
 -- hidden is the same as false, but does not show up in the console !
 
 local bEnable_modules_gadgets_c4 = true
-            if (bEnable_modules_gadgets_c4) == (true) then print('C4 Gadgets modules config Enabled... ... ...')
+            if (bEnable_modules_gadgets_c4) == (true) then print('C4 Gadgets modules config Enabled ...')
 
 
--- Gadgets stuff --
- bEnable_C4 = true
- bEnable_turbo_C4 = false
+-- C4 Gadgets stuff --
+-- ONLY ONE CAN BE ACTIVE !
+ bEnable_extended_C4 = false -- This increased the C4 ammount you can carry and place to 32
+ bEnable_pimped_C4 = false  -- Has 32 packages, but the explosion is pimped by 3 times
+ bEnable_mapmode_C4 = true -- depended on mapmode the C4 you can carry varies from 8 to 32
 
 	else
-	    if (bEnable_modules_gadgets_c4) == (false) then print('C4 Gadgets Modules config Disabled... ... ...')
+	    if (bEnable_modules_gadgets_c4) == (false) then print('C4 Gadgets Modules config Disabled ...')
 
 -- Gadgets stuff --
- bEnable_turbo_C4 = false
- bEnable_C4 = false
+ bEnable_extended_C4 = false
+ bEnable_pimped_C4 = false
+ bEnable_mapmode_C4 = false
 
  end
 end
 --
 
--- Gadgets modules --
+-- C4 modules --
 
-	    if (bEnable_turbo_C4) == (true) then print('Turbo C4 Enabled...')
+	    if (bEnable_mapmode_C4) == (true) then print('C4 mapmode depending Enabled ...')
+
 __init_turbo_C4_cq_large = require('__shared/Gadgets_Modules_c4/__init_turbo_C4_cq_large')
 __init_turbo_C4_cq_small = require('__shared/Gadgets_Modules_c4/__init_turbo_C4_cq_small')
 __init_turbo_C4_rush_large = require('__shared/Gadgets_Modules_c4/__init_turbo_C4_rush_large')
@@ -38,16 +42,28 @@ __init_turbo_C4_assault2 = require('__shared/Gadgets_Modules_c4/__init_turbo_C4_
 __init_turbo_C4_assault64 = require('__shared/Gadgets_Modules_c4/__init_turbo_C4_assault64')
 	
 	else
-	    if (bEnable_turbo_C4) == (false) then print('Turbo C4 Disabled...')
+	    if (bEnable_mapmode_C4) == (false) then print('C4 mapmode depending Disabled ...')
+end
+end
+--
+-- ----------------------------------------------------------------------------------
+
+	    if (bEnable_extended_C4) == (true) then print('C4 extended ammo Enabled ...')
+__init_extended_C4 = require('__shared/Gadgets_Modules_c4/__init_extended_C4')
+	
+	else
+	    if (bEnable_extended_C4) == (false) then print('C4 extended ammo Disabled ...')
 end
 end
 --
 
-	    if (bEnable_C4) == (true) then print('C4 Enabled...')
-__init_turbo_C4 = require('__shared/Gadgets_Modules_c4/__init_turbo_C4')
+-- ----------------------------------------------------------------------------------
+
+	    if (bEnable_pimped_C4) == (true) then print('Pimped ammo C4 Enabled ...')
+__init_pimped_C4 = require('__shared/Gadgets_Modules_c4/__init_pimped_C4')
 	
 	else
-	    if (bEnable_C4) == (false) then print('C4 Disabled...')
+	    if (bEnable_pimped_C4) == (false) then print('Pimped ammo C4 Disabled ...')
 end
 end
 --
