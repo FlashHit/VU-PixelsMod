@@ -33,7 +33,7 @@
 - to rulz.txt filenames section.
 - This wil spam on spawn the C4 settings for that mapmode.
 - This is ONLY when u use mapmode_c4 or mapmode_extreme_c4 !
-
+- Usefull for admins who want to test it, this is basicly NOT needed.
 
 # Previous Update: 26-11-2022
 - Retweaked the C4 section.
