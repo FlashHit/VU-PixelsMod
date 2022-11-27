@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.0
+# Welcome to Version 2.1.1
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -20,7 +20,22 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 26-11-2022
+# Last Update 27-11-2022
+- Full revamp of the C4 section.
+- C4 module has 4 settings u can use
+- bEnable_extended_C4 = false - This increased the C4 ammount you can carry and place to 32
+- bEnable_pimped_C4 = false   - Has 32 packages, but the explosion is pimped by 3 times
+- bEnable_mapmode_C4 = false  - depended on mapmode the C4 you can carry varies from 8 to 32
+- bEnable_mapmode_extreme_C4 = true - Same as bEnable_mapmode_C4, but with pimped Explosion damage !
+-
+- If u are also using procon with proconrulz plugin
+- Copy the proconrulz_gadgets_C4.txt in the bf3 plugin folder and add it
+- to rulz.txt filenames section.
+- This wil spam on spawn the C4 settings for that mapmode.
+- This is ONLY when u use mapmode_c4 or mapmode_extreme_c4 !
+
+
+# Previous Update: 26-11-2022
 - Retweaked the C4 section.
 
 # Previous Update: 25-11-2022

@@ -1,0 +1,23 @@
+on spawn;playerfirst;mapmode ConquestLarge0;say Mapmode: Conquest Large;say 32x C4 here
+on spawn;playerfirst;mapmode ConquestSmall0;say Mapmode: Conquast Small;say 16x C4 here
+
+on spawn;playerfirst;mapmode TeamDeathMatch0;say Mapmode: Team Deathmatch;say 8x C4 here
+on spawn;playerfirst;mapmode SquadDeathMatch0;say Mapmode: Squad Deathmatch;say 8x C4 here
+on spawn;playerfirst;mapmode TeamDeathMatchC0;say Mapmode: TDM Close Quarters;say 8x C4 here
+
+on spawn;playerfirst;mapmode Domination0;say Mapmode: Conquest Domination;say 16x C4 here
+on spawn;playerfirst;mapmode TankSuperiority0;say Mapmode: Tank Superiority;say 32x C4 here
+
+on spawn;playerfirst;mapmode ConquestAssaultLarge0;say Mapmode: Assualt64;say 32x C4 here
+on spawn;playerfirst;mapmode ConquestAssaultSmall0;say Mapmode: Assualt;say 24x C4 here
+on spawn;playerfirst;mapmode ConquestAssaultSmall1;say Mapmode: Assualt2;say 24x C4 here
+
+on spawn;playerfirst;mapmode SquadRush0;say Mapmode: Squad Rush;say 12x C4 here
+on spawn;playerfirst;mapmode RushLarge0;say Mapmode: Rush;say 12x C4 here
+
+on spawn;playerfirst;mapmode CaptureTheFlag0;say Mapmode: Capture the flag;say 12x C4 here
+
+on spawn;playerfirst;mapmode AirSuperiority0;say Mapmode: Air Superiority;say No C4 on this map
+on spawn;playerfirst;mapmode GunMaster0;say Mapmode: Gun Master;say No C4 on this map
+on spawn;playerfirst;mapmode Scavenger0;say Mapmode: Scavenger;say No C4 on this map
+
