@@ -19,6 +19,7 @@
 # On default almost all modules are active !
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
+# 29-11-2022:  OEPS ! had some missing files, FIXED..
 
 # Last Update 27-11-2022
 - Full revamp of the C4 section.
