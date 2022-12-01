@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.3
+# Welcome to Version 2.1.3a
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -24,6 +24,7 @@
 - Added more tweaked firedata for vehicles.
 - Added mapinfo script that spams in the server console mapmode and map name
 - Added a simply UpdateCheck file to notify server admins if there is a new pixelmod version
+- 2.1.3a updatecheck.lua tweak
 
 # Previous Update 27-11-2022
 - Full revamp of the C4 section.
