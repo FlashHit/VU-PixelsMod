@@ -1,6 +1,6 @@
 -- Player instances
 -- yump instance
-var_yump_heigt = 1
+var_yump_heigt = 2
 var_yump_size = 5
 
 -- pose_stand instance
