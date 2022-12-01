@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.1
+# Welcome to Version 2.1.2
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -19,9 +19,12 @@
 # On default almost all modules are active !
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
-# 29-11-2022:  OEPS ! had some missing files, FIXED..
 
-# Last Update 27-11-2022
+# Last Update: 01-12-2022
+- Added more tweaked firedata for vehicles.
+- Added mapinfo script that spams in the server console mapmode and map name
+
+# Previous Update 27-11-2022
 - Full revamp of the C4 section.
 - C4 module has 4 settings u can use
 - bEnable_extended_C4 = false - This increased the C4 ammount you can carry and place to 32
