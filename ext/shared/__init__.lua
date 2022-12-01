@@ -32,4 +32,4 @@ require('__shared/__init_modules_M15_mines')
 -- modules below can and will lag the server startup performance
 -- it also affects the client loading time !
 -- require('__shared/__init_Modules_No_recoil')
--- require('__shared/__init_modules_steady_scope')
+-- require('__shared/__init_modules_steady_scope') -- This is not yet working as it should be, DO NOT ENABLE !!
