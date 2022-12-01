@@ -13,9 +13,15 @@ end
 
 function checkVersion()
     if getCurrentVersion() ~= localModVersion then
-        print("Pixelmod seems to be out of date! Please visit https://github.com/spatieman/VU-PixelsMod");
+	print("********************************************************************************************");
+        print("** Pixelmod seems to be out of date! Please visit https://github.com/spatieman/VU-PixelsMod" );
+	print('Changed Version on github is ('..json.Version..') - Local version:('..localModVersion..')...')
+	print("********************************************************************************************");
 	else
-	print("*************** Pixelmod seems to be up2date ***************");
+	print("************************************************************************");
+	print("********************* Pixelmod seems to be up2date *********************");
+	print('Version on github is ('..json.Version..') - Local version:('..localModVersion..')...')
+	print("************************************************************************");
     end
 end
 
