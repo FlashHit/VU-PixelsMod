@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.3b (time 17:40)
+# Welcome to Version 2.1.3c (time 17:52)
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -25,8 +25,12 @@
 - Added mapinfo script that spams in the server console mapmode and map name
 - Added a simply UpdateCheck file to notify server admins if there is a new pixelmod version
 - 2.1.3a updatecheck.lua tweak
+-
 - (Time 17:40) Minor cosmetic tweaks, not serious to update at this point.
 - Removed some unwanted spaces in mapinfo_modules/server_message.lua file
+-
+- (Time 17:52) Minor cosmetic tweaks, not serious to update at this point.
+- Removed some unwanted spaces in Gadgets_Modules_c4/server_message.lua file
 
 
 # Previous Update 27-11-2022
