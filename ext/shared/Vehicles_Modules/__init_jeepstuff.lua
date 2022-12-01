@@ -30,6 +30,22 @@ ResourceManager:RegisterInstanceLoadHandler(partition_growlerengine, instance_gr
 	end)
 
 -- ###############
+   local partition_growlerengine_v = Guid ("8B54A360-9F4D-43F4-9F0D-A2151D902584")
+   local instance_growlerengine_v = Guid ("EF3CEBBC-3816-407C-A3AB-22FEA11C3793")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_growlerengine_v, instance_growlerengine_v, function(loadedInstance)
+     loadedInstance = CombustionEngineConfigData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.rpmMin = 600 -- default = 500
+    loadedInstance.rpmMax = 6000 -- default = 5000
+    loadedInstance.rpmCut = 9500 -- default = 9500
+    loadedInstance.enginePowerMultiplier = 3 -- default = 1
+    loadedInstance.boost.accelerationScale = 3 -- default = 1
+	print('Changed Vehicle: Growler (valley) Engine...')
+	end)
+
+-- ###############
    local partition_quadbike = Guid ("08D3686F-A96A-11E1-9047-F3806E4ECBA6")
    local instance_quadbike = Guid ("ED159859-02F5-47C5-82D2-74D5381C9919")
 

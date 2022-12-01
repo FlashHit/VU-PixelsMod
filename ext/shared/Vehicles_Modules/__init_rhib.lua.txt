@@ -1,0 +1,434 @@
+   local partition_rhib_engine = Guid ("C0C2582E-82ED-4176-9F0A-61B5748CA3CD")
+    local instance_rhib_engine = Guid ("988F8935-BF29-4A12-B3E0-B6CA22B54D5D")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_rhib_engine, instance_rhib_engine, function(loadedInstance)
+     loadedInstance = JetEngineConfigData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.rpmMin = 100 -- default = 0
+    loadedInstance.rpmMax = 7500 -- default = 5000
+    loadedInstance.rpmCut = 11000 -- default = 9500
+    loadedInstance.enginePowerMultiplier = 3.0 -- default = 0.6
+    loadedInstance.boost.accelerationScale = 2 -- default = 1
+	print('Changed Vehicle: rhib (1) Engine...')
+	end)
+
+-- -----------------------------------------
+
+   local partition_rhib_engine2 = Guid ("0991DC0A-4681-11E0-AB52-CF61A9ADB6F1")
+    local instance_rhib_engine2 = Guid ("734223B4-4E66-4441-8A6E-18055AFDECB7")
+
+
+ResourceManager:RegisterInstanceLoadHandler(partition_rhib_engine2, instance_rhib_engine2, function(loadedInstance)
+     loadedInstance = JetEngineConfigData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.rpmMin = 100 -- default = 0
+    loadedInstance.rpmMax = 7500 -- default = 5000
+    loadedInstance.rpmCut = 11000 -- default = 9500
+    loadedInstance.enginePowerMultiplier = 3.0 -- default = 0.6
+    loadedInstance.boost.accelerationScale = 2 -- default = 1
+	print('Changed Vehicle: rhib (2) Engine...')
+	end)
+
+-- -----------------------------------------
+-- -----------------------------------------
+-- -----------------------------------------
+-- -----------------------------------------
+-- -----------------------------------------
+-- in case i publish this, this is a test setup.
+
+--  unknown on MP/XP maps, perhaps SP maps
+-- Used on 
+-- Used on 
+
+--   local partition_unknown0 = Guid ("126522AA-C3AB-E148-87D6-B32458C64ADC")
+--    local instance_unknown0 = Guid ("ACC80CBF-6334-8EBC-400E-FCA3EF6C3494")
+
+-- ResourceManager:RegisterInstanceLoadHandler(partition_unknown0, instance_unknown0, function(loadedInstance)
+--     loadedInstance = FiringFunctionData(loadedInstance)
+--    loadedInstance:MakeWritable()
+
+--    loadedInstance.ammo.magazineCapacity = 50
+--    loadedInstance.ammo.numberOfMagazines = -1
+--	print('Changed ???? Firedata: US/RU [000] ...')
+--	end)
+-- --------------------------------------
+
+-- Mounted_M2HB_Firing.txt
+-- Used on US vehicles: Growler ITV (jeep) - RHIB (gunner) - DPV (gunner)
+-- Used on phoenix (gunner) - 
+
+   local partition_unknown1 = Guid ("F7DEF272-8440-46AB-A624-B7C102471DF6")
+    local instance_unknown1 = Guid ("1E98B2EB-7272-4899-9D55-78C5EEDB4305")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown1, instance_unknown1, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 250
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed Vehicle: US Growler ITV / RHIB / Phoenix - Firedata: Gunner ammo size [001] ...')
+	end)
+
+
+-- --------------------------------------
+
+-- Mounted_Minigun_Firing.txt
+-- Used on US Vehicles: Railgun recon chopper - 
+-- Used on RU Vehicles: Railgun recon chopper - 
+
+   local partition_unknown2 = Guid ("B9DE386A-3798-41C9-983F-267BEA9A241B")
+    local instance_unknown2 = Guid ("9ED3A887-06CF-4FA4-9E07-EFCFEA31B1F2")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown2, instance_unknown2, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 250
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed Vehicle: US/RU Recon chopper - Firedata: Railgun ammo size [002] ...')
+	end)
+
+
+-- --------------------------------------
+
+-- Mounted_PKM_Firing.txt
+-- Used on RU vehicles: Bursak (gunner) - 
+-- Used on ?
+
+   local partition_unknown3 = Guid ("C260C6C5-EAD9-4586-A0B8-95830FD72B43")
+    local instance_unknown3 = Guid ("0B1191CC-382D-40E2-BF33-21285554DD06")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown3, instance_unknown3, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 300
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [003] RU ...')
+	end)
+
+
+-- ---------------
+-- Mounted_HMG_Firing.txt
+-- Used on 
+-- Used on RU vehicles: VDV Buggy (jeep) - RHIB (gunner) - DPV (gunner)?
+
+  local partition_unknown4 = Guid ("318A27B9-E92F-4BD0-83A0-23F9ABA59C73")
+   local instance_unknown4 = Guid ("3F6AF461-5EDE-4881-A72A-92509DA21FEB")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown4, instance_unknown4, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 250
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed Vehicle: RU VDV Buggy / RHIB / DPV - Firedata: Gunner ammo size[004] ...')
+	end)
+
+--
+-- ---------------
+-- LBT_HE_Cannon_Firing.txt
+-- Used US vehicles: M1128 (main 2nd not advisable) - 
+-- Used RU vehicles: sprud-sd (main 2nd not advisable) - 
+
+  local partition_unknown5 = Guid ("240EDB1B-3410-4A8A-80EA-C4910A59DD07")
+   local instance_unknown5 = Guid ("EE04B0B1-8A51-4913-AF6B-16F0F85A3484")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown5, instance_unknown5, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 501
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [005] US/RU ...')
+	end)
+
+--
+
+-- ---------------
+-- UNKNOWN IN ALL MAPS, OR I AM STUPID TO FIND IT.
+-- section disabled....
+-- Mounted_TechnicalTruck_Firing.txt
+-- Used on 
+-- Used on 
+
+-- local partition_unknown6 = Guid ("93091014-DBD2-4124-9B4E-F293CF7F3568")
+--    local instance_unknown6 = Guid ("B341B6A4-EF06-4219-9B73-8EB526841938")
+
+-- ResourceManager:RegisterInstanceLoadHandler(partition_unknown6, instance_unknown6, function(loadedInstance)
+--     loadedInstance = FiringFunctionData(loadedInstance)
+--    loadedInstance:MakeWritable()
+
+--    loadedInstance.ammo.magazineCapacity = 600
+--    loadedInstance.ammo.numberOfMagazines = -1
+--	print('Changed ???? Firedata: US/RU [006] ...')
+--	end)
+
+--
+
+-- ---------------
+-- Tank_Remote_HMG_Firing.txt
+-- Used on US vehicles: LAV-25 (gunner) - HMMWV - M1 Abrams (tank,gunner) - AAV-7A1 AMTRAC (gunner) - 
+-- Used on US vehicles: rhino - 
+
+   local partition_unknown7 = Guid ("6C3AFD1A-A95D-4D02-BE45-5AFADE8B5A7F")
+    local instance_unknown7 = Guid ("ACCB3DF7-5834-4520-811F-F0BC4B560D66")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown7, instance_unknown7, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 700
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [007] US ...')
+	end)
+
+--
+
+-- ---------------
+-- Coax_HMG_Firing.txt
+-- Used on US vehicles: M1 Abrams (tank) -
+-- Used on 
+
+   local partition_unknown8 = Guid ("36C4ACA3-19B2-42A0-BD85-DD555BFC4700")
+    local instance_unknown8 = Guid ("7A0BDAC9-1F45-46D2-BA64-A68BAF942921")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown8, instance_unknown8, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 800
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [008] US ...')
+	end)
+
+--
+
+-- ---------------
+-- Coax_LMG_Firing.txt
+-- Used on US vehicles: LAV-25 - M1 Abrams (tank) - M1128 (gunners)
+-- Used on RU vehicles: sprud-sd (gunners) -
+
+
+   local partition_unknown9 = Guid ("38D0C787-E880-4E5A-BE89-9E697402C3DA")
+    local instance_unknown9 = Guid ("5446DA55-1462-4B6F-B54D-4B9708C5CE67")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown9, instance_unknown9, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 900
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [009] US/RU ...')
+	end)
+
+--
+
+-- ---------------
+-- GAU8_cannon_firing.txt
+-- Used on RU vehicle: SU25TM frogfoot 
+-- Used on US vehicle: A10 thunderbolt
+
+   local partition_unknown10 = Guid ("71B9175E-431B-405F-8E7A-6CA6745BEE47")
+    local instance_unknown10 = Guid ("C1642697-2490-4AED-99D2-CFBDC84CD311")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown10, instance_unknown10, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1000
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [010] RU/US Tankkiller jets ...')
+	end)
+
+--
+
+-- ---------------
+-- Coax_LMG_Firing_M1128.txt
+-- Used on US vehicles: M1128 -
+-- Used on 
+
+   local partition_unknown11 = Guid ("16BFCBCD-F0B5-4AD3-A2A2-8ACBD9A230FC")
+    local instance_unknown11 = Guid ("49620BD2-D6C1-40CB-B85F-88667893A8A8")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown11, instance_unknown11, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1100
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [011] US...')
+	end)
+
+--
+
+-- ---------------
+-- LBT_Cannon_Firing_M1128.txt -
+-- Used on US vehicles: M1128 (main cannon not advisable)
+-- Used on 
+
+   local partition_unknown12 = Guid ("6244034F-4140-41D5-BFA8-C19FFA05B915")
+    local instance_unknown12 = Guid ("15D4E4DE-399C-4AAF-A931-016D3646F942")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown12, instance_unknown12, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1200
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [012] US...')
+	end)
+
+--
+
+-- ---------------
+-- LBT_Cannon_Firing_2S25.txt -
+-- Used on
+-- Used on RU vehicles: sprud-sd (main cannon,not advisable) - 
+
+   local partition_unknown13 = Guid ("115E78B1-74E7-A5A0-490E-853DC10F3FF5")
+    local instance_unknown13 = Guid ("077ED1FF-208D-0F55-D145-24867877591F")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown13, instance_unknown13, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1300
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [013] RU...')
+	end)
+
+--
+
+-- ---------------
+-- DummyFiring.txt
+-- Used on
+-- Used on 
+-- recon chopper pilot dummy stuff 
+--
+--   local partition_unknown14 = Guid ("30EEF49D-4876-4DA2-8A14-CEFF88324F9C")
+--    local instance_unknown14 = Guid ("7E8F670B-A04D-42D9-AD26-B951EB46307E")
+
+-- ResourceManager:RegisterInstanceLoadHandler(partition_unknown14, instance_unknown14, function(loadedInstance)
+--     loadedInstance = FiringFunctionData(loadedInstance)
+--    loadedInstance:MakeWritable()
+
+--    loadedInstance.ammo.magazineCapacity = 1400
+--    loadedInstance.ammo.numberOfMagazines = -1
+--	print('Changed ???? Firedata: US/RU [014] ...')
+--	end)
+
+--
+
+
+
+
+
+
+
+
+
+-- ---------------
+-- Coax_HMG_Firing_Green_Tracer.txt
+-- Used on
+-- Used on RU vehicle: T-90A (tank) - 
+
+   local partition_unknown15 = Guid ("33B87C86-1308-3B90-2FB3-C46309AF723B")
+    local instance_unknown15 = Guid ("CA655F07-E3AB-9BF0-03E1-1003AF81993B")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown15, instance_unknown15, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1500
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [015] RU ...')
+	end)
+
+--
+-- ---------------
+-- Coax_LMG_Firing_Green_Tracer.txt
+-- Used on
+-- Used on RU vehicle: BMP-2M - T-90A (tank) - BTR-90 - 
+
+   local partition_unknown16 = Guid ("92A730E9-A070-1B6A-62F7-5C3C111F1CD5")
+    local instance_unknown16 = Guid ("6DEBB13C-7F70-CE9B-3FC4-963B6843AE86")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown16, instance_unknown16, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1600
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [016] RU ...')
+	end)
+
+--
+-- ---------------
+-- Tank_Remote_HMG_Firing_Green_Tracer.txt
+-- Used on
+-- Used on RU vehicle: GAZ-3937 Vodnik - BMP-2M (gunner)- T-90A (tank,gunner) 
+-- Used on RU vehicle: BTR-90 (gunner) - 
+
+   local partition_unknown17 = Guid ("0C27C964-2FC5-8754-05F3-582AF9EC9828")
+    local instance_unknown17 = Guid ("6756D475-8CC0-B9C8-F2B7-1893ACF85974")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown17, instance_unknown17, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1700
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [017] RU ...')
+	end)
+
+--
+
+-- ---------------
+-- Partition B74B48B5-A0AB-45D3-B056-256FA7752ACF
+-- FiringFunctionData 9DFD3182-EB7F-43FC-ABE7-BA169CA2AA24
+
+-- US: MBT_Canister_Firing.txt
+-- Used on US vehicles: M1128 - 
+-- Used 
+-- Used 
+
+   local partition_unknown18 = Guid ("B74B48B5-A0AB-45D3-B056-256FA7752ACF")
+    local instance_unknown18 = Guid ("9DFD3182-EB7F-43FC-ABE7-BA169CA2AA24")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown18, instance_unknown18, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1800
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [018] US...')
+	end)
+
+--
+
+-- ---------------
+-- Partition B1EA7E55-A576-5A64-3D80-FC082B007543
+-- FiringFunctionData 4660EC72-5C03-73AE-0354-446E2A9E8CF1
+-- RU: MBT_Canister_Firing_T90.txt
+-- Used on RU vehicles: sprud-sd - 
+-- Used on 
+-- Used on 
+
+   local partition_unknown19 = Guid ("B1EA7E55-A576-5A64-3D80-FC082B007543")
+    local instance_unknown19 = Guid ("4660EC72-5C03-73AE-0354-446E2A9E8CF1")
+
+ResourceManager:RegisterInstanceLoadHandler(partition_unknown19, instance_unknown19, function(loadedInstance)
+     loadedInstance = FiringFunctionData(loadedInstance)
+    loadedInstance:MakeWritable()
+
+    loadedInstance.ammo.magazineCapacity = 1900
+    loadedInstance.ammo.numberOfMagazines = -1
+	print('Changed ???? Firedata: US/RU [019] RU ...')
+	end)
+
+--
+
+
