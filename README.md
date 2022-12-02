@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.3c (time 17:52)
+# Welcome to Version 2.1.4
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -20,7 +20,17 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 01-12-2022
+# Last Update: 02-12-2022
+- Revamped the rockets modules (rpg/smaw  igla/stinger javelin)
+- Each rocket module has now its own module entry
+- you can choose out of 4 configuration for each item.
+- on default the extreme settings are active.
+- Removed the rockets_module directory (not needed anymore)
+-
+- Updated the updatecheck.lua file, it now reads the Reason variable
+- and spams it on the server console on startup
+
+# Previous Update: 01-12-2022
 - Added more tweaked firedata for vehicles.
 - Added mapinfo script that spams in the server console mapmode and map name
 - Added a simply UpdateCheck file to notify server admins if there is a new pixelmod version
