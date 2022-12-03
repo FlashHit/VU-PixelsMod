@@ -1,17 +1,13 @@
 -- Pimped Ammo and medic bags
--- ####################################################################################################
---   local partition_ammobag_total = Guid ("0343F80F-06CC-11E0-8BDF-D7443366E28A")
---   local instance_ammobag_total = Guid ("5B73C5E2-127E-419B-95FB-A69D9F5CAA7B")
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
 
--- ResourceManager:RegisterInstanceLoadHandler(partition_ammobag_total, instance_ammobag_total, function(loadedInstance)
---     loadedInstance = FiringFunctionData(loadedInstance)
---    loadedInstance:MakeWritable()
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
 
---    loadedInstance.ammo.magazineCapacity = 1
---    loadedInstance.ammo.numberOfMagazines = 3
---	print('Changed Ammobag - Increased AMMO bags to place...')
---	end)
-
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
 
 -- ####################################################################################################
 
@@ -39,12 +35,10 @@ ResourceManager:RegisterInstanceLoadHandler(partition_ammobag, partition_ammobag
     loadedInstance.supplyData.healing.supplyPointsRefillSpeed = 1 -- This a multiplier ! -- Default = 0
     loadedInstance.supplyData.healing.supplyPointsCapacity = 1 -- This a multiplier ! -- Default = 0
 
-	print('Changed Ammobag - you are now a medic in training !... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed Ammobag - you are now a medic in training !... ... ...')
+end
 end)
 -- ####################################################################################################
-
-
-
 
 
 
@@ -71,6 +65,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_medicbag, partition_medicb
     loadedInstance.supplyData.ammo.supplyPointsRefillSpeed = 1 -- This a multiplier ! -- Default = 0
     loadedInstance.supplyData.ammo.supplyPointsCapacity = 1 -- This a multiplier ! -- Default = 0
 
-	print('Changed Medicbag - Now you are a ammo dealer in training !... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed Medicbag - Now you are a ammo dealer in training !... ... ...')
+end
 end)
 

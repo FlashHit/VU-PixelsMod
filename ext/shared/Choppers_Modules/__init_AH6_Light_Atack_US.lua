@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_ah6engine = Guid ("FD8AB747-FF4D-11DD-A7B1-F7C6DEEC9D32")
    local instance_ah6engine = Guid ("15AB2B27-FF4E-11DD-A7B1-F7C6DEEC9D32")
 
@@ -10,8 +21,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_ah6engine, instance_ah6eng
     loadedInstance.spForwardStrength = 30.0
     loadedInstance.spSidewaysStrength = 15.0
     loadedInstance.spVerticalStrength = 20.0
-	print('Changed Chopper: AH6-J Engine... (AH6_Light_Atack_US) ... ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper: AH6-J Engine... (AH6_Light_Atack_US) ... ...')
+	end
+end)
 
 -- -------------------------
    local partition_ah6rotors = Guid ("FD8AB747-FF4D-11DD-A7B1-F7C6DEEC9D32")
@@ -22,5 +34,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_ah6rotors, instance_ah6rot
     loadedInstance:MakeWritable()
 
     loadedInstance.horizontalForceModifier = 2
-	print('Changed Chopper: AH6-J Rotors... (AH6_Light_Atack_US) ... ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper: AH6-J Rotors... (AH6_Light_Atack_US) ... ...')
+	end
+end)

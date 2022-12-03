@@ -1,4 +1,13 @@
--- --------------------------------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
    local partition_grenadeent = Guid ("CF031A0B-2492-11E0-85B7-F234A394297F")
     local instance_grenadeent = Guid ("326152E6-0F84-430D-D2E3-19EBDA8266C4")
@@ -9,8 +18,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenadeent, instance_grena
 
     loadedInstance.timeToLive = 3
     loadedInstance.gravity = -3.5
-	print('Changed M67 Grenade is now lighter ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed M67 Grenade is now lighter ...')
+	end
+end)
 
 -- --------------------------------------
    local partition_grenade = Guid ("FFF5DB09-E74B-11DF-9B5E-86394B544891")
@@ -25,6 +35,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenade, instance_grenade,
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
     loadedInstance.shot.initialSpeed.z = 25
-	print('Changed M67 Grenade increased ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed M67 Grenade increased ammo size ...')
+	end
+end)
 

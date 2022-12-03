@@ -1,4 +1,15 @@
 -- kinky MAV
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+
+-- -------------------------------------
 
    local partition_mav_pda = Guid ("1271F1BE-49D5-4599-AAD2-0D3BBAFB1EF7")
     local instance_mav_pda = Guid ("0A6952EC-1EF1-4B3C-80DC-DEC527096066")
@@ -9,7 +20,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mav_pda, instance_mav_pda,
 
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 30 -- Default = 2.5
     
-    print("Changed MAV: picks up faster ...")
+ 	if (bEnable_announcement) == (true) then print("Changed MAV: picks up faster ...")
+end
 	end)
 
 -- ###############
@@ -28,7 +40,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mav_sweep, Instance_mav_sw
     loadedInstance.mineSweepRadius = 60 -- default = 30
     loadedInstance.mineSweepInterval = 1.5 -- default = 3
 
-	print('Changed Gadgets: MAV Sweep Range...')
+ 	if (bEnable_announcement) == (true) then print('Changed Gadgets: MAV Sweep Range...')
+end
 end)
 
 -- ###############
@@ -50,9 +63,9 @@ end)
        loadedInstance.shockwaveTime = 0
        loadedInstance.triggerImpairedHearing = true
        loadedInstance.isCausingSuppression = true 
-
   
-  	print('Changed MAV: things goes boom (1)...')
+ 	if (bEnable_announcement) == (true) then print('Changed MAV: things goes boom (1)...')
+end
   end)
 
 -- ###############
@@ -76,5 +89,6 @@ end)
        loadedInstance.isCausingSuppression = true 
 
   
-  	print('Changed MAV: things goes boom (2)...')
+ 	if (bEnable_announcement) == (true) then print('Changed MAV: things goes boom (2)...')
+end
   end)

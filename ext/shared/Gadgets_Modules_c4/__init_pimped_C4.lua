@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_c4exp = Guid ("910AD7C5-2558-11E0-96DC-FF63A5537869")
    local instance_c4exp = Guid ("5FE6E2AD-072E-4722-984A-5C52BC66D4C1")
 
@@ -14,8 +25,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_c4exp, instance_c4exp, fun
     loadedInstance.shockwaveTime = 0
     loadedInstance.triggerImpairedHearing = false
     loadedInstance.isCausingSuppression = false
-	print('Changed pimped C4 Explosion...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed pimped C4 Explosion...')
+	end
+end)
 
 -- ------------------------------
 
@@ -30,8 +42,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_c4, instance_c4, function(
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
     loadedInstance.fireLogic.rateOfFire = 250.0
-	print('Changed pimped C4 - Increased AMMO size...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed pimped C4 - Increased AMMO size...')
+	end
+end)
 
 -- ------------------------------
 
@@ -44,6 +57,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_c4expentity, instance_c4ex
 
     loadedInstance.health = 1
     loadedInstance.maxCount = 32
-	print('Changed pimped C4 - can place more !...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed pimped C4 - can place more !...')
+	end
+end)
 

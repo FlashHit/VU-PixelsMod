@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_mi28engine = Guid ("89BE53B6-2FF4-11DE-8C23-DAB1D69416DE")
    local instance_mi28engine = Guid ("89BEA1FD-2FF4-11DE-8C23-DAB1D69416DE")
 
@@ -10,8 +21,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mi28engine, instance_mi28e
     loadedInstance.spForwardStrength = 30.0
     loadedInstance.spSidewaysStrength = 15.0
     loadedInstance.spVerticalStrength = 20.0
-	print('Changed Chopper: Mi28 Engine... (RU Mi28 Atack chopper) ... ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper: Mi28 Engine... (RU Mi28 Atack chopper) ... ...')
+	end
+end)
 
 
 -- ------------------
@@ -23,5 +35,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mi28rotors, instance_mi28r
     loadedInstance:MakeWritable()
 
     loadedInstance.horizontalForceModifier = 2
-		print('Changed Chopper: Mi28 Rotors... (RU Mi28 Atack chopper) ... ...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed Chopper: Mi28 Rotors... (RU Mi28 Atack chopper) ... ...')
+	end
+end)

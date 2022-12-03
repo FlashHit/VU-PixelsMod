@@ -1,4 +1,13 @@
--- -------------------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
    local partition_m15exp = Guid ("49F4451D-D64E-45E5-BC96-B39CE8BC4D10")
     local instance_m15exp = Guid ("EA440D5D-925C-4239-8463-4FE3EAD30C5F")
@@ -15,8 +24,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m15exp, instance_m15exp, f
     loadedInstance.shockwaveImpulse = 4000 -- Normal = 2000
     loadedInstance.triggerImpairedHearing = true
     loadedInstance.isCausingSuppression = true
-	print('Changed kinky M15 tank mine - Things goes extra BOOOOOOOOM !!!...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed kinky M15 tank mine - Things goes extra BOOOOOOOOM !!!...')
+	end
+end)
  
 -- -------------------------
 
@@ -31,8 +41,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m15, instance_m15, functio
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
     loadedInstance.fireLogic.rateOfFire = 250.0
-	print('Changed kinky M15 tank mine - Increased AMMO size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed kinky M15 tank mine - Increased AMMO size ...')
+	end
+end)
 
 -- -------------------------
 
@@ -46,6 +57,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m15expentity, instance_m15
     loadedInstance.maxAttachableInclination = 180
     loadedInstance.health = 1
     loadedInstance.maxCount = 40  -- Total mines you can place
-	end)
+end)
 
 -- -----------------

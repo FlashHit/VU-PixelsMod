@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 --
    local partition_rocketpods = Guid ("E64E52BD-4E40-4BFE-B6C3-49523084AE94")
    local instance_rocketpods = Guid ("3EE6789F-4113-42BA-B8FE-79DD5EF89FB1")
@@ -8,8 +19,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rocketpods, instance_rocke
 
     loadedInstance.ammo.magazineCapacity = 45
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed Chopper Firedata: US/RU Atack Choppers - Increased rocketpods ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper Firedata: US/RU Atack Choppers - Increased rocketpods ...')
+	end
+end)
 
 --
    local partition_gunnercannon = Guid ("0A232494-FB58-496E-BF30-FD9B39E12008")
@@ -21,8 +33,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunnercannon, instance_gun
 
     loadedInstance.ammo.magazineCapacity = 90
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed Chopper Firedata: US Atack Chopper - Gunner bullet entity ammo ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper Firedata: US Atack Chopper - Gunner bullet entity ammo ...')
+	end
+end)
 
 --
    local partition_gunnercannon1 = Guid ("0D61B717-18D3-4295-9070-9AB925B1C784")
@@ -34,8 +47,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunnercannon1, instance_gu
 
     loadedInstance.ammo.magazineCapacity = 90
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed Chopper Firedata: RU Atack Chopper - Gunner bullet entity ammo ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper Firedata: RU Atack Chopper - Gunner bullet entity ammo ...')
+	end
+end)
 
 --
    local partition_litlebird = Guid ("5490C4AB-A322-3F65-9680-CF9CD9D32705")
@@ -47,8 +61,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
 
     loadedInstance.ammo.magazineCapacity = 1000
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed Chopper Firedata: US/RU  Light Atack Chopper - Gunner bullet entity ammo ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Chopper Firedata: US/RU  Light Atack Chopper - Gunner bullet entity ammo ...')
+	end
+end)
 
 
 -- ##################
@@ -68,8 +83,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
      loadedInstance.shockwaveTime = 0 -- Deafault = 0.14
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed TV Missile Pimped Explosion data US - RU ...')
- 	end) 
+ 	if (bEnable_announcement) == (true) then print('Changed TV Missile Pimped Explosion data US - RU ...')
+ 	end
+end) 
 
 -- ---------------------------------------------------------------------------------------
 -- Heatseakers on US Atack chopper and US Jet FA18E increased
@@ -85,8 +101,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
      loadedInstance.ammo.numberOfMagazines = -1
  
      loadedInstance.fireLogic.reloadTime = 4.0
- 	print('Changed Chopper Firedata : US Atack Chopper / US Jets - Increased Heatseakers ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed Chopper Firedata : US Atack Chopper / US Jets - Increased Heatseakers ...')
+ 	end
+end)
 
 -- ----------------------------------------
 -- Heatseakers on RU Atack chopper
@@ -102,8 +119,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
      loadedInstance.ammo.numberOfMagazines = -1
  
      loadedInstance.fireLogic.reloadTime = 4.0
- 	print('Changed Chopper Firedata : RU Atack Chopper - Increased Heatseakers ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed Chopper Firedata : RU Atack Chopper - Increased Heatseakers ...')
+ 	end
+end)
 
 -- ----------------------------------------
 -- Heatseakers on RU Jet increased
@@ -119,8 +137,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_litlebird, instance_litleb
      loadedInstance.ammo.numberOfMagazines = -1
  
      loadedInstance.fireLogic.reloadTime = 4.0
- 	print('Changed jet Firedata : RU jet - Increased Heatseakers ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed jet Firedata : RU jet - Increased Heatseakers ...')
+ 	end
+end)
 
 
 -- ----------------------------------------

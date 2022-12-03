@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- TEST project for C4
 -- Here is where partition and instance is placed
 
@@ -25,8 +36,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_c4exp, instance_c4exp, fun
     loadedInstance.shockwaveTime = 0
     loadedInstance.triggerImpairedHearing = false
     loadedInstance.isCausingSuppression = false
-	print('Changed pimped C4 Explosion...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed pimped C4 Explosion...')
+	end
+end)
 
 -- ------------------------------
 

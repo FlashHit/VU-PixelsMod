@@ -1,4 +1,13 @@
--- --------------------------------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
    local partition_grenade = Guid ("FFF5DB09-E74B-11DF-9B5E-86394B544891")
     local instance_grenade = Guid ("04E1FA90-5B6E-4316-862C-15EB89652441")
@@ -14,8 +23,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_grenadeent, instance_grena
 
     loadedInstance.timeToLive = 3
     loadedInstance.gravity = -3.5
-	print('Changed M67 Grenade is now lighter ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed M67 Grenade is now lighter ...')
+	end
+end)
 
 -- --------------------------------------
 

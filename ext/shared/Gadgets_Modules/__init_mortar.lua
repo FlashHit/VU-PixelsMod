@@ -1,6 +1,15 @@
 -- Pimped Mortar
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
 
--- ###############################################
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+
+-- -------------------------------------
 
    local partition_mortarexp = Guid ("5350B268-18C9-11E0-B820-CD6C272E4FCC")
     local instance_mortarexp = Guid ("4827959A-8A3B-4C9F-994E-E54150AA565F")
@@ -19,7 +28,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortarexp, instance_mortar
     loadedInstance.triggerImpairedHearing = true
     loadedInstance.isCausingSuppression = true
 
-    dprint("Changed Mortar:  Explosion (1) ... ... ...")
+ 	if (bEnable_announcement) == (true) then dprint("Changed Mortar:  Explosion (1) ... ... ...")
+end
 	end)
 
 -- ###############################################
@@ -35,7 +45,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortardeployedff1, instanc
     loadedInstance.ammo.magazineCapacity = 25 -- Default = 1
     loadedInstance.fireLogic.rateOfFire = 20  -- Default = 300
 
-	dprint('Changed Mortar Ammo size (Explosion)...')
+ 	if (bEnable_announcement) == (true) then dprint('Changed Mortar Ammo size (Explosion)...')
+end
 	end)
 
 -- ###############################################
@@ -50,7 +61,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortardeployedff2, instanc
     loadedInstance.ammo.magazineCapacity = 25 -- Default = 1
     loadedInstance.fireLogic.rateOfFire = 20  -- Default = 300
 
-	dprint('Changed Mortar Ammo size (Smoke)...')
+ 	if (bEnable_announcement) == (true) then dprint('Changed Mortar Ammo size (Smoke)...')
+end
 	end)
 
 -- ###############################################
@@ -66,7 +78,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortardeployedrot1, instan
     loadedInstance.angularConstraintMin = -360     -- Default = -45
     loadedInstance.angularConstraintMax = 360      -- Default = 44
 
-	dprint('Changed Mortar Deployed Rotation Data (1)...')
+ 	if (bEnable_announcement) == (true) then dprint('Changed Mortar Deployed Rotation Data (1)...')
+end
 	end)
 
 -- ###############################################
@@ -82,7 +95,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortardeployedrot2, instan
     loadedInstance.angularConstraintMin = -5       -- Default = -9
     loadedInstance.angularConstraintMax = 10       -- Default = 14.5
 
-	dprint('Changed Mortar Deployed Rotation Data (2)...')
+ 	if (bEnable_announcement) == (true) then dprint('Changed Mortar Deployed Rotation Data (2)...')
+end
 	end)
 
 -- ###############################################
@@ -98,7 +112,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortardeployedrot3, instan
     loadedInstance.angularConstraintMin = -26       -- Default = -16
     loadedInstance.angularConstraintMax = 60        -- Default = 25
 
-	dprint('Changed Mortar Deployed Rotation Data (3)...')
+ 	if (bEnable_announcement) == (true) then dprint('Changed Mortar Deployed Rotation Data (3)...')
+end
 	end)
 
 -- ###############################################
@@ -114,7 +129,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortar_med, instance_morta
     loadedInstance.timeToLive = 20.0 -- default = 5
     loadedInstance.detonateOnTimeout = true -- default = false
 
-	dprint('Changed Mortar: Longer time till it goes self destruct...')
+ 	if (bEnable_announcement) == (true) then dprint('Changed Mortar: Longer time till it goes self destruct...')
+end
 	end)
 
 -- ###############################################
@@ -129,6 +145,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_mortar_smk4, instance_mort
     loadedInstance.transform.left.x = 2.5
     loadedInstance.transform.up.y = 2.5
     loadedInstance.transform.forward.z = 2.5
-    print("Changed mortar: Smoke size (3) ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Changed mortar: Smoke size (3) ... ... ...")
+end
 end)
 

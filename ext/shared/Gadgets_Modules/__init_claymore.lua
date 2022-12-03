@@ -1,4 +1,15 @@
 -- Kinky Claymore
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+
+-- -------------------------------------
 
    local partition_claymore = Guid ("D9EAFB20-1357-11E0-B5EB-8AEE7FB8A0AF")
     local instance_claymore = Guid ("526C78FC-D2CA-491B-9D18-1EDEFB10A762")
@@ -21,7 +32,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_claymore, instance_claymor
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
     loadedInstance.fireLogic.rateOfFire = 250.0
-	print('Changed Claymore magazine ...')
+ 	if (bEnable_announcement) == (true) then print('Changed Claymore magazine ...')
+end
 	end)
 --
  ResourceManager:RegisterInstanceLoadHandler(partition_claymore_expentity, instance_claymore_expentity, function(loadedInstance)
@@ -30,7 +42,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_claymore, instance_claymor
  
      loadedInstance.health = 5
      loadedInstance.maxCount = 32
- 		print('Changed Claymore Placed Entity ...')
+ 	if (bEnable_announcement) == (true) then print('Changed Claymore Placed Entity ...')
+end
  	end)
 
 
@@ -40,7 +53,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_claymore, instance_claymor
      loadedInstance:MakeWritable()
  
      loadedInstance.scale = 2.0
- 		print('Changed Claymore HavokAsset ...')
+ 	if (bEnable_announcement) == (true) then print('Changed Claymore HavokAsset ...')
+end
  	end)
 
 --
@@ -57,5 +71,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_claymore, instance_claymor
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 		print('Changed Claymore Explosions data ...')
+ 	if (bEnable_announcement) == (true) then print('Changed Claymore Explosions data ...')
+end
  	end)

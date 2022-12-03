@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- M320 LVG - HE combo
    local partition_40mmshg_grenade = Guid ("0782833F-E28E-417F-8D25-350D504EBEAA")
    local instance_40mmshg_grenade = Guid ("B287AFC7-2597-4C5A-A2B8-D0F8D43018C4")
@@ -21,8 +32,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_40mmshg_grenade, instance_
     loadedInstance.shot.numberOfBulletsPerShot = 15
 
 	
-	print('Changed Assault weapon: M320 SHG - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M320 SHG - Super charched AMMO...')
+	end
+end)
 
 --
 ResourceManager:RegisterInstanceLoadHandler(partition_40mmhe_grenade, instance_40mmhe_grenade, function(loadedInstance)
@@ -34,8 +46,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_40mmhe_grenade, instance_4
     loadedInstance.shot.numberOfBulletsPerShell = 15
     loadedInstance.shot.numberOfBulletsPerShot = 15
 	
-	print('Changed Assault weapon: M320 HE - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M320 HE - Super charched AMMO...')
+	end
+end)
 
 --
 ResourceManager:RegisterInstanceLoadHandler(partition_40mmsmk_grenade, instance_40mmsmk_grenade, function(loadedInstance)
@@ -47,8 +60,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_40mmsmk_grenade, instance_
     loadedInstance.shot.numberOfBulletsPerShell = 15
     loadedInstance.shot.numberOfBulletsPerShot = 15
 	
-	print('Changed Assault weapon: M320 SMK - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M320 SMK - Super charched AMMO...')
+	end
+end)
 
 --
 -- to do
@@ -66,8 +80,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m26_buckshot, instance_m26
     loadedInstance.shot.numberOfBulletsPerShell = 15
     loadedInstance.shot.numberOfBulletsPerShot = 15
 	
-	print('Changed Assault weapon: M26 Buckshot - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M26 Buckshot - Super charched AMMO...')
+	end
+end)
 --
 
 
@@ -83,8 +98,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m26_flechette, instance_m2
     loadedInstance.shot.numberOfBulletsPerShell = 15
     loadedInstance.shot.numberOfBulletsPerShot = 15
 	
-	print('Changed Assault weapon: M26 Flechette - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M26 Flechette - Super charched AMMO...')
+	end
+end)
 --
 
 
@@ -100,8 +116,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m26_frag, instance_m26_fra
     loadedInstance.shot.numberOfBulletsPerShell = 15
     loadedInstance.shot.numberOfBulletsPerShot = 15
 	
-	print('Changed Assault weapon: M26 frag - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M26 frag - Super charched AMMO...')
+	end
+end)
 --
 
 
@@ -117,8 +134,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m26_slug, instance_m26_slu
     loadedInstance.shot.numberOfBulletsPerShell = 15
     loadedInstance.shot.numberOfBulletsPerShot = 15
 	
-	print('Changed Assault weapon: M26 slug - Super charched AMMO...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M26 slug - Super charched AMMO...')
+	end
+end)
 --
 
    local partition_m320_gravity = Guid ("D37476C2-3A86-11E0-BC25-D51252D5A427")
@@ -133,8 +151,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m320_gravity, instance_m32
     loadedInstance.initialSpeed = 900
 
 
-	print('Changed Assault weapon: M320 Gravity modifier ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M320 Gravity modifier ...')
+	end
+end)
 --
 
    local partition_m320_lvg_gravity = Guid ("FD79A08F-F108-4751-B2C0-6C47397133B5")
@@ -149,6 +168,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m320_lvg_gravity, instance
     loadedInstance.initialSpeed = 900
 
 
-	print('Changed Assault weapon: M320 LVG Gravity modifier ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Assault weapon: M320 LVG Gravity modifier ...')
+	end
+end)
 --

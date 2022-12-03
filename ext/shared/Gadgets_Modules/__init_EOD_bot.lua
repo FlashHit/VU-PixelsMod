@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+
+-- -------------------------------------
    local partition_eod = Guid ("269BB4A2-0DC3-11E0-B817-B1885439A6BF")
    local instance_eod = Guid ("E280A780-82D0-4B1F-865D-E47865E2772C")
 
@@ -22,8 +33,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_eod, instance_eod, functio
     loadedInstance.fireLogic.rateOfFire = 400 -- This is the amount in pulse a rocket is shot and repairs
     loadedInstance.shot.projectileData:MakeWritable()
     loadedInstance.shot.initialSpeed.z = 200 -- Firespeed ! but lowers repair speed dramaticly
-    print("Changed EOD bot as a mobile SUPER repair platform  ... ... ...")
-
+ 	if (bEnable_announcement) == (true) then print("Changed EOD bot as a mobile SUPER repair platform  ... ... ...")
+end
 end)
 --
 
@@ -38,7 +49,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_eod_health, instance_eod_h
     loadedInstance.rightHealthZone.maxHealth = 500.0
     loadedInstance.regenerationDelay = 5.0
     loadedInstance.regenerationRate = 50.0
-    print("Changed EOD SUPER health status  ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Changed EOD SUPER health status  ... ... ...")
+end
 end)
 
 --
@@ -49,7 +61,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_eod_wheels, instance_eod_w
     loadedInstance.slopeGripMinAngle = 150.0
     loadedInstance.slopeGripMaxAngle = 150.0
 
-    print("Changed EOD SUPER wheel status  ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Changed EOD SUPER wheel status  ... ... ...")
+end
 end)
 --
 ResourceManager:RegisterInstanceLoadHandler(partition_eod_chassis, instance_eod_chassis, function(loadedInstance)
@@ -59,7 +72,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_eod_chassis, instance_eod_
     loadedInstance.transform.left.x = 3
     loadedInstance.transform.up.y = 3
     loadedInstance.transform.forward.z = 3
-    print("Changed EOD SUPER chassis status  ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Changed EOD SUPER chassis status  ... ... ...")
+end
 end)
 
 

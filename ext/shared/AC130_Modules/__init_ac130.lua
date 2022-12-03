@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Gunship tweaks
 
     local partition_gunship_ac = Guid ("D1507C85-243B-45D5-9378-9ADE0C936909") -- 
@@ -10,8 +21,9 @@
      loadedInstance.ammo.magazineCapacity = 90 -- Default = 30
  
      loadedInstance.fireLogic.reloadTime = 4.0
- 	print('Changed Gunship AutoCannon ammo - Increased ammo ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed Gunship AutoCannon ammo - Increased ammo ...')
+ 	end
+end)
 
 -- ----------------------------------------
 
@@ -31,8 +43,9 @@
      loadedInstance.shockwaveTime = 0.1 -- Deafault = 0.5
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed Gunship AutoCannon ammo - Increased Damage ...')
- 	end) 
+ 	if (bEnable_announcement) == (true) then print('Changed Gunship AutoCannon ammo - Increased Damage ...')
+ 	end
+end) 
 
 -- ----------------------------------------
 
@@ -52,8 +65,9 @@
      loadedInstance.shockwaveTime = 0.1 -- Deafault = 0.14
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed Gunship 60mm cannon - Increased Damage ...')
- 	end) 
+ 	if (bEnable_announcement) == (true) then print('Changed Gunship 60mm cannon - Increased Damage ...')
+ 	end
+end) 
 
 
 -- ----------------------------------------
@@ -84,8 +98,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunship_rg1, instance_guns
     loadedInstance.fireLogic.reloadTime = 3.5 -- Default = 3.5
 --
     loadedInstance.overHeat.heatPerBullet = 0.009  -- Time till Guynship stops fireing, Default 0.014 --
-	print('Changed Gunship Railgun (1) -  Tweaked AMMO size...')
-	end) 
+	if (bEnable_announcement) == (true) then print('Changed Gunship Railgun (1) -  Tweaked AMMO size...')
+	end
+end) 
 
 -- ----------------------------------------
 -- Partition 15A6F4C7-1700-432B-95A7-D5DE8A058ED2
@@ -115,8 +130,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunship_rg2, instance_guns
     loadedInstance.fireLogic.reloadTime = 3.5 -- Default = 3.5
 --
     loadedInstance.overHeat.heatPerBullet = 0.009  -- Time till Guynship stops fireing, Default 0.014 --
-	print('Changed Gunship Railgun (2) -  Tweaked AMMO size...')
-	end) 
+	if (bEnable_announcement) == (true) then print('Changed Gunship Railgun (2) -  Tweaked AMMO size...')
+	end
+end) 
 
 
 -- ----------------------------------------
@@ -135,12 +151,15 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunship_tbd1, instance_gun
     loadedInstance.endDamage = 15 -- Default = 10
     loadedInstance.initialSpeed = 600 -- 1400 PIMPED -- Default = 350
     loadedInstance.timeToLive = 1.0 -- Default = 1.2
-	print('Changed Gunship (1) - Tweaked Bullets data ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Gunship (1) - Tweaked Bullets data ...')
+	end
+end)
 
 -- ----------------------------------------
 -- Partition 15A6F4C7-1700-432B-95A7-D5DE8A058ED2
 -- BulletEntityData 66C5F2C0-E97D-4850-900C-89D655E7E354
+-- Used on US vehicles: Centurion c-ram (stationary AA) - 
+-- Used on RU vehicles: Pantsir S1 (stationary AA) - 
 
    local partition_gunship_tbd2 = Guid ("15A6F4C7-1700-432B-95A7-D5DE8A058ED2")
     local instance_gunship_tbd2 = Guid ("66C5F2C0-E97D-4850-900C-89D655E7E354")
@@ -154,7 +173,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_gunship_tbd2, instance_gun
     loadedInstance.endDamage = 15 -- Default = 10
     loadedInstance.initialSpeed = 600 -- 1400 PIMPED -- Default = 350
     loadedInstance.timeToLive = 1.0 -- Default = 1.2
-	print('Changed Gunship (2) - Tweaked Bullets data ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Gunship (2) - stationary AA`s US/RU - Tweaked Bullets data ...')
+	end
+end)
 
  

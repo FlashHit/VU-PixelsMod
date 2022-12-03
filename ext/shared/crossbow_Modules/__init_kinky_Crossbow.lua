@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Pimped Crossbow
 
 -- ----------------
@@ -21,7 +32,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_crossbolt_damage_HE, Insta
     loadedInstance.isCausingSuppression = true 
 
 
-	print('Changed william Tell HE BOOM changed ... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed william Tell HE BOOM changed ... ... ...')
+end
 end)
 
 -- ----------------
@@ -50,7 +62,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_ammo, Instance_ammo, funct
 --    loadedInstance.weaponDispersion.proneDispersion.increasePerShot = 0.8
 
 
-	print('Changed william Tell instance (pimped ammo)... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed william Tell instance (pimped ammo)... ... ...')
+end
 end)
 
 -- ----------------
@@ -65,7 +78,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_crossbolt_default, Instanc
 
     loadedInstance.gravity = 0
 
-	print('Changed william Tell Gravity data (Default bolt) ... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed william Tell Gravity data (Default bolt) ... ... ...')
+end
 end)
 
 -- ----------------
@@ -80,7 +94,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_crossbolt_scan, Instance_c
 
     loadedInstance.gravity = 0
 
-	print('Changed william Tell Gravity data (Scan bolt) ... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed william Tell Gravity data (Scan bolt) ... ... ...')
+end
 end)
 
 -- ----------------
@@ -97,7 +112,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_crossbolt_he, Instance_cro
     loadedInstance.initialSpeed = 5.0
     loadedInstance.timeToLive = 15.0
 
-	print('Changed william Tell Gravity data (Explosion bolt) ... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed william Tell Gravity data (Explosion bolt) ... ... ...')
+end
 end)
 
 -- ----------------
@@ -112,5 +128,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_crossbolt_BA, Instance_cro
 
     loadedInstance.gravity = 0
 
-	print('Changed william Tell Gravity data (Bully bolt) ... ... ...')
+	if (bEnable_announcement) == (true) then print('Changed william Tell Gravity data (Bully bolt) ... ... ...')
+end
 end)
