@@ -3,7 +3,7 @@
 -- Module to turn on and off the no recoil function
 -- WARNING THIS WILL INCREASE LOADING TIME ON SERVER AND CLIENT
 
-local bEnable_recoil_modules = false
+local bEnable_recoil_modules = true
 
             if (bEnable_recoil_modules) == (true) then print('No Recoil module config Enabled... ... ...')
 

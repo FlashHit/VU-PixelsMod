@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Values can be true false or hidden
 -- hidden is the same as false, but does not show up in the console !
 
@@ -53,10 +64,11 @@ end
 	    if (bEnable_mapmode_M67) == (true) then print('M67 mapmode depending Enabled ...')
 
 __init_mapmode_grenade = require('__shared/grenades_Modules/__init_mapmode_grenade')
-   server_message = require('__shared/grenades_Modules/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/grenades_Modules/server_message')
 	
 	else
 	    if (bEnable_mapmode_M67) == (false) then print('M67 mapmode depending Disabled ...')
+end
 end
 end
 --
@@ -65,10 +77,11 @@ end
 	    if (bEnable_mapmode_extreme_M67) == (true) then print('M67 extreme mapmode depending Enabled ...')
 
 __init_mapmode_extreme_grenade = require('__shared/grenades_Modules/__init_mapmode_extreme_grenade')
-   server_message = require('__shared/grenades_Modules/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/grenades_Modules/server_message')
 	
 	else
 	    if (bEnable_mapmode_extreme_M67) == (false) then print('M67 extreme mapmode depending Disabled ...')
+end
 end
 end
 --

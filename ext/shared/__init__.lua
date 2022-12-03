@@ -17,10 +17,10 @@ require('__shared/mapinfo_Modules/server_message')
 -- and add the line below to your init file ! ** enjoy **
 
 require('__shared/UpdateCheck') 
---
+-- 
 require('__shared/__init_Modules_Player')
 require('__shared/__init_modules_gadgets')
---
+-- 
 require('__shared/__init_modules_rockets_javelin')
 require('__shared/__init_modules_rockets_rpg')
 require('__shared/__init_modules_rockets_igla')
@@ -28,20 +28,23 @@ require('__shared/__init_modules_gadgets_c4')
 require('__shared/__init_modules_M15_mines')
 require('__shared/__init_modules_grenades')
 --
+require('__shared/__init_modules_vehicles')
+require('__shared/__init_modules_choppers')
+require('__shared/__init_modules_ac130')
+--
 require('__shared/__init_modules_shotguns')
 require('__shared/__init_modules_common_weapons')
-require('__shared/__init_modules_vehicles')
 require('__shared/__init_modules_handguns')
-require('__shared/__init_modules_choppers')
 require('__shared/__init_modules_assault_weapons')
 require('__shared/__init_modules_engineer_weapons')
 require('__shared/__init_modules_recon_weapons')
 require('__shared/__init_modules_support_LMG')
-require('__shared/__init_modules_ac130')
 require('__shared/__init_modules_crossbow')
 --
 -- modules below can and will lag the server startup performance
 -- it also affects the client loading time !
--- require('__shared/__init_Modules_No_recoil')
+-- require('__shared/__init_Modules_No_recoil') -- THIS WIL INCREASE SERVER STARTUP !!!!
+--
 -- require('__shared/__init_modules_steady_scope') -- This is not yet working as it should be, DO NOT ENABLE !!
 
+-- ###########

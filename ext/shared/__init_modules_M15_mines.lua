@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Values can be true false or hidden
 -- hidden is the same as false, but does not show up in the console !
 
@@ -51,10 +62,11 @@ end
 	    if (bEnable_mapmode_M15) == (true) then print('M15 mapmode depending Enabled ...')
 
 __init_mapmode_M15 = require('__shared/M15_mines_Modules/__init_mapmode_M15')
-   server_message = require('__shared/M15_mines_Modules/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/M15_mines_Modules/server_message')
 	
 	else
 	    if (bEnable_mapmode_M15) == (false) then print('M15 mapmode depending Disabled ...')
+end
 end
 end
 --
@@ -63,10 +75,11 @@ end
 	    if (bEnable_mapmode_extreme_M15) == (true) then print('M15 extreme mapmode depending Enabled ...')
 
 __init_mapmode_extreme_M15 = require('__shared/M15_mines_Modules/__init_mapmode_extreme_M15')
-   server_message = require('__shared/M15_mines_Modules/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/M15_mines_Modules/server_message')
 	
 	else
 	    if (bEnable_mapmode_extreme_M15) == (false) then print('M15 extreme mapmode depending Disabled ...')
+end
 end
 end
 --

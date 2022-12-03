@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Values can be true false or hidden
 -- hidden is the same as false, but does not show up in the console !
 
@@ -47,9 +58,10 @@ end
 -- ---------------------------------------------------------------------
 	    if (bEnable_mapmode_rpg) == (true) then print('rpg/smaw ammo mapmode depending Enabled...')
 __init_mapmode_rpg = require('__shared/Rockets_Modules_rpg/__init_mapmode_rpg')
-   server_message = require('__shared/Rockets_Modules_rpg/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/Rockets_Modules_rpg/server_message')
 	else
 	    if (bEnable_mapmode_rpg) == (false) then print('rpg/smaw ammo mapmode depepending Disabled...')
+end
 end
 end
 --
@@ -57,9 +69,10 @@ end
 -- ---------------------------------------------------------------------
 	    if (bEnable_mapmode_extreme_rpg) == (true) then print('rpg/smaw extreme ammo mapmode depending Enabled...')
 __init_mapmode_extreme_rpg = require('__shared/Rockets_Modules_rpg/__init_mapmode_extreme_rpg')
-   server_message = require('__shared/Rockets_Modules_rpg/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/Rockets_Modules_rpg/server_message')
 	else
 	    if (bEnable_mapmode_extreme_rpg) == (false) then print('rpg/smaw extreme ammo mapmode depepending Disabled...')
+end
 end
 end
 --

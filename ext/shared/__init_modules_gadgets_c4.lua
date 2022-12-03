@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Values can be true false or hidden
 -- hidden is the same as false, but does not show up in the console !
 
@@ -55,10 +66,11 @@ end
 	    if (bEnable_mapmode_C4) == (true) then print('C4 mapmode depending Enabled ...')
 
 __init_mapmode_C4 = require('__shared/Gadgets_Modules_c4/__init_mapmode_C4')
-   server_message = require('__shared/Gadgets_Modules_c4/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/Gadgets_Modules_c4/server_message')
 	
 	else
 	    if (bEnable_mapmode_C4) == (false) then print('C4 mapmode depending Disabled ...')
+end
 end
 end
 --
@@ -67,10 +79,11 @@ end
 	    if (bEnable_mapmode_extreme_C4) == (true) then print('C4 extreme mapmode depending Enabled ...')
 
 __init_mapmode_extreme_C4 = require('__shared/Gadgets_Modules_c4/__init_mapmode_extreme_C4')
-   server_message = require('__shared/Gadgets_Modules_c4/server_message')
+   if (bEnable_announcement) == (true) then server_message = require('__shared/Gadgets_Modules_c4/server_message')
 	
 	else
 	    if (bEnable_mapmode_extreme_C4) == (false) then print('C4 extreme mapmode depending Disabled ...')
+end
 end
 end
 --
