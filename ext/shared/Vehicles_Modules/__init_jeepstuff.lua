@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_humveeengine = Guid ("611F48A3-0919-11E0-985D-C512734E48AF")
    local instance_humveeengine = Guid ("7ED9EDBE-034C-4CEE-9BA0-EFAB0698E167")
 
@@ -10,8 +21,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_humveeengine, instance_hum
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 2.5 -- default = 1
     loadedInstance.boost.accelerationScale = 1.5 -- default = 1
-	print('Changed VEhicle: Humvee Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed VEhicle: Humvee Engine...')
+	end
+end)
 
 -- ###################
    local partition_growlerengine = Guid ("CF5166FD-6B60-11E0-8ACE-C75FA07B1C42")
@@ -26,8 +38,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_growlerengine, instance_gr
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 3 -- default = 1
     loadedInstance.boost.accelerationScale = 3 -- default = 1
-	print('Changed Vehicle: Growler Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Growler Engine...')
+	end
+end)
 
 -- ###############
    local partition_growlerengine_v = Guid ("8B54A360-9F4D-43F4-9F0D-A2151D902584")
@@ -42,8 +55,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_growlerengine_v, instance_
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 3 -- default = 1
     loadedInstance.boost.accelerationScale = 3 -- default = 1
-	print('Changed Vehicle: Growler (valley) Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Growler (valley) Engine...')
+	end
+end)
 
 -- ###############
    local partition_quadbike = Guid ("08D3686F-A96A-11E1-9047-F3806E4ECBA6")
@@ -58,8 +72,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_quadbike, instance_quadbik
     loadedInstance.rpmCut = 9500.0 -- default = 9500
     loadedInstance.enginePowerMultiplier = 4 -- default = 2
     loadedInstance.boost.accelerationScale = 3 -- default = 1
-	print('Changed Vehicle: Quad Bike Engine ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Quad Bike Engine ...')
+	end
+end)
 
 
 -- ################
@@ -76,8 +91,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_dirtbike, instance_dirtbik
     loadedInstance.rpmCut = 11000.0 -- default = 9500
     loadedInstance.enginePowerMultiplier = 6 -- default = 3.7
     loadedInstance.boost.accelerationScale = 3 -- default = 0
-	print('Changed Vehicle: Dirt Bike Engine ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Dirt Bike Engine ...')
+	end
+end)
 
 
 -- ###################
@@ -93,8 +109,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_vdvengine, instance_vdveng
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 3 -- default = 1
     loadedInstance.boost.accelerationScale = 3 -- default = 1
-	print('Changed Vehicle: VDV Buggy Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: VDV Buggy Engine...')
+	end
+end)
 
 -- ################
    local partition_dpvengine = Guid ("6F91A4CF-344D-11E0-930F-E8BE623140CB")
@@ -109,8 +126,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_dpvengine, instance_dpveng
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 3 -- default = 1
     loadedInstance.boost.accelerationScale = 3 -- default = 1
-	print('Changed Vehicle: DPV Buggy Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: DPV Buggy Engine...')
+	end
+end)
 
 -- ################
 
@@ -126,8 +144,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_skidloaderengine, instance
     loadedInstance.rpmCut = 9500 -- default = 9500
     loadedInstance.enginePowerMultiplier = 5 -- default = 2.2
     loadedInstance.boost.accelerationScale = 3 -- default = 1
-	print('Changed Vehicle: Skid Loader Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Skid Loader Engine...')
+	end
+end)
 
 -- ################
 

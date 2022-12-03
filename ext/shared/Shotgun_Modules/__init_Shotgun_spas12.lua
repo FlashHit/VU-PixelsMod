@@ -1,4 +1,14 @@
 -- Shotgun Spas12
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
               local partition_spas12 = Guid ("37F8F2ED-CAC0-42E8-B77B-2300A99C3B0F")
      local partition_spas12_Instance = Guid ("27C36CA8-C16D-4D2B-B3DC-73E7AF91BE85")
  local partition_spas12_Instance_mag = Guid ("6960AF18-30BA-4D23-9497-F4E022DFF56C")
@@ -16,7 +26,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_I
     loadedInstance.magazineCapacity = 200
     loadedInstance.numberOfMagazines = 1000
 
-    print("Shotgun spas12 Extended magazine ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun spas12 Extended magazine ...")
+end
 end)
 
 -- #####################
@@ -31,7 +42,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun Spas12 12g_Buckshot ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Spas12 12g_Buckshot ... ... ...")
+end
 end)
 
 
@@ -44,7 +56,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
-    print("Shotgun Spas12 12g_flechette ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Spas12 12g_flechette ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_FireFunction3, function(loadedInstance)
@@ -56,7 +69,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
-    print("Shotgun Spas12 12g_frag ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Spas12 12g_frag ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_FireFunction4, function(loadedInstance)
@@ -68,5 +82,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_spas12, partition_spas12_F
     loadedInstance.ammo.magazineCapacity = 100
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
-    print("Shotgun Spas12 12g_slug ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Spas12 12g_slug ... ... ...")
+end
 end)

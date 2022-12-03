@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_pkp = Guid ("D1DC5650-EBFE-11DF-8ACD-A1D8961E5550")
     local instance_pkp = Guid ("9893EBD7-95B1-43E7-8405-86803312D998")
 
@@ -8,8 +19,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_pkp, instance_pkp, functio
     loadedInstance.ammo.magazineCapacity = 600
     loadedInstance.ammo.numberOfMagazines = 3
 
-	print('Changed Support weapon: pkp LMG - Pimped AMMO size...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Support weapon: pkp LMG - Pimped AMMO size...')
+	end
+end)
 
  -- #############
 
@@ -23,5 +35,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_pkp_mag, instance_pkp_mag,
     loadedInstance.magazineCapacity = 1200
     loadedInstance.numberOfMagazines = 2
 
-	print('Changed Support weapon: PKP LMG - Ext magazine Pimped AMMO size...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Support weapon: PKP LMG - Ext magazine Pimped AMMO size...')
+	end
+end)

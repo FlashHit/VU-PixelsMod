@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_tunguskacannon = Guid ("22D80A30-0A76-176C-C559-6E71C4F17915")
    local instance_tunguskacannon = Guid ("5ED03B20-CEE4-52F7-6C9B-DDE56DE6F800")
    local partition_tunguskabullets = Guid ("22D80A30-0A76-176C-C559-6E71C4F17915")
@@ -28,8 +39,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_tunguskacannon, instance_t
     loadedInstance.fireLogic.recoil.maxRecoilAngleZ = 0
     loadedInstance.fireLogic.recoil.minRecoilAngleZ = 0
     loadedInstance.overHeat.heatPerBullet = 0.009  -- Time till Mobile AA stops fireing, Default 0.014 --
-		print('Changed Mobile AA Cannon - No recoil - Tweaked AMMO size...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed Mobile AA Cannon - No recoil - Tweaked AMMO size...')
+	end
+end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_tunguskabullets, instance_tunguskabullets, function(loadedInstance)
      loadedInstance = BulletEntityData(loadedInstance)
@@ -40,7 +52,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_tunguskabullets, instance_
     loadedInstance.endDamage = 15 -- Default = 10
     loadedInstance.initialSpeed = 600 -- 1400 PIMPED -- Default = 350
     loadedInstance.timeToLive = 1.0 -- Default = 1.2
-		print('Changed Mobile AA Tweaked Bullets data ...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed Mobile AA Tweaked Bullets data ...')
+	end
+end)
 
 

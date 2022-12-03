@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_bm23shell = Guid ("AB65DA57-DAC6-4201-AA97-F1B8F5328E80")
    local instance_bm23shell = Guid ("9520BC73-20E0-4C99-A61D-07D6E3397DA7")
 
@@ -6,8 +17,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_bm23shell, instance_bm23sh
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.magazineCapacity = 24 -- Default = 6
-		print('Changed RU BM-23 and US M142 Shell Modifier ... ... ...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed RU BM-23 and US M142 Shell Modifier ... ... ...')
+	end
+end)
 
 -- ##################
    local partition_bm23air = Guid ("0029E9E6-AB7A-4C54-AA46-0465C2EAC6F1")
@@ -18,8 +30,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_bm23air, instance_bm23air,
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.magazineCapacity = 24 -- Default = 2
-		print('Changed RU BM-23 and US M142 Air Shell Modifier ... ... ...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed RU BM-23 and US M142 Air Shell Modifier ... ... ...')
+	end
+end)
 
 
 -- ################
@@ -35,8 +48,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_himarengine, instance_hima
     loadedInstance.rpmCut = 15000 -- default = 9500
     loadedInstance.enginePowerMultiplier = 8 -- default = 5
     loadedInstance.boost.accelerationScale = 5 -- default = 2
-	print('Changed Vehicle: Himar Engine RU...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Himar Engine RU...')
+	end
+end)
 
 -- ################
    local partition_himarengine2 = Guid ("ECE82307-9454-11E1-9418-9BD47D974A22")
@@ -51,8 +65,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_himarengine2, instance_him
     loadedInstance.rpmCut = 15000 -- default = 9500
     loadedInstance.enginePowerMultiplier = 8 -- default = 5
     loadedInstance.boost.accelerationScale = 5 -- default = 2
-	print('Changed Vehicle: Himar Engine US...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: Himar Engine US...')
+	end
+end)
 
 -- ##################
    local partition_himardamage = Guid ("16C1EC21-4049-11E1-8705-E3C8ED8C7B19")
@@ -71,8 +86,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_himarengine2, instance_him
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed Himar Pimped Explosion data ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed Himar Pimped Explosion data ...')
+ 	end
+end)
 
 -- ##################
    local partition_himartowdmg = Guid ("195B945C-6F17-11DF-90E6-B4DEFEBE3C65")
@@ -91,6 +107,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_himarengine2, instance_him
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed Himar TOW ATGM Pimped Explosion data ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed Himar TOW ATGM Pimped Explosion data ...')
+ 	end
+end)
 

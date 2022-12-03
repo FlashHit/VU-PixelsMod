@@ -1,4 +1,14 @@
--- -----------------------------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_igla_ammo = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
    local instance_igla_ammo = Guid ("CE53E1AB-2B5B-4844-97B7-5A4990EB3913")
 -- -----------------------------------
@@ -17,8 +27,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_speed, instance_igla_
     loadedInstance.timeToLive = 60.0 -- Default = 10
     loadedInstance.maxSpeed = 150.0 -- Default = 200
     loadedInstance.engineStrength = 70.0 -- Default = 35
-	print('Changed Sa18IGLA - changed speed / TTL ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Sa18IGLA - changed speed / TTL ...')
+	end
+end)
 
 -- ############
    local partition_igla_lockrange = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
@@ -29,8 +40,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_lockrange, instance_i
 
     loadedInstance:MakeWritable()
     loadedInstance.rayLength = 1500.0
-	print('Changed Sa18IGLA - Increased locking range ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Sa18IGLA - Increased locking range ...')
+	end
+end)
 	
 -- ###############
    local partition_igla_lock = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
@@ -43,8 +55,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_lock, instance_igla_l
     loadedInstance.isGuided = true
     loadedInstance.isGuidedWhenZoomed = true
     loadedInstance.fireOnlyWhenLockedOn = true
-	print('Changed Sa18IGLA guided data...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Sa18IGLA guided data...')
+	end
+end)
 
 -- #################
    local partition_igla_lockdata = Guid ("B412A569-1413-11E0-A672-E0A480096E27")
@@ -63,8 +76,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_igla_lockdata, instance_ig
     loadedInstance.rayLength = 750.0 -- default 400
     loadedInstance.lockOnVisibleTargetsOnly = true
     loadedInstance.lockOnEmptyVehicles = false
-	print('Changed Sa18IGLA turbo locking...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Sa18IGLA turbo locking...')
+	end
+end)
 
 -- -----------------------------------
    local partition_us_stinger_speed = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
@@ -78,8 +92,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_us_stinger_speed, instance
     loadedInstance.timeToLive = 60.0 -- Default = 10
     loadedInstance.maxSpeed = 150.0 -- Default = 200
     loadedInstance.engineStrength = 70.0 -- Default = 35
-	print('Changed Stinger - changed speed / TTL ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Stinger - changed speed / TTL ...')
+	end
+end)
 
 -- ############
    local partition_us_stinger_lockrange = Guid ("38BED001-2A1F-11E0-BE1A-979F86D1AB92")
@@ -90,8 +105,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_us_stinger_lockrange, inst
 
     loadedInstance:MakeWritable()
     loadedInstance.rayLength = 1500.0
-	print('Changed Stinger - Increased locking range ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Stinger - Increased locking range ...')
+	end
+end)
 
 	
 -- ##############
@@ -105,8 +121,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_us_stinger, instance_us_st
     loadedInstance.isGuided = true
     loadedInstance.isGuidedWhenZoomed = true
     loadedInstance.fireOnlyWhenLockedOn = true
-	print('Changed Stinger guided data ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Stinger guided data ...')
+	end
+end)
 
 -- ################
    local partition_us_stinger_lockdata = Guid ("28C2561D-EC16-11DF-BA9E-F3DCE5C70CB9")
@@ -125,8 +142,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_us_stinger_lockdata, insta
     loadedInstance.rayLength = 750.0 -- default 400
     loadedInstance.lockOnVisibleTargetsOnly = true
     loadedInstance.lockOnEmptyVehicles = false
-	print('Changed Stinger turbo locking...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Stinger turbo locking...')
+	end
+end)
 
 
 -- -----------------------------------

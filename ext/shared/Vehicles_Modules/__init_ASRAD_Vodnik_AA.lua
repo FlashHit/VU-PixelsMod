@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Generic pimped ammo data
 -- Shared data: (US)ASRAD - (RU)Vodnik-AA 
    local partition_asrad_aa = Guid ("00001130-B1AD-4D5D-8D86-07D87AFE5F9B")
@@ -8,8 +19,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_asrad_aa, instance_asrad_a
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.magazineCapacity = 24
-	print('Changed ASRAD / Vodnik Shell Modifier ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed ASRAD / Vodnik Shell Modifier ...')
+	end
+end)
 
 -- ---------------------
 
@@ -25,5 +37,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_asrad_grav, instance_asrad
     loadedInstance.initialSpeed = 700 -- default = 350
     loadedInstance.gravity = 0        -- default = -1.5
     loadedInstance.timeToLive = 8     -- default = 10
-	print('Changed ASRAD / Vodnik No gravity on shell ...')
-	end) 
+	if (bEnable_announcement) == (true) then print('Changed ASRAD / Vodnik No gravity on shell ...')
+	end
+end) 

@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 --
 
    local partition_lav25_atgm = Guid ("ACFD0C2A-2D69-496A-AE55-9E09EE43BAF0")
@@ -10,8 +21,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lav25_atgm, instance_lav25
     loadedInstance.ammo.magazineCapacity = 12
     loadedInstance.ammo.numberOfMagazines = -1
     loadedInstance.fireLogic.reloadTime = 4.0
-	print('Changed Atack Vehicle Firedata: US ATGM Launcher ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Atack Vehicle Firedata: US ATGM Launcher ...')
+	end
+end)
 
    local partition_bmp2m_atgm = Guid ("9A3C60F7-4A0F-B735-3B7C-FA64DDE35E4E")
    local instance_bmp2m_atgm = Guid ("52EC2FFF-2E86-26DC-41A2-4CA3B92F3C05")
@@ -23,8 +35,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_bmp2m_atgm, instance_bmp2m
     loadedInstance.ammo.magazineCapacity = 12
     loadedInstance.ammo.numberOfMagazines = -1
     loadedInstance.fireLogic.reloadTime = 4.0
-	print('Changed Atack Vehicle Firedata: RU - ATGM Launcher ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Atack Vehicle Firedata: RU - ATGM Launcher ...')
+	end
+end)
 -- IFV_ATGM_Projectile changes also: lav25 btr90 m142 bm32
 
 -- ---------------------------------------------------------------------------------------
@@ -42,8 +55,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown1, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed land Vehicle: US Growler ITV / RHIB / Phoenix - Firedata: Gunner ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed land Vehicle: US Growler ITV / RHIB / Phoenix - Firedata: Gunner ammo size ...')
+	end
+end)
 
 -- --------------------------------------
 -- Mounted_Minigun_Firing.txt
@@ -59,8 +73,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown2, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed air vehicle: US/RU Recon chopper - Firedata: Railgun ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed air vehicle: US/RU Recon chopper - Firedata: Railgun ammo size ...')
+	end
+end)
 
 -- --------------------------------------
 -- Mounted_PKM_Firing.txt
@@ -75,8 +90,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown3, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: RU gunner ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: RU gunner ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Mounted_HMG_Firing.txt
@@ -91,8 +107,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown4, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed land vehicle: RU VDV Buggy / RHIB / DPV - Firedata: Gunner ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed land vehicle: RU VDV Buggy / RHIB / DPV - Firedata: Gunner ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Tank_Remote_HMG_Firing.txt
@@ -108,8 +125,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown7, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: US HMG ammo size...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: US HMG ammo size...')
+	end
+end)
 
 -- ---------------
 -- Coax_HMG_Firing.txt
@@ -124,8 +142,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown8, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: US Coax HMG ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: US Coax HMG ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Coax_LMG_Firing.txt
@@ -141,8 +160,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown9, instance_unknown
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: US/RU Coax LMG ammo size...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: US/RU Coax LMG ammo size...')
+	end
+end)
 
 -- ---------------
 -- GAU8_cannon_firing.txt
@@ -158,8 +178,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown10, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 1000
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed Changed tank destroyers - Firedata: US/RU jets ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Changed tank destroyers - Firedata: US/RU jets ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Coax_LMG_Firing_M1128.txt
@@ -174,8 +195,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown11, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: US Coax LMG gun ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: US Coax LMG gun ...')
+	end
+end)
 
 -- ---------------
 -- Coax_HMG_Firing_Green_Tracer.txt
@@ -190,8 +212,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown15, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed Heavy atack vehicle Firedata: RU coax HMG ammo size...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Heavy atack vehicle Firedata: RU coax HMG ammo size...')
+	end
+end)
 
 -- ---------------
 -- Coax_LMG_Firing_Green_Tracer.txt
@@ -206,8 +229,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown16, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: RU coax LMG ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: RU coax LMG ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Tank_Remote_HMG_Firing_Green_Tracer.txt
@@ -223,8 +247,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown17, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: RU coax HMG ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: RU coax HMG ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Partition B74B48B5-A0AB-45D3-B056-256FA7752ACF
@@ -242,8 +267,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown18, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: US Canister shell ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: US Canister shell ammo size ...')
+	end
+end)
 
 -- ---------------
 -- Partition B1EA7E55-A576-5A64-3D80-FC082B007543
@@ -260,7 +286,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_unknown19, instance_unknow
 
     loadedInstance.ammo.magazineCapacity = 250
     loadedInstance.ammo.numberOfMagazines = -1
-	print('Changed atack vehicle Firedata: RU Canister shell ammo size ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed atack vehicle Firedata: RU Canister shell ammo size ...')
+	end
+end)
 
 -- ---------------

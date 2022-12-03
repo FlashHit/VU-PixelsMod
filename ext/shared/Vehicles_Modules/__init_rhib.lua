@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 --
 -- For tweaked gunner firedata, see the firedata.lua file
 --
@@ -14,8 +25,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rhib_engine, instance_rhib
     loadedInstance.rpmCut = 11000 -- default = 9500
     loadedInstance.enginePowerMultiplier = 3.0 -- default = 0.6
     loadedInstance.boost.accelerationScale = 2 -- default = 1
-	print('Changed Vehicle: rhib (1) Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: rhib (1) Engine...')
+	end
+end)
 
 -- -----------------------------------------
 
@@ -32,7 +44,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rhib_engine2, instance_rhi
     loadedInstance.rpmCut = 11000 -- default = 9500
     loadedInstance.enginePowerMultiplier = 3.0 -- default = 0.6
     loadedInstance.boost.accelerationScale = 2 -- default = 1
-	print('Changed Vehicle: rhib (2) Engine...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed Vehicle: rhib (2) Engine...')
+	end
+end)
 
 -- -----------------------------------------

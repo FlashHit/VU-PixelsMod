@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_lbt_shell1 = Guid ("347C7F28-38E4-4888-8567-AD4FFBD25299")
    local instance_lbt_shell1 = Guid ("F0F54699-EE70-4F17-8416-DF41912E183F")
 
@@ -6,8 +17,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt_shell1, instance_lbt_s
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.magazineCapacity = 24
-		print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (1) Ammo Modifier ...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (1) Ammo Modifier ...')
+	end
+end)
 
 -- -----------------
 
@@ -21,8 +33,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt_grav, instance_lbt_gra
     loadedInstance.initialSpeed = 700 -- default = 350
     loadedInstance.gravity = 0        -- default = -4.9
     loadedInstance.timeToLive = 8     -- default = 5
-	print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT - (2) Gravity modifier ...')
-	end) 
+	if (bEnable_announcement) == (true) then print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT - (2) Gravity modifier ...')
+	end
+end) 
 
 -- -----------------
 
@@ -42,8 +55,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt_grav, instance_lbt_gra
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (3) explosion modifier ...')
- 	end) 
+ 	if (bEnable_announcement) == (true) then print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (3) explosion modifier ...')
+ 	end
+end) 
 
 -- #####################################
 
@@ -56,8 +70,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt_shell2, instance_lbt_s
     loadedInstance:MakeWritable()
 
     loadedInstance.ammo.magazineCapacity = 24
-		print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (4) Ammo Modifier ...')
-	end)
+		if (bEnable_announcement) == (true) then print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (4) Ammo Modifier ...')
+	end
+end)
 
 -- -----------------
 
@@ -71,8 +86,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt2_grav, instance_lbt2_g
     loadedInstance.initialSpeed = 700 -- default = 350
     loadedInstance.gravity = 0        -- default = -4.9
     loadedInstance.timeToLive = 8     -- default = 5
-	print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT - (5) Gravity modifier ...')
-	end) 
+	if (bEnable_announcement) == (true) then print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT - (5) Gravity modifier ...')
+	end
+end) 
 
 -- -----------------
 
@@ -92,5 +108,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt2_grav, instance_lbt2_g
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (6) explosion modifier ...')
- 	end) 
+ 	if (bEnable_announcement) == (true) then print('Changed US LAV-25 - RU BMP-2M - BTR90 LBT (6) explosion modifier ...')
+ 	end
+end) 

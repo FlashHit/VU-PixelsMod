@@ -1,4 +1,13 @@
--- -----------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
    local partition_fgm148_ammo = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
    local instance_fgm148_ammo = Guid ("C1CE96A7-C9DD-43B3-822F-1B5BAC0F331A")
@@ -15,8 +24,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lock, instance_fgm1
     loadedInstance.isGuided = true
     loadedInstance.isGuidedWhenZoomed = true
     loadedInstance.fireOnlyWhenLockedOn = true
-	print('Changed FGM148 Javelin Guided Data ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed FGM148 Javelin Guided Data ...')
+	end
+end)
 
 -- ###########
    local partition_fgm148_lockdata = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
@@ -36,8 +46,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lockdata, instance_
     loadedInstance.lockOnVisibleTargetsOnly = true
     loadedInstance.lockOnEmptyVehicles = false
 
-	print('Changed FGM148 Javelin Turbo locking...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed FGM148 Javelin Turbo locking...')
+	end
+end)
 
 -- ------------------------------------------
 

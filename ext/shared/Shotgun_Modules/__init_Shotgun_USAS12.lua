@@ -1,4 +1,14 @@
 -- Shotgun USAS12 tweaks
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
 -- #####################
               local partition_USAS12 = Guid ("F4F57492-38F5-11E0-845E-D6BEC180D605")
@@ -12,7 +22,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_USAS12, instance_USAS12_in
     loadedInstance.magazineCapacity = 200
     loadedInstance.numberOfMagazines = 1000
 
-    print("Shotgun USAS12 Extended magazine ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun USAS12 Extended magazine ...")
+end
 end)
 
 -- #####################
@@ -26,12 +37,13 @@ ResourceManager:RegisterInstanceLoadHandler(partition_USAS12, instance_USAS12_Fi
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 200 -- default = 275
+    loadedInstance.fireLogic.rateOfFire = 150 -- default = 275
     loadedInstance.ammo.magazineCapacity = 100 -- default = 7
     loadedInstance.ammo.numberOfMagazines = 500 -- default = 4 
     loadedInstance.shot.numberOfBulletsPerShell = 150 -- default = 7
 
-    print("Shotgun USAS12 12g_Buckshot ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun USAS12 12g_Buckshot ... ... ...")
+end
 end)
 
 -- ######
@@ -44,12 +56,13 @@ ResourceManager:RegisterInstanceLoadHandler(partition_USAS12, instance_USAS12_Fi
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 200 -- default = 275
+    loadedInstance.fireLogic.rateOfFire = 150 -- default = 275
     loadedInstance.ammo.magazineCapacity = 100 -- default = 7
     loadedInstance.ammo.numberOfMagazines = 1000 -- default = 4
     loadedInstance.shot.numberOfBulletsPerShell = 150 -- default = 7
 
-    print("Shotgun USAS12 12g_flechette ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun USAS12 12g_flechette ... ... ...")
+end
 end)
 
 -- ######
@@ -62,12 +75,13 @@ ResourceManager:RegisterInstanceLoadHandler(partition_USAS12, instance_USAS12_Fi
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 200 -- default = 200
+    loadedInstance.fireLogic.rateOfFire = 150 -- default = 200
     loadedInstance.ammo.magazineCapacity = 100 -- default = 7
     loadedInstance.ammo.numberOfMagazines = 1000 -- default = 4
     loadedInstance.shot.numberOfBulletsPerShell = 15 -- default = 1
 
-    print("Shotgun USAS12 12g_frag ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun USAS12 12g_frag ... ... ...")
+end
 end)
 
 -- ######
@@ -80,10 +94,11 @@ ResourceManager:RegisterInstanceLoadHandler(partition_USAS12, instance_USAS12_Fi
     loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
 
-    loadedInstance.fireLogic.rateOfFire = 200 -- default = 275
+    loadedInstance.fireLogic.rateOfFire = 150 -- default = 275
     loadedInstance.ammo.magazineCapacity = 100 -- default = 7
     loadedInstance.ammo.numberOfMagazines = 1000 -- default = 4
     loadedInstance.shot.numberOfBulletsPerShell = 150 -- default = 1
 
-    print("Shotgun USAS12 12g_slug ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun USAS12 12g_slug ... ... ...")
+end
 end)

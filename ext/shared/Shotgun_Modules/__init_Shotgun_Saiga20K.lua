@@ -1,4 +1,14 @@
 -- Shotgun Saiga20K
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
               local partition_Saiga20K = Guid ("A119D627-257B-11E0-96DC-FF63A5537869")
      local partition_Saiga20K_Instance = Guid ("9CBF227A-BCD6-B540-622B-B70BBC85331F")
  local partition_Saiga20K_Instance_mag = Guid ("CEF32F54-CF6A-48F6-8602-E259A2D145A6")
@@ -16,7 +26,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga2
     loadedInstance.magazineCapacity = 200
     loadedInstance.numberOfMagazines = 1000
 
-    print("Shotgun Saiga20K Extended magazine ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Saiga20K Extended magazine ...")
+end
 end)
 
 -- #####################
@@ -31,7 +42,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga2
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun Saiga20K 12g_Buckshot ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Saiga20K 12g_Buckshot ... ... ...")
+end
 end)
 
 
@@ -45,7 +57,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga2
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun Saiga20K 12g_flechette ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Saiga20K 12g_flechette ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga20K_FireFunction3, function(loadedInstance)
@@ -58,7 +71,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga2
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun Saiga20K 12g_frag ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Saiga20K 12g_frag ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga20K_FireFunction4, function(loadedInstance)
@@ -71,5 +85,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_Saiga20K, partition_Saiga2
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun Saiga20K 12g_slug ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun Saiga20K 12g_slug ... ... ...")
+end
 end)

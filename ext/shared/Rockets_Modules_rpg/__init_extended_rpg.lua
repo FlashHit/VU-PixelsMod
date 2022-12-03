@@ -1,4 +1,14 @@
--- -----------------------------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_rpg7gravity = Guid ("6C857FD9-6FB3-11DE-B35E-864CF572E1C4")
    local instance_rpg7gravity = Guid ("CDD3A384-8243-A258-E23D-239CC0D52698")
 
@@ -9,8 +19,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rpg7gravity, instance_rpg7
     loadedInstance.initialSpeed = 500.0
     loadedInstance.timeToLive = 8
     loadedInstance.gravity = 0
-	print('Changed RPG-7 - Gravity ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed RPG-7 - Gravity ...')
+	end
+end)
 
 -- -----------------------------------
 
@@ -24,8 +35,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_smawgravity, instance_smaw
     loadedInstance.initialSpeed = 500.0
     loadedInstance.timeToLive = 8
     loadedInstance.gravity = 0
-	print('Changed SMAW - Gravity ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed SMAW - Gravity ...')
+	end
+end)
 
 -- -----------------------------------
 
@@ -39,8 +51,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rpg7, instance_rpg7, funct
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
-	print('Changed RPG-7 - Ammo size increased 40x ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed RPG-7 - Ammo size increased 40x ...')
+	end
+end)
 
 -- --------
 
@@ -54,9 +67,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_smaw, instance_smaw, funct
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
-	print('Changed SMAW - Ammo size increased 40x ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed SMAW - Ammo size increased 40x ...')
+	end
+end)
 
-
-	
--- #################################

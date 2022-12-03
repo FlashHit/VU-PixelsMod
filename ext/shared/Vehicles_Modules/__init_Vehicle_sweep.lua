@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_radarsweep_lav25 = Guid ("D124CDD4-FE2A-11DF-BB74-FD1A26B74EE5")
    local instance_radarsweep_lav25 = Guid ("30769039-A9CD-4B93-BC5B-34E59265A25F")
    local partition_radarsweep_lavAD = Guid ("0E23F40F-CDB3-4B9E-A36B-BD338CFA35BC")
@@ -15,8 +26,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_radarsweep_lav25, instance
     loadedInstance.sweepForMines = true
     loadedInstance.mineSweepRadius = 60
     loadedInstance.mineSweepInterval = 1.5
-	print('Changed LAV-25 Radarsweep Range...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed LAV-25 Radarsweep Range...')
+	end
+end)
 
 
 ResourceManager:RegisterInstanceLoadHandler(partition_radarsweep_lav25_1, instance_radarsweep_lav25_1, function(loadedInstance)
@@ -28,8 +40,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_radarsweep_lav25_1, instan
     loadedInstance.sweepForMines = true
     loadedInstance.mineSweepRadius = 60
     loadedInstance.mineSweepInterval = 1.5
-	print('Changed LAV-25 (1) Radarsweep Range...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed LAV-25 (1) Radarsweep Range...')
+	end
+end)
 
 
 ResourceManager:RegisterInstanceLoadHandler(partition_radarsweep_lavAD, instance_radarsweep_lavAD, function(loadedInstance)
@@ -41,5 +54,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_radarsweep_lavAD, instance
     loadedInstance.sweepForMines = true
     loadedInstance.mineSweepRadius = 60
     loadedInstance.mineSweepInterval = 1.5
-	print('Changed LAV-AD Radarsweep Range...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed LAV-AD Radarsweep Range...')
+	end
+end)

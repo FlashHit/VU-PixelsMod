@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- weapon config for removal of recoils / spread data on recon class
 
 Events:Subscribe('Partition:Loaded', function(partition)
@@ -17,11 +28,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for M39EBR ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for M39EBR ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -42,11 +54,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for M40A5 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for M40A5 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -67,11 +80,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for MK11 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for MK11 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -92,11 +106,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for M98B ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for M98B ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -117,11 +132,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for SKS ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for SKS ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -142,11 +158,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for SV98 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for SV98 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -167,11 +184,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for SVD ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for SVD ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -192,11 +210,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for L96 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for L96 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -217,11 +236,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for QBU88 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for QBU88 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -242,11 +262,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for HK417 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for HK417 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 
@@ -267,11 +288,12 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			gunSwayData.gameplayDeviationScaleFactorNoZoom = 0
 			gunSwayData.shootingRecoilDecreaseScale = 0
 			gunSwayData.firstShotRecoilMultiplier = 0
-    dprint("Recon: Removing recoil for JNG90 ...") 
+    if (bEnable_announcement) == (true) then dprint("Recon: Removing recoil for JNG90 ...") 
 
     end
    end
- end)
+ end
+end)
 
 -- ################
 

@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_lbt_shell4 = Guid ("E8E52039-27D8-4629-8E4D-7B1F8A419175")
    local instance_lbt_shell4 = Guid ("36BB119F-DD27-4DE5-93A1-644BB5F12A99")
 
@@ -6,8 +17,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_lbt_shell4, instance_lbt_s
     loadedInstance:MakeWritable()
 	
     loadedInstance.ammo.magazineCapacity = 24
-	print('Changed LBT Phoenix - Barsuk Shell ammo Modifier ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed LBT Phoenix - Barsuk Shell ammo Modifier ...')
+	end
+end)
 
 -- -----------------------
     local partition_phnx_bar_grav = Guid ("E8E52039-27D8-4629-8E4D-7B1F8A419175")
@@ -20,8 +32,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_phnx_bar_grav, instance_ph
     loadedInstance.initialSpeed = 450 -- default = 350
     loadedInstance.gravity = 0        -- default = -7
     loadedInstance.timeToLive = 6     -- default = 5
-	print('Changed LBT Phoenix - Barsuk Shell Gravity Modifier ...')
-	end) 
+	if (bEnable_announcement) == (true) then print('Changed LBT Phoenix - Barsuk Shell Gravity Modifier ...')
+	end
+end) 
 
 -- -----------------------
 
@@ -41,5 +54,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_phnx_bar_grav, instance_ph
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed LBT Phoenix - Barsuk Shell explosion modifier ...')
- 	end) 
+ 	if (bEnable_announcement) == (true) then print('Changed LBT Phoenix - Barsuk Shell explosion modifier ...')
+ 	end
+end) 

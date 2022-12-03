@@ -1,4 +1,14 @@
 -- Shotgun M1014
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
               local partition_M1014 = Guid ("460F1126-2578-11E0-96DC-FF63A5537869")
      local partition_M1014_Instance = Guid ("707C6815-CFD6-FBE0-A5DE-915AFDA6350A")
  local partition_M1014_Instance_mag = Guid ("0B1AA063-19D9-4745-B1F2-08C6286F640E")
@@ -16,7 +26,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Ins
     loadedInstance.magazineCapacity = 200
     loadedInstance.numberOfMagazines = 1000
 
-    print("Shotgun M1014 Extended magazine ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun M1014 Extended magazine ...")
+end
 end)
 
 -- #####################
@@ -31,7 +42,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun M1014 12g_Buckshot ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun M1014 12g_Buckshot ... ... ...")
+end
 end)
 
 
@@ -45,7 +57,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun M1014 12g_flechette ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun M1014 12g_flechette ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_FireFunction3, function(loadedInstance)
@@ -58,7 +71,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun M1014 12g_frag ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun M1014 12g_frag ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_FireFunction4, function(loadedInstance)
@@ -71,5 +85,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_M1014, partition_M1014_Fir
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun M1014 12g_slug ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun M1014 12g_slug ... ... ...")
+end
 end)

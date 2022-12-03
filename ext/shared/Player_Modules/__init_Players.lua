@@ -1,13 +1,24 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
 -- Player instances
 -- yump instance
-var_yump_heigt = 2
+var_yump_heigt = 3
 var_yump_size = 5
 
 -- pose_stand instance
 var_stand_velocity = 6  -- 4.5
 var_stand_multiplier = 2
 
--- pose_standair instance
+-- pose_standair instance (jumping while running)
 var_air_velocity = 6
 var_air_miltiplier = 2
 
@@ -46,7 +57,8 @@ ResourceManager:RegisterInstanceLoadHandler(Partition_yump, Instance_yump, funct
 
     loadedInstance.jumpHeight = var_yump_heigt
     loadedInstance.jumpEffectSize = var_yump_size
-	print('Changed Player Jump...')
+	if (bEnable_announcement) == (true) then print('Changed Player Jump...')
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Partition_pose_stand, Instance_pose_stand, function(loadedInstance)
@@ -56,7 +68,8 @@ ResourceManager:RegisterInstanceLoadHandler(Partition_pose_stand, Instance_pose_
 
     loadedInstance.velocity = var_stand_velocity
     loadedInstance.sprintMultiplier = var_stand_multiplier
-	print('Changed Player Stand Pose...')
+	if (bEnable_announcement) == (true) then print('Changed Player Stand Pose...')
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Partition_pose_standair, Instance_pose_standair, function(loadedInstance)
@@ -66,7 +79,8 @@ ResourceManager:RegisterInstanceLoadHandler(Partition_pose_standair, Instance_po
 
     loadedInstance.velocity = var_air_velocity
     loadedInstance.sprintMultiplier = var_air_miltiplier
-	print('Changed Player Stand air Pose...')
+	if (bEnable_announcement) == (true) then print('Changed Player Stand air Pose...')
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Partition_pose_swimming, Instance_pose_swimming, function(loadedInstance)
@@ -75,7 +89,8 @@ ResourceManager:RegisterInstanceLoadHandler(Partition_pose_swimming, Instance_po
     loadedInstance:MakeWritable()
 
     loadedInstance.velocity = var_swimming_velocity
-	print('Changed Player Swim Pose...')
+	if (bEnable_announcement) == (true) then print('Changed Player Swim Pose...')
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Partition_pose_climbing, Instance_pose_climbing, function(loadedInstance)
@@ -85,7 +100,8 @@ ResourceManager:RegisterInstanceLoadHandler(Partition_pose_climbing, Instance_po
 
     loadedInstance.velocity = var_climbing_velocity
     loadedInstance.sprintMultiplier = var_climbing_multiplier
-	print('Changed Player Climb Pose...')
+	if (bEnable_announcement) == (true) then print('Changed Player Climb Pose...')
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Partition_pose_chute, Instance_pose_chute, function(loadedInstance)
@@ -95,6 +111,7 @@ ResourceManager:RegisterInstanceLoadHandler(Partition_pose_chute, Instance_pose_
 
     loadedInstance.velocity = var_climbing_velocity
     loadedInstance.velocity = var_chute_velocity
-	print('Changed Player Parachute Pose...')
+	if (bEnable_announcement) == (true) then print('Changed Player Parachute Pose...')
+end
 end)
 

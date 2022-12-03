@@ -1,4 +1,14 @@
--- -----------------------------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_smaw = Guid ("BCE98CA0-17EC-11E0-8CD8-85483A75A7C5")
    local instance_smaw = Guid ("AB8577C5-D5F9-4A17-BEB2-2E153E171630")
 
@@ -17,8 +27,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_rpg7gravity, instance_rpg7
     loadedInstance.initialSpeed = 500.0
     loadedInstance.timeToLive = 8
     loadedInstance.gravity = 0
-	print('Changed RPG-7 - Gravity ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed RPG-7 - Gravity ...')
+	end
+end)
 
 -- -----------------------------------
 
@@ -32,8 +43,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_smawgravity, instance_smaw
     loadedInstance.initialSpeed = 500.0
     loadedInstance.timeToLive = 8
     loadedInstance.gravity = 0
-	print('Changed SMAW - Gravity ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed SMAW - Gravity ...')
+	end
+end)
 
 -- -----------------------------------
 -- -----------------------------------
@@ -61,7 +73,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_smaw, instance_smaw, funct
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
 	end)
-
 
 
 -- Mapmode: Conquest Small - Assault - Assault#2
@@ -145,4 +156,3 @@ end
 
 end)
 	
--- #################################

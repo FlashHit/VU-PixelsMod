@@ -1,4 +1,14 @@
 -- Shotgun global gravity tweaks
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
               local partition_buck_grav = Guid ("730EC837-C59D-4E96-AFD5-01F3BDA2AE69")
 local instance_FireFunction1_buck_grav = Guid ("50ACD447-1BCD-4363-AB61-312840D5D28B") -- 12g_buckshot
@@ -13,7 +23,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_buck_grav, instance_FireFu
     loadedInstance.gravity = 0 -- default = -9.8
     loadedInstance.startDamage = 25 -- default = 18.0
     loadedInstance.endDamage = 25 -- default = 6.0
-    print("Shotgun - (Buckshot ammo) What gravity ? ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun - (Buckshot ammo) What gravity ? ...")
+end
 end)
 
 -- #####
@@ -31,7 +42,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_flech_grav, instance_FireF
     loadedInstance.gravity = 0 -- default = -9.8
     loadedInstance.startDamage = 25 -- default = 12.5
     loadedInstance.endDamage = 25 -- default = 8.3
-    print("Shotgun - (Flechette ammo) What gravity ? ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun - (Flechette ammo) What gravity ? ...")
+end
 end)
 
 -- #####
@@ -49,7 +61,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_frag_grav, instance_FireFu
     loadedInstance.gravity = 0 -- default = -15
     loadedInstance.startDamage = 50 -- default = 20
     loadedInstance.endDamage = 50 -- default = 5
-    print("Shotgun - (Frag ammo) What gravity ? ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun - (Frag ammo) What gravity ? ...")
+end
 end)
 
 -- #####
@@ -67,7 +80,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_slug_grav, instance_FireFu
     loadedInstance.gravity = 0 -- default = -12
     loadedInstance.startDamage = 75 -- default = 75
     loadedInstance.endDamage = 75 -- default = 37.5
-    print("Shotgun - (Slug ammo) What gravity ? ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun - (Slug ammo) What gravity ? ...")
+end
 end)
 
 -- #####
@@ -85,7 +99,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_slug_pump_grav, instance_F
     loadedInstance.gravity = 0 -- default = -15
     loadedInstance.startDamage = 50 -- default = 37.5
     loadedInstance.endDamage = 50 -- default = 10
-    print("Shotgun - (Frag_pump ammo) What gravity ? ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun - (Frag_pump ammo) What gravity ? ...")
+end
 end)
 
 -- #####
@@ -102,7 +117,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_slug_pump_grav, instance_F
     loadedInstance.gravity = 0 -- default = -12
     loadedInstance.startDamage = 100 -- default = 100
     loadedInstance.endDamage = 100 -- default = 40
-    print("Shotgun - (Slug_pump ammo) What gravity ? ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun - (Slug_pump ammo) What gravity ? ...")
+end
 end)
 
 -- #####

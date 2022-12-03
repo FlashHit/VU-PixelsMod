@@ -1,4 +1,14 @@
 -- Shotgun 870MCS
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
               local partition_870MCS = Guid ("50F905EA-E32B-11DF-931B-DC6D3E613E0F")
      local partition_870MCS_Instance = Guid ("B76D7661-C812-64C2-322C-A269E40A1CD7")
  local partition_870MCS_Instance_mag = Guid ("DE774BEF-AEA7-4A5D-8046-5ED66391F828")
@@ -16,7 +26,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_I
     loadedInstance.magazineCapacity = 200
     loadedInstance.numberOfMagazines = 1000
 
-    print("Shotgun 870MCS Extended magazine ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun 870MCS Extended magazine ...")
+end
 end)
 
 -- #####################
@@ -31,7 +42,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_F
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun 870MCS 12g_Buckshot ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun 870MCS 12g_Buckshot ... ... ...")
+end
 end)
 
 
@@ -45,7 +57,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_F
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun 870MCS 12g_flechette ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun 870MCS 12g_flechette ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_FireFunction3, function(loadedInstance)
@@ -58,7 +71,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_F
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun 870MCS 12g_frag ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun 870MCS 12g_frag ... ... ...")
+end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_FireFunction4, function(loadedInstance)
@@ -71,5 +85,6 @@ ResourceManager:RegisterInstanceLoadHandler(partition_870MCS, partition_870MCS_F
     loadedInstance.ammo.numberOfMagazines = 1000
     loadedInstance.shot.numberOfBulletsPerShell = 150
 
-    print("Shotgun 870MCS 12g_slug ... ... ...")
+ 	if (bEnable_announcement) == (true) then print("Shotgun 870MCS 12g_slug ... ... ...")
+end
 end)

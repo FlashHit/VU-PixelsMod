@@ -1,4 +1,13 @@
--- -----------------
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
 
    local partition_fgm148_lock = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
    local instance_fgm148_lock = Guid ("F3150F93-C300-43A1-96AA-9453DBD159E8")
@@ -10,8 +19,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lock, instance_fgm1
     loadedInstance.isGuided = true
     loadedInstance.isGuidedWhenZoomed = true
     loadedInstance.fireOnlyWhenLockedOn = true
-	print('Changed FGM148 Javelin Guided Data ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed FGM148 Javelin Guided Data ...')
+	end
+end)
 
 -- ###########
    local partition_fgm148_lockdata = Guid ("F4C6BD34-0D15-11E0-99FE-EA6897C76A7E")
@@ -31,8 +41,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_lockdata, instance_
     loadedInstance.lockOnVisibleTargetsOnly = true
     loadedInstance.lockOnEmptyVehicles = false
 
-	print('Changed FGM148 Javelin Turbo locking...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed FGM148 Javelin Turbo locking...')
+	end
+end)
 
 -- ###########
    local partition_fgm148_dmg = Guid ("742C0343-1E94-11E0-833E-D522F39B6476")
@@ -49,8 +60,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_dmg, instance_fgm14
     loadedInstance.shockwaveRadius = 12 -- Default = 6.0
     loadedInstance.shockwaveImpulse = 3000 -- Default = 1500.0
     loadedInstance.shockwaveTime = 0  -- Default = 0.25
-	print('Changed FGM148 Javelin Damage...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed FGM148 Javelin Damage...')
+	end
+end)
 
 -- -----------------------------------
 
@@ -65,7 +77,8 @@ ResourceManager:RegisterInstanceLoadHandler(partition_fgm148_ammo, instance_fgm1
     loadedInstance.ammo.numberOfMagazines = 20 -- x2 !
     loadedInstance.ammo.autoReplenishDelay = 0.5
     loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
-	print('Changed FGM148 Javelin - Increased AMMO size 40x ...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed FGM148 Javelin - Increased AMMO size 40x ...')
+	end
+end)
 
 -- -----------------

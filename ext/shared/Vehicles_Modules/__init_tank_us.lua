@@ -1,3 +1,14 @@
+-- This wil hide the messages in the console if set to false
+-- information is good, but can also be a bit overkill.
+
+bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+
+-- 	if (bEnable_announcement) == (true) then 
+-- copy above line in front of the print statement xD
+-- Also place a end statement below the line you added to close the statement properly and restart the server
+-- true is print statement visible
+-- --------------------------------
+
    local partition_m1abramsshell = Guid ("D684EC68-0FE9-4DF1-A732-9279BBA202F8")
    local instance_m1abramsshell = Guid ("F8903680-77AE-4D0C-88B7-88E5407CE897")
 
@@ -7,8 +18,9 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m1abramsshell, instance_m1
 
     loadedInstance.gravity = 0
     loadedInstance.timeToLive = 4
-	print('Changed US Tank - M1Abrams Shell...')
-	end)
+	if (bEnable_announcement) == (true) then print('Changed US Tank - M1Abrams Shell...')
+	end
+end)
 
 -- ##################
    local partition_m1abrams_dmg = Guid ("D684EC68-0FE9-4DF1-A732-9279BBA202F8")
@@ -27,6 +39,7 @@ ResourceManager:RegisterInstanceLoadHandler(partition_m1abramsshell, instance_m1
      loadedInstance.shockwaveTime = 0
      loadedInstance.triggerImpairedHearing = true
      loadedInstance.isCausingSuppression = true
- 	print('Changed US Tank - Pimped Explosion data ...')
- 	end)
+ 	if (bEnable_announcement) == (true) then print('Changed US Tank - Pimped Explosion data ...')
+ 	end
+end)
 
