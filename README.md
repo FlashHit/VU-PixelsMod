@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.5
+# Welcome to Version 2.1.6
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -20,7 +20,14 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 03-12-2022
+# Last Update: 04-12-2022
+- Server console output tweak.
+- This wil hide the messages in the console if set to false
+- information is good, but can also be a bit overkill.
+- bEnable_announcement = false -- if this is true, the print announcement wil show in the console
+- On default i set this to false, enable if you want to see some stuff
+
+# Previous Update: 03-12-2022
 - C4 fix: adjusted the ammount on domination mode.
 - revamped the M67 grenades module
 - revamped the M15 Tank mine module

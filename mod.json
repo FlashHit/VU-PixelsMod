@@ -1,8 +1,8 @@
 {
     "Name": "Iamadeadpixel's Mod",
     "Description": "pimped gadgets for Battlefield 3: Venice Unleashed",
-    "Version": "2.1.5",
-    "Reason": "upgrade and C4 fix",
+    "Version": "2.1.6",
+    "Reason": "Console output tweak",
     "Authors": [ "iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {
