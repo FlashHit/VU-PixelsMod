@@ -6,18 +6,18 @@ local bEnable_modules_vehicles = true
 
             if (bEnable_modules_vehicles) == (true) then print('Vehicles modules config Enabled... ... ...')
 
-bEnable_Mobile_AA = false
-bEnable_tank_lbt_sprutsd = false
-bEnable_tank_lbt_stryker = false
-bEnable_tank_ru = false
-bEnable_tank_us = false
-bEnable_tank_ru_lbt_bm23 = false
-bEnable_tank_lbt_lav25_bmp2m = false
-bEnable_tank_lbt_amtrac = false
-bEnable_tank_lbt_phoenix_barsuk = false
-bEnable_vehicle_radarsweep_data = false
-bEnable_vehicle_ASRAD_Vodnik_AA = false
-bEnable_vehicle_jeepstuff = false
+bEnable_Mobile_AA = true
+bEnable_tank_lbt_sprutsd = true
+bEnable_tank_lbt_stryker = true
+bEnable_tank_ru = true
+bEnable_tank_us = true
+bEnable_tank_ru_lbt_bm23 = true
+bEnable_tank_lbt_lav25_bmp2m = true
+bEnable_tank_lbt_amtrac = true
+bEnable_tank_lbt_phoenix_barsuk = true
+bEnable_vehicle_radarsweep_data = true
+bEnable_vehicle_ASRAD_Vodnik_AA = true
+bEnable_vehicle_jeepstuff = true
 bEnable_vehicle_firedata = true
 bEnable_vehicle_rhib = true
 
