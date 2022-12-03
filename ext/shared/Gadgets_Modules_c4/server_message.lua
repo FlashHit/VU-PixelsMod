@@ -12,13 +12,15 @@ Events:Subscribe('Level:LoadResources', function()
 	print('Changed -Tank Superiority- 32x C4 - Increased AMMO size...')
 	print('Changed -Tank Superiority- 32x C4 Packages you can place !...')
 
+-- -----------------------
 	elseif SharedUtils:GetCurrentGameMode() == "ConquestSmall0" then
 	print('Changed -CQ Small- 16x C4 - Increased AMMO size...')
 	print('Changed -CQ Small- 16x C4 Packages you can place !...')
 
+-- -----------------------
 	elseif SharedUtils:GetCurrentGameMode() == "Domination0" then
-	print('Changed -Conquest Domination- 16x C4 - Increased AMMO size...')
-	print('Changed -Conquest Domination- 16x C4 Packages you can place !...')
+	print('Changed -Conquest Domination- 8x C4 - Increased AMMO size...')
+	print('Changed -Conquest Domination- 8x C4 Packages you can place !...')
 
 	elseif SharedUtils:GetCurrentGameMode() == "TeamDeathMatch0" then
 	print('Changed -TDM- 8x C4 - Increased AMMO size...')
@@ -32,6 +34,7 @@ Events:Subscribe('Level:LoadResources', function()
 	print('Changed -Squad DeathMatch- 8x C4 - Increased AMMO size...')
 	print('Changed -Squad DeathMatch- 8x C4 Packages you can place !...')
 	
+-- -----------------------
 	elseif SharedUtils:GetCurrentGameMode() == "RushLarge0" then
 	print('Changed -RUSH- 12x C4 - Increased AMMO size...')
 	print('Changed -RUSH- 12x C4 Packages you can place !...')
@@ -44,6 +47,7 @@ Events:Subscribe('Level:LoadResources', function()
 	print('Changed -Capture The Flag- 12x C4 - Increased AMMO size...')
 	print('Changed -Capture The Flag- 12x C4 Packages you can place !...')
 
+-- -----------------------
 	elseif SharedUtils:GetCurrentGameMode() == "ConquestAssaultSmall0" then
 	print('Changed -Assault- 24x C4 - Increased AMMO size...')
 	print('Changed -Assault- 24x C4 Packages you can place !...')
@@ -52,6 +56,7 @@ Events:Subscribe('Level:LoadResources', function()
 	print('Changed -Assault2- 24x C4 - Increased AMMO size...')
 	print('Changed -Assault2- 24x C4 Packages you can place !...')
 
+-- -----------------------
 	elseif SharedUtils:GetCurrentGameMode() == "AirSuperiority0" then
 	print('Changed -Air Superiority- No C4 in a jet ...')
 

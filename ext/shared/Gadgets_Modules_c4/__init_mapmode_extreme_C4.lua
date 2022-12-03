@@ -53,7 +53,7 @@ end)
 end)
 
 	else
-	if SharedUtils:GetCurrentGameMode() == "ConquestSmall0" or SharedUtils:GetCurrentGameMode() == "Domination0" then
+	if SharedUtils:GetCurrentGameMode() == "ConquestSmall0" then
 	ResourceManager:RegisterInstanceLoadHandler(partition_c4, instance_c4, function(loadedInstance)
      loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()
@@ -73,7 +73,7 @@ end)
 end)
 
 	else
-	if SharedUtils:GetCurrentGameMode() == "TeamDeathMatch0" or SharedUtils:GetCurrentGameMode() == "SquadDeathMatch0" or SharedUtils:GetCurrentGameMode() == "TeamDeathMatchC0" then
+	if SharedUtils:GetCurrentGameMode() == "TeamDeathMatch0" or SharedUtils:GetCurrentGameMode() == "SquadDeathMatch0" or SharedUtils:GetCurrentGameMode() == "TeamDeathMatchC0" or SharedUtils:GetCurrentGameMode() == "Domination0" then
 	ResourceManager:RegisterInstanceLoadHandler(partition_c4, instance_c4, function(loadedInstance)
      loadedInstance = FiringFunctionData(loadedInstance)
     loadedInstance:MakeWritable()

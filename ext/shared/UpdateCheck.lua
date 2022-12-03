@@ -1,5 +1,7 @@
 require('__shared/version')
 -- Object in mod.json for Reason: upgrade - patch - bugfix - new release - stable release - test
+-- or anything else you want to announce.
+-- if u want to use this, use the mod.json i am using, it contains the   "Reason": "whatever it is",  entry.
 
 function getCurrentVersion()
     options = HttpOptions({}, 10);

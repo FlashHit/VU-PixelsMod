@@ -7,9 +7,9 @@ local bEnable_modules_gadgets_c4 = true
 
 -- C4 Gadgets stuff --
 -- ONLY ONE CAN BE ACTIVE !
- bEnable_extended_C4 = false -- This increased the C4 ammount you can carry and place to 32
- bEnable_pimped_C4 = false  -- Has 32 packages, but the explosion is pimped by 3 times
- bEnable_mapmode_C4 = false -- depended on mapmode the C4 you can carry varies from 8 to 32
+ bEnable_extended_C4 = hidden -- This increased the C4 ammount you can carry and place to 32
+ bEnable_pimped_C4 = hidden  -- Has 32 packages, but the explosion is pimped by 3 times
+ bEnable_mapmode_C4 = hidden -- depended on mapmode the C4 you can carry varies from 8 to 32
  bEnable_mapmode_extreme_C4 = true -- depended on mapmode the C4 you can carry varies from 8 to 32 - Pimped Explosion damage !
 
 

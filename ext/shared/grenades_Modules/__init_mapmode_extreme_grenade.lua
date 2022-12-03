@@ -97,21 +97,3 @@ end
 end
 
 end)
-
-
-
--- --------------------------------------
-
-ResourceManager:RegisterInstanceLoadHandler(partition_grenade, instance_grenade, function(loadedInstance)
-     loadedInstance = FiringFunctionData(loadedInstance)
-    loadedInstance:MakeWritable()
-
-    loadedInstance.ammo.magazineCapacity = 1
-    loadedInstance.ammo.numberOfMagazines = 32
-    loadedInstance.ammo.autoReplenishDelay = 0.5
-    loadedInstance.ammo.ammoBagPickupDelayMultiplier = 0.5
-    loadedInstance.shot.initialSpeed.z = 25
-	end)
-
-
--- --------------------------------------

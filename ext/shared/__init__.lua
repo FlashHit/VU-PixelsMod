@@ -25,6 +25,8 @@ require('__shared/__init_modules_rockets_javelin')
 require('__shared/__init_modules_rockets_rpg')
 require('__shared/__init_modules_rockets_igla')
 require('__shared/__init_modules_gadgets_c4')
+require('__shared/__init_modules_M15_mines')
+require('__shared/__init_modules_grenades')
 --
 require('__shared/__init_modules_shotguns')
 require('__shared/__init_modules_common_weapons')
@@ -37,8 +39,6 @@ require('__shared/__init_modules_recon_weapons')
 require('__shared/__init_modules_support_LMG')
 require('__shared/__init_modules_ac130')
 require('__shared/__init_modules_crossbow')
-require('__shared/__init_modules_grenades')
-require('__shared/__init_modules_M15_mines')
 --
 -- modules below can and will lag the server startup performance
 -- it also affects the client loading time !
