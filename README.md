@@ -7,7 +7,7 @@
 ## iamadeadpixel
 - Make things go more fun and kinky
 -
-# Welcome to Version 2.1.4
+# Welcome to Version 2.1.5
 - This is complete overworked version from 1.4.4
 - Every item is now its own instance file
 - Basicly ,if you want to run only ONLY one modification, you can copy it out of the mod
@@ -20,7 +20,16 @@
 # The no recoil mods are inactive due long loading time
 # Firedata can be shared with other type class vehicles or weapons.
 
-# Last Update: 02-12-2022
+# Last Update: 03-12-2022
+- C4 fix: adjusted the ammount on domination mode.
+- revamped the M67 grenades module
+- revamped the M15 Tank mine module
+- M67 and M15 has now 4 settings.
+- on default the extreme settings are active.
+-
+- Did i mention that u also can use your own updatecheck.lua for your mods ??
+
+# Previous Update: 02-12-2022
 - Revamped the rockets modules (rpg/smaw  igla/stinger javelin)
 - Each rocket module has now its own module entry
 - you can choose out of 4 configuration for each item.
