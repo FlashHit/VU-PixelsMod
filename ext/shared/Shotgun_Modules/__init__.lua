@@ -1,7 +1,0 @@
-require('__shared/MMShotgun_DAO12')
-require('__shared/MMShotgun_M1014')
-require('__shared/MMShotgun_USAS12')
-require('__shared/MMShotgun_Saiga20K')
-require('__shared/MMShotgun_Remington870MCS')
-require('__shared/MMShotgun_spas12')
-require('__shared/MMShotgun_MK3A1')

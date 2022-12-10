@@ -1,35 +1,35 @@
-require('__shared/version')
--- Object in mod.json for Reason: upgrade - patch - bugfix - new release - stable release - test
--- or anything else you want to announce.
--- if u want to use this, use the mod.json i am using, it contains the   "Reason": "whatever it is",  entry.
+do
+	local m_ModVersion = require('__shared/version')
+	-- Object in mod.json for Reason: upgrade - patch - bugfix - new release - stable release - test
+	-- or anything else you want to announce.
+	-- if u want to use this, use the mod.json i am using, it contains the   "Reason": "whatever it is",  entry.
 
-function getCurrentVersion()
-    options = HttpOptions({}, 10);
-    options.verifyCertificate = false; --ignore cert for wine users
-    res = Net:GetHTTP("https://raw.githubusercontent.com/spatieman/VU-PixelsMod/main/mod.json", options);
-    if res.status ~= 200 then
-        return null;
-    end
-    json = json.decode(res.body);
-    return json.Version,json.Reason;
---    return json.Version;
-end
+	local function _GetResponse()
+		local s_Options = HttpOptions({}, 10)
+		s_Options.verifyCertificate = false
 
+		local s_Response = Net:GetHTTP("https://raw.githubusercontent.com/spatieman/VU-PixelsMod/main/mod.json", s_Options);
 
-function checkVersion()
-    if getCurrentVersion() ~= localModVersion then
-	print("**********************************************************************************************");
-        print("** Pixelmod seems to be out of date! Please visit https://github.com/spatieman/VU-PixelsMod **" );
-	print('Changed Version on github is ('..json.Version..') - Local version:('..localModVersion..') - Reason for update: ('..json.Reason..')')
-	print("**********************************************************************************************");
+		if not s_Response or s_Response.status ~= 200 then
+			return
+		end
+
+		local s_Table = json.decode(s_Response.body)
+
+		return s_Table.Version, s_Table.Reason
+	end
+
+	local s_Version, s_Reason = _GetResponse()
+
+	if s_Version ~= m_ModVersion then
+		print("**********************************************************************************************");
+		print("** Pixelmod seems to be out of date! Please visit https://github.com/spatieman/VU-PixelsMod **");
+		print('Changed Version on github is (' .. s_Version .. ') - Local version:(' .. m_ModVersion .. ') - Reason for update: (' .. s_Reason .. ')')
+		print("**********************************************************************************************");
 	else
-	print("************************************************************************");
-	print("********************* Pixelmod seems to be up2date *********************");
-	print('Version on github is ('..json.Version..') - Local version:('..localModVersion..')...')
-	print("************************************************************************");
-    end
+		print("************************************************************************");
+		print("********************* Pixelmod seems to be up2date *********************");
+		print('Version on github is (' .. s_Version .. ') - Local version:(' .. m_ModVersion .. ')...')
+		print("************************************************************************");
+	end
 end
-
-checkVersion();
-
-
