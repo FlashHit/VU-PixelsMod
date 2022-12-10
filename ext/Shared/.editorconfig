@@ -1,0 +1,9 @@
+[*]
+indent_size = 4
+indent_style = tab
+insert_final_newline = true
+max_line_length = 250
+trim_trailing_whitespace = true
+end_of_line = crlf
+if_branch_comments_after_block_no_indent = true
+if_condition_no_continuation_indent = true
